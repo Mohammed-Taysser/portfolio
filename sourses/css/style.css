@@ -101,7 +101,7 @@ section.project .content{
     position: relative;
     /* top: -40px;
     left: -40px; */
-    opacity: 0;
+    /* opacity: 0; */
     transition: all 0.8s;
 }
 section.project .content.appear{
