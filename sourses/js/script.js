@@ -20,7 +20,7 @@ $(function () {
 
     scrollToElement(nav_bar_links);
 
-	// navbar background change on scroll
+	// navbar background color change on scroll
 
     $(window).scroll(function() {
 		let navbar = $("nav.navbar");    
@@ -31,13 +31,14 @@ $(function () {
             navbar.removeClass("scrolled");
         }
 
-        nav_bar_links.forEach((elm) => {
-            let current_element = document.querySelector('#' + elm.dataset.section);
-			if(current_element.clientHeight >= scroll){
-                current_element.classList.add('appear')
-            }
-		});
-    });
+    //     nav_bar_links.forEach((elm) => {
+    //         let current_element = document.querySelector('#' + elm.dataset.section);
+	// 		if(scroll >= current_element.getBoundingClientRect().top){
+    //             current_element.children[0].classList.add('appear');
+    //             console.log(elm.dataset.section, 'added');
+    //         }
+	// 	});
+    // });
 
 
     // current year

@@ -99,14 +99,14 @@ section.project .content{
     background-color: rgba(23, 24, 32, 0.95);
     z-index: 2;
     position: relative;
-    top: -40px;
-    left: -40px;
+    /* top: -40px;
+    left: -40px; */
     opacity: 0;
     transition: all 0.8s;
 }
 section.project .content.appear{
-    top: 0;
-    left: 0;
+    /* top: 0;
+    left: 0; */
     opacity: 1;
     transition: all 0.5s;
 }
