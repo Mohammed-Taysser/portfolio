@@ -38,7 +38,7 @@ $(function () {
     //             console.log(elm.dataset.section, 'added');
     //         }
 	// 	});
-    // });
+    });
 
 
     // current year
