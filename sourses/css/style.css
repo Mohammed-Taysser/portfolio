@@ -35,6 +35,44 @@ body{
     background-color: #20c997;
     border-color: #20c997;
 }
+
+.btn-teal {
+    color: #fff;
+    background-color: #20c997;
+    border-color: #20c997;
+  }
+  
+  .btn-teal:hover {
+    color: #fff;
+    background-color: #0069d9;
+    border-color: #20c996ce;
+  }
+  
+  .btn-teal:focus, .btn-teal.focus {
+    color: #fff;
+    background-color: #0069d9;
+    border-color: #0062cc;
+    box-shadow: 0 0 0 0.2rem #20c996ce;
+  }
+  
+  .btn-teal.disabled, .btn-teal:disabled {
+    color: #fff;
+    background-color: #20c997;
+    border-color: #20c997;
+  }
+  
+  .btn-teal:not(:disabled):not(.disabled):active, .btn-teal:not(:disabled):not(.disabled).active,
+  .show > .btn-teal.dropdown-toggle {
+    color: #fff;
+    background-color: #20c996ce;
+    border-color: #20c996ce;
+  }
+  
+  .btn-teal:not(:disabled):not(.disabled):active:focus, .btn-teal:not(:disabled):not(.disabled).active:focus,
+  .show > .btn-teal.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.2rem #20c996ce;
+  }
+  
 /* navbar */
 nav.navbar.scrolled{
     background-color: #272833cc !important;
