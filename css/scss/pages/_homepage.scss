@@ -60,6 +60,11 @@
           font-family: Montserrat-bold, sans-serif !important;
       }
 
+      .about-text{
+          padding: 20px;
+          border-radius: 5px;
+      }
+
       .special-header {
         &::before {
           left: calc(50% - 20px);
