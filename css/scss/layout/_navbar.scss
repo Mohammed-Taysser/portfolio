@@ -1,97 +1,188 @@
+/* navbar start */
+nav.navbar {
+  background-color: #fff;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  top: 0;
 
-/**
-<nav class="other-menu">
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 
-  <input type="checkbox" class="menu-checkbox" name="menu-checkbox" id="menu-checkbox" />
+  .main-links ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
 
-  <label class="menu-button" for="menu-checkbox">
-    <span class="hamburger hamburger-1"></span>
-    <span class="hamburger hamburger-2"></span>
-    <span class="hamburger hamburger-3"></span>
-  </label>
-
-</nav>
-*/
-
-.other-menu {
-    margin: 80px;
-    box-sizing: border-box;
-    font-size: 20px;
-    text-align: left;
-  
-    .menu-button {
-      background: tomato;
-      border-radius: 100%;
-      width: 80px;
-      height: 80px;
-      margin-left: -40px;
-      position: absolute;
-      top: 20px;
-      color: white;
-      text-align: center;
-      line-height: 80px;
-      transform: translate3d(0, 0, 0);
-      transition: 0.3s;
+    li {
+      margin: 5px 10px;
     }
-  
-    .menu-checkbox {
-      display: none;
-    }
-  
-    .menu-button {
-      z-index: 2;
-      transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
-      transition-duration: 400ms;
-      transform: scale(1.1, 1.1) translate3d(0, 0, 0);
-      cursor: pointer;
-  
-      .hamburger {
-        width: 25px;
-        height: 3px;
-        background: #f2f2f2;
+
+    li.custom-nav-link a {
+      padding: 5px;
+      position: relative;
+      display: block;
+      font-weight: bolder;
+      color: $main-color;
+
+      &::before {
+        content: "";
         display: block;
+        width: 0;
         position: absolute;
-        top: 50%;
-        left: 50%;
-        margin-left: -12.5px;
-        margin-top: -1.5px;
+        background-color: $main-color;
+        bottom: 0;
+        left: 0;
+        height: 3px;
         transition: 0.3s;
-  
-        &-1 {
-          transform: translate3d(0, -8px, 0);
-        }
-  
-        &-2 {
-          transform: translate3d(0, 0, 0);
-        }
-  
-        &-3 {
-          transform: translate3d(0, 8px, 0);
+      }
+
+      &:hover,
+      &.active {
+        &::before {
+          width: 100%;
         }
       }
     }
-  
-  
-    .menu-button:hover {
-      transform: scale(1.2, 1.2) translate3d(0, 0, 0);
+
+    &.open {
+      left: 0;
     }
-  
-    .menu-checkbox:checked {
-      + .menu-button {
-        transition-timing-function: linear;
-        transition-duration: 200ms;
-        transform: scale(0.8, 0.8) translate3d(0, 0, 0);
-  
-        .hamburger-1 {
-          transform: translate3d(0, 0, 0) rotate(45deg);
+
+    a,
+    a:hover {
+      text-decoration: none;
+      transition: all 0.3s ease-in-out;
+    }
+  }
+  /* close button */
+
+  .menu-toggle {
+    width: 70px;
+    height: 60px;
+    margin-left: auto;
+    position: relative;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    transition: 0.25s ease-in-out;
+    transform: scale(0.8);
+    display: none;
+
+    &.open {
+      .hamburger {
+        span {
+          width: 0%;
+          &:nth-child(1) {
+            transition-delay: 0s;
+          }
+          &:nth-child(2) {
+            transition-delay: 0.125s;
+          }
+          &:nth-child(3) {
+            transition-delay: 0.25s;
+          }
         }
-        .hamburger-2 {
-          transform: translate3d(0, 0, 0) scale(0.1, 1);
+      }
+      .cross {
+        span {
+          &:nth-child(1) {
+            height: 80%;
+            transition-delay: 0.625s;
+          }
         }
-        .hamburger-3 {
-          transform: translate3d(0, 0, 0) rotate(-45deg);
+        span {
+          &:nth-child(2) {
+            width: 70%;
+            transition-delay: 0.375s;
+          }
+        }
+      }
+    }
+
+    span {
+      display: block;
+      background: $main-color;
+      transition: 0.25s ease-in-out;
+      border-radius: 2px;
+    }
+
+    .hamburger {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      transition: 0.25s ease-in-out;
+      span {
+        width: 50px;
+        height: 4px;
+        position: relative;
+        top: 5px;
+        margin: 10px 0;
+        left: 10px;
+        border-radius: 5px;
+
+        &:nth-child(1) {
+          transition-delay: 0.5s;
+        }
+        &:nth-child(2) {
+          transition-delay: 0.625s;
+        }
+        &:nth-child(3) {
+          transition-delay: 0.75s;
+        }
+      }
+    }
+    .cross {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      transform: rotate(45deg);
+      span {
+        &:nth-child(1) {
+          height: 0%;
+          width: 4px;
+          left: 35px;
+          position: absolute;
+          top: 10%;
+          transition-delay: 0s;
+        }
+        &:nth-child(2) {
+          width: 0%;
+          height: 4px;
+          position: absolute;
+          left: 16%;
+          top: 29px;
+          transition-delay: 0.25s;
         }
       }
     }
   }
-  
+
+  @media (max-width: 768px) {
+    .menu-toggle {
+      display: block;
+    }
+    .main-links ul {
+      display: block;
+      position: absolute;
+      width: 20em;
+      left: -25em;
+      background-color: $main-bg;
+      top: 0;
+      height: 100vh;
+      padding-top: 50px;
+      padding-left: 20px;
+      transition: all 0.3s ease-in-out;
+
+      li{
+        a {
+          display: inline-block;
+        }
+      }
+    }
+  }
+}

@@ -49,3 +49,39 @@
 // });
 
 AOS.init();
+
+const close_button = document.getElementById('js-menu-toggle'),
+    menu_links = document.querySelector('#js-main-links ul');
+
+// Toggle menu on navbar
+close_button.onclick = function (event) {
+    'use strict';
+    this.classList.toggle('open');
+    menu_links.classList.toggle('open');
+    event.stopPropagation();
+};
+
+menu_links.onclick = function (event) {
+    'use strict';
+    event.stopPropagation();
+};
+
+
+document.addEventListener('click', event => {
+    'use strict';
+    const event_condition = event.target !== menu_links
+        && event.target !== close_button
+        && menu_links.classList.contains('open');
+
+    if (event_condition) {
+        menu_links.classList.toggle('open');
+        close_button.classList.toggle('open');
+    }
+});
+
+document.querySelectorAll('#js-main-links ul li a').forEach(link => {
+    link.onclick = function(){
+        document.querySelector('#js-main-links ul li a.active').classList.remove('active');
+        this.classList.add('active');
+    }
+});
