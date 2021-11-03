@@ -4,6 +4,11 @@
   src: url("../fonts/Montserrat-Regular.ttf");
 }
 
+@font-face {
+  font-family: Montserrat-bold;
+  src: url("../fonts/Montserrat-bold.ttf");
+}
+
 body {
   font-family: Montserrat, sans-serif !important;
   text-transform: capitalize;
