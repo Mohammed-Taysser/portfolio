@@ -1,54 +1,3 @@
-// $(function () {
-// 	'use strict';
-
-// 	$('[data-toggle="tooltip"]').tooltip();
-// 	$('[data-toggle="popover"]').popover();
-
-//     // link section
-
-//     let nav_bar_links = document.querySelectorAll('#nav-bar-section-links a');
-
-//     function scrollToElement(element) {
-//         element.forEach((elm) => {
-//             elm.onclick = function () {
-//                 document.querySelector('#' + elm.dataset.section).scrollIntoView({
-//                     behavior: 'smooth',
-//                 });
-//             };
-//         });
-//     }
-
-//     scrollToElement(nav_bar_links);
-
-// 	// navbar background color change on scroll
-
-//     $(window).scroll(function() {
-// 		let navbar = $("nav.navbar");    
-//         let scroll = $(window).scrollTop();
-//         if (scroll >= 930) {
-//             navbar.addClass("scrolled");
-//         } else {
-//             navbar.removeClass("scrolled");
-//         }
-
-//     //     nav_bar_links.forEach((elm) => {
-//     //         let current_element = document.querySelector('#' + elm.dataset.section);
-// 	// 		if(scroll >= current_element.getBoundingClientRect().top){
-//     //             current_element.children[0].classList.add('appear');
-//     //             console.log(elm.dataset.section, 'added');
-//     //         }
-// 	// 	});
-//     });
-
-
-//     // current year
-//     let current_year = new Date().getFullYear();
-
-//     $('#current_year').text(current_year);
-
-// });
-
-AOS.init();
 
 const close_button = document.getElementById('js-menu-toggle'),
     menu_links = document.querySelector('#js-main-links ul');
@@ -79,9 +28,33 @@ document.addEventListener('click', event => {
     }
 });
 
-document.querySelectorAll('#js-main-links ul li a').forEach(link => {
-    link.onclick = function(){
-        document.querySelector('#js-main-links ul li a.active').classList.remove('active');
-        this.classList.add('active');
-    }
+// current year
+let current_year = new Date().getFullYear();
+
+document.querySelector('#current_year').textContent = current_year;
+
+
+// libraries
+
+AOS.init({
+    // Global settings:
+    disable: false,                // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+    startEvent: 'DOMContentLoaded',   // name of the event dispatched on the document, that AOS should initialize on
+    initClassName: 'aos-init',           // class applied after initialization
+    animatedClassName: 'aos-animate',        // class applied on animation
+    useClassNames: false,                // if true, will add content of `data-aos` as classes on scroll
+    disableMutationObserver: false,                // disables automatic mutations' detections (advanced)
+    debounceDelay: 50,                   // the delay on debounce used while resizing window (advanced)
+    throttleDelay: 99,                   // the delay on throttle used while scrolling the page (advanced)
+
+
+    // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+    offset: 120,            // offset (in px) from the original trigger point
+    delay: 300,              // values from 0 to 3000, with step 50ms
+    duration: 1000,            // values from 0 to 3000, with step 50ms
+    easing: 'ease',         // default easing for AOS animations
+    once: false,          // whether animation should happen only once - while scrolling down
+    mirror: true,          // whether elements should animate out while scrolling past them
+    anchorPlacement: 'top-bottom',   // defines which position of the element regarding to window should trigger the animation
+
 });
