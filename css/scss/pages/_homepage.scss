@@ -40,7 +40,6 @@
 }
 
 .about-me {
-
   .about-me-container {
     min-height: 60vh;
     display: flex;
@@ -51,18 +50,17 @@
     .about-content {
       width: 55%;
       margin: 20px 2%;
-      
 
-      .title{
-          margin-bottom: 40px;
-          font-size: 2rem;
-          text-align: center;
-          font-family: Montserrat-bold, sans-serif !important;
+      .title {
+        margin-bottom: 40px;
+        font-size: 2rem;
+        text-align: center;
+        font-family: Montserrat-bold, sans-serif !important;
       }
 
-      .about-text{
-          padding: 20px;
-          border-radius: 5px;
+      .about-text {
+        padding: 20px;
+        border-radius: 5px;
       }
 
       .special-header {
@@ -89,9 +87,59 @@
       display: block;
       padding: 0;
 
-      .about-content , .about-image{
+      .about-content,
+      .about-image {
         width: 100% !important;
       }
     }
+  }
+}
+
+.my-skills {
+  .special-header {
+    margin-bottom: 40px;
+    font-size: 2rem;
+    text-align: center;
+    font-family: Montserrat-bold, sans-serif !important;
+
+    &::before {
+      left: calc(50% - 20px);
+    }
+    &::after {
+      left: calc(50% - 60px);
+    }
+  }
+
+  .skills-container {
+    text-align: center;
+
+    .skill {
+      padding: 10px;
+      box-shadow: 0px 3px 15px rgba(22, 41, 124, 0.1);
+      margin: 10px;
+      display: inline-block;
+      width: 150px;
+
+      .content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        align-self: center;
+
+        svg {
+          color: $main-color;
+        }
+        span {
+          font-weight: bolder;
+        }
+      }
+    }
+  }
+  .show-more{
+    width: 50%;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px auto;
+    text-align: center;
   }
 }
