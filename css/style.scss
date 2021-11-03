@@ -1,0 +1,20 @@
+@use "sass:color";
+@use "sass:map";
+
+@import 'scss/helpers/variables';
+@import 'scss/helpers/mixins';
+@import 'scss/helpers/utilities';
+@import 'scss/helpers/keyframes';
+
+
+/* custom layout */
+@import 'scss/layout/reboot';
+@import 'scss/layout/navbar';
+@import 'scss/layout/header';
+@import 'scss/layout/footer';
+
+
+/* written style */
+@import 'scss/pages/homepage';
+
+

@@ -1,9 +1,3 @@
-# Portfolio
+# My portfolio
 
-collection of my project
-
-> wait for next version | update
-> ### new tools
-> - SASS (SCSS)
-> - Gulp.js
-> - React.js
+portfolio of my project, skills and more
