@@ -42,18 +42,15 @@
   transition: translate(-50%, -50%);
 }
 
-
-@mixin btn ($color:tomato) {
+%button-template{
   appearance: none;
-  background: #fff;
-  border: 0.05rem solid $color;
+  border: 0.05rem solid;
   border-radius: 0.1rem;
-  color: $color;
   cursor: pointer;
   display: inline-block;
-  font-size: 0.8rem;
+  font-size: .9rem;
   height: 1.8rem;
-  line-height: 1.2rem;
+  line-height: 1.8rem;
   outline: none;
   padding: 0.25rem 0.4rem;
   text-align: center;
@@ -62,21 +59,62 @@
   user-select: none;
   vertical-align: middle;
   white-space: nowrap;
+  border-radius: 5px;
+}
+
+@mixin btn-outline ($color:tomato, $background:#fff) {
+  background: $background;
+  border-color: $color;
+  color: $color;
+  @extend %button-template;
 
   &:focus,
   &:hover {
     background: color.adjust($color, $lightness: 10%);
     border-color: color.adjust($color, $lightness: 15%);
-    color: #fff;
+    color: $background;
+    text-decoration: none;
   }
   &:focus {
-    box-shadow: 0 0 0 0.2rem color.adjust($color, $lightness: 23%);
+    box-shadow: 0 0 0 0.2rem color.adjust($color, $lightness: 25%);
   }
   &:active,
   &.active {
     background: color.adjust($color, $lightness: -10%);
     border-color: color.adjust($color, $lightness: -15%);
-    color: #fff;
+    color: $background;
+    text-decoration: none;
+  }
+
+  &[disabled],
+  &:disabled,
+  &.disabled {
+    cursor: default;
+    opacity: 0.5;
+    pointer-events: none;
+  }
+}
+@mixin btn ($color:tomato, $background:#fff) {
+  background: $color;
+  border-color: $color;
+  color: $background;
+  @extend %button-template;
+
+  &:focus,
+  &:hover {
+    background: color.adjust($color, $lightness: 10%);
+    border-color: color.adjust($color, $lightness: 15%);
+    color: $background;
+    text-decoration: none;
+  }
+  &:focus {
+    box-shadow: 0 0 0 0.2rem color.adjust($color, $lightness: 25%);
+  }
+  &:active,
+  &.active {
+    background: color.adjust($color, $lightness: -10%);
+    border-color: color.adjust($color, $lightness: -15%);
+    color: $background;
     text-decoration: none;
   }
 

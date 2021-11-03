@@ -217,6 +217,10 @@ $cursor: (pointer, move, zoom-in, zoom-out, not-allowed, auto);
 
 /* button */
 
+.btn-aurora-outline{
+  @include btn-outline($main-color);
+}
+
 .btn-aurora{
   @include btn($main-color);
 }
@@ -230,7 +234,9 @@ $cursor: (pointer, move, zoom-in, zoom-out, not-allowed, auto);
 .bg-aurora {
   background-color: $main-color;
 }
-
+.text-muted{
+  color: $gray-600;
+}
 /*
 <pre class="code" data-lang="HTML"><code></code></pre>
 */

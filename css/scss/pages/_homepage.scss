@@ -39,6 +39,20 @@
   }
 }
 
+.special-header {
+  margin-bottom: 40px;
+  font-size: 2rem;
+  text-align: center;
+  font-family: Montserrat-bold, sans-serif !important;
+
+  &::before {
+    left: calc(50% - 20px);
+  }
+  &::after {
+    left: calc(50% - 60px);
+  }
+}
+
 .about-me {
   .about-me-container {
     min-height: 60vh;
@@ -51,25 +65,9 @@
       width: 55%;
       margin: 20px 2%;
 
-      .title {
-        margin-bottom: 40px;
-        font-size: 2rem;
-        text-align: center;
-        font-family: Montserrat-bold, sans-serif !important;
-      }
-
       .about-text {
         padding: 20px;
         border-radius: 5px;
-      }
-
-      .special-header {
-        &::before {
-          left: calc(50% - 20px);
-        }
-        &::after {
-          left: calc(50% - 60px);
-        }
       }
     }
     .about-image {
@@ -96,20 +94,7 @@
 }
 
 .my-skills {
-  .special-header {
-    margin-bottom: 40px;
-    font-size: 2rem;
-    text-align: center;
-    font-family: Montserrat-bold, sans-serif !important;
-
-    &::before {
-      left: calc(50% - 20px);
-    }
-    &::after {
-      left: calc(50% - 60px);
-    }
-  }
-
+  min-height: 60vh;
   .skills-container {
     text-align: center;
 
@@ -135,11 +120,52 @@
       }
     }
   }
-  .show-more{
+  .show-more {
     width: 50%;
     padding: 10px;
     border-radius: 5px;
     margin: 10px auto;
     text-align: center;
+  }
+}
+
+.projects {
+  margin: 30px auto;
+
+  .projects-container {
+    text-align: center;
+
+    .project {
+      display: inline-block;
+      width: 320px;
+      box-shadow: 0px 3px 15px rgba(22, 41, 124, 0.1);
+      margin: 10px;
+      border-radius: 5px;
+
+      .image {
+        width: 100%;
+        height: 200px;
+        background-position: center;
+        background-size: cover;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+      }
+      .project-title {
+        margin: 20px;
+        font-size: 30px;
+      }
+      .content{
+        p{
+          padding: 10px;
+        }
+      }
+      .button-use {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        align-content: center;
+        margin-bottom: 20px;
+      }
+    }
   }
 }
