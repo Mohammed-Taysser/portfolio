@@ -6,27 +6,9 @@ nav.navbar {
   z-index: 10;
   top: 0;
 
-  .navbar-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
   .main-links ul {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin: 0;
 
-    li {
-      margin: 5px 10px;
-    }
-
-    li.custom-nav-link a {
-      padding: 5px;
-      position: relative;
-      display: block;
-      font-weight: bolder;
+    li a {
       color: $main-color;
 
       &::before {
@@ -72,6 +54,8 @@ nav.navbar {
     transition: 0.25s ease-in-out;
     transform: scale(0.8);
     display: none;
+    position: absolute;
+    right: 10px;
 
     &.open {
       .hamburger {
@@ -167,11 +151,11 @@ nav.navbar {
       display: block;
     }
     .main-links ul {
-      display: block;
+      display: block !important;
       position: absolute;
       width: 20em;
       left: -25em;
-      background-color: $main-bg;
+      background-color: #fff;
       top: 0;
       height: 100vh;
       padding-top: 50px;
