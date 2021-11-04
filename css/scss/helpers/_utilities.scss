@@ -4,11 +4,6 @@
   src: url("../fonts/Montserrat-Regular.ttf");
 }
 
-@font-face {
-  font-family: Montserrat-bold;
-  src: url("../fonts/Montserrat-bold.ttf");
-}
-
 body {
   font-family: Montserrat, sans-serif !important;
   text-transform: capitalize;
@@ -70,6 +65,10 @@ body {
 }
 .special-header {
     position: relative;
+    padding-bottom: 10px;
+    margin-bottom: 40px;
+    font-size: 2rem;
+    font-weight: bolder;
 
     &::after,
     &::before {
@@ -81,15 +80,15 @@ body {
 
     &::after {
         width: 120px;
-        height: 1px;
-        background: #ddd;
+        height: 3px;
+        background: #f2f2f2;
         bottom: -3px;
         left: 0;
     }
 
     &::before {
         width: 40px;
-        height: 3px;
+        height: 5px;
         left: 40px;
         bottom: -4px;
         z-index: 1;
@@ -399,4 +398,10 @@ label.moved-checkbox {
             transform: scale(0);
         }
     }
+}
+
+/* animation */
+
+.border-transform{
+  animation: border-transform 10s linear infinite alternate forwards;
 }
