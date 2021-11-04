@@ -3,16 +3,10 @@
 
 @import 'scss/helpers/variables';
 @import 'scss/helpers/mixins';
-@import 'scss/helpers/utilities';
 @import 'scss/helpers/keyframes';
+@import 'scss/helpers/utilities';
 
 
 /* custom layout */
 @import 'scss/layout/navbar';
 @import 'scss/layout/footer';
-
-
-/* written style */
-@import 'scss/pages/homepage';
-
-
