@@ -8,6 +8,11 @@
 	src: url("../fonts/CascadiaCode.ttf");
 }
 
+@font-face {
+	font-family: LavishlyYours;
+	src: url("../fonts/LavishlyYours-Regular.ttf");
+}
+
 body {
 	font-family: Montserrat, sans-serif;
 	text-transform: capitalize;
@@ -40,17 +45,6 @@ a.bg-underline {
 	&:hover {
 		background-size: 100% 100%;
 	}
-}
-
-.overlay {
-	height: 100%;
-	width: 100%;
-	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	background-color: #f1f1f1e6;
 }
 
 .special-header {
@@ -96,101 +90,9 @@ a.bg-underline {
 	}
 }
 
-.hr-header {
-	position: relative;
-
-	&::before,
-	&::after {
-		content: "";
-		width: 50px;
-		height: 2px;
-		background: $main-color;
-		display: inline-block;
-	}
-
-	&::before {
-		margin: 0 15px 10px 0;
-	}
-
-	&::after {
-		margin: 0 0 10px 15px;
-	}
-}
-
-.clearfix::after {
-	display: block;
-	clear: both;
-	content: "";
-}
-
 /* shadow */
 .nice-shadow {
 	box-shadow: 0 3px 15px rgba(22, 41, 124, 0.1);
-}
-
-/* skew effect */
-
-%skew {
-	content: "";
-	background-color: $main-color;
-	z-index: -1;
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	right: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	transform: skewY(-6deg);
-}
-
-.skew-divider {
-	position: relative;
-	margin-top: 200px;
-	margin-bottom: 200px;
-
-	&::before,
-	&::after {
-		@extend %skew;
-	}
-
-	&::before {
-		transform-origin: top left;
-	}
-
-	&::after {
-		transform-origin: bottom right;
-	}
-}
-
-.skew-divider-top {
-	position: relative;
-	margin-top: 200px;
-
-	&::before {
-		@extend %skew;
-		transform-origin: top left;
-	}
-}
-
-.skew-divider-bottom {
-	position: relative;
-	margin-bottom: 200px;
-
-	&::before {
-		@extend %skew;
-		transform-origin: bottom right;
-	}
-}
-
-.skew-divider-img {
-	position: relative;
-
-	&::after {
-		@extend %skew;
-		background-image: attr(data-image);
-		transform-origin: bottom right;
-	}
 }
 
 /* colors */
@@ -205,4 +107,188 @@ a.bg-underline {
 /* animation */
 .border-transform {
 	animation: border-transform 10s linear infinite alternate forwards;
+}
+
+.about-me-section {
+	position: relative;
+
+	.about-me {
+		position: relative;
+
+		&::before {
+			content: "";
+			height: 100%;
+			width: 62%;
+			background-color: $main-color;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			clip-path: polygon(0 0, 70% 0%, 100% 100%, 0% 100%);
+			z-index: -1;
+			transition: all 0.3s ease-in-out;
+		}
+	}
+
+	.shapes {
+		.networking-shape {
+			position: absolute;
+			right: 0;
+			bottom: 0;
+			opacity: 0.1;
+			width: 200px;
+		}
+		.wave-shape {
+			position: absolute;
+			left: 15px;
+			bottom: 25px;
+		}
+		.points-shape {
+			position: absolute;
+			top: -30px;
+			left: -30px;
+		}
+	}
+}
+
+.header-with-point {
+	position: relative;
+
+	&.text-center::after {
+		left: 50%;
+		transform: translate(-50%);
+	}
+
+	&::before {
+		content: "";
+		height: 7px;
+		width: 7px;
+		background: $main-color;
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		left: -15px;
+		border: none;
+		border-radius: 50%;
+		z-index: 2;
+	}
+
+	&::after {
+		content: attr(data-text);
+		position: absolute;
+		top: -65px;
+		left: 0;
+		display: inline-block;
+		font-family: LavishlyYours, cursive;
+		font-size: 100px;
+		line-height: 130px;
+		color: $main-color;
+		opacity: 0.2;
+		pointer-events: none;
+	}
+}
+
+.runner-btn {
+	position: relative;
+	display: inline-block;
+	padding: 10px 20px;
+	color: $main-color;
+	font-size: 16px;
+	text-decoration: none;
+	text-transform: uppercase;
+	overflow: hidden;
+	transition: 0.5s;
+	margin-top: 40px;
+	letter-spacing: 4px;
+
+	&:hover {
+		background: $main-color;
+		color: #fff;
+		border-radius: 5px;
+		box-shadow: 0 0 5px rgba($main-color, 0.8), 0 0 25px rgba($main-color, 0.6),
+			0 0 50px rgba($main-color, 0.4), 0 0 100px rgba($main-color, 0.2);
+	}
+
+	span {
+		position: absolute;
+		display: block;
+
+		&:nth-child(1) {
+			top: 0;
+			left: -100%;
+			width: 100%;
+			height: 2px;
+			background: linear-gradient(90deg, transparent, $main-color);
+			animation: btn-anim1 1s linear infinite;
+		}
+
+		&:nth-child(2) {
+			top: -100%;
+			right: 0;
+			width: 2px;
+			height: 100%;
+			background: linear-gradient(180deg, transparent, $main-color);
+			animation: btn-anim2 1s linear infinite;
+			animation-delay: 0.25s;
+		}
+
+		&:nth-child(3) {
+			bottom: 0;
+			right: -100%;
+			width: 100%;
+			height: 2px;
+			background: linear-gradient(270deg, transparent, $main-color);
+			animation: btn-anim3 1s linear infinite;
+			animation-delay: 0.5s;
+		}
+
+		&:nth-child(4) {
+			bottom: -100%;
+			left: 0;
+			width: 2px;
+			height: 100%;
+			background: linear-gradient(360deg, transparent, $main-color);
+			animation: btn-anim4 1s linear infinite;
+			animation-delay: 0.75s;
+		}
+	}
+}
+
+@keyframes btn-anim1 {
+	0% {
+		left: -100%;
+	}
+	50%,
+	100% {
+		left: 100%;
+	}
+}
+
+@keyframes btn-anim2 {
+	0% {
+		top: -100%;
+	}
+	50%,
+	100% {
+		top: 100%;
+	}
+}
+
+@keyframes btn-anim3 {
+	0% {
+		right: -100%;
+	}
+	50%,
+	100% {
+		right: 100%;
+	}
+}
+
+@keyframes btn-anim4 {
+	0% {
+		bottom: -100%;
+	}
+	50%,
+	100% {
+		bottom: 100%;
+	}
 }
