@@ -28,11 +28,11 @@ document.addEventListener('click', event => {
 		}
 });
 
-// current year
-let current_year = new Date().getFullYear();
-
-document.querySelector('#current_year').textContent = new Date().getFullYear();
-
+// Footer Current Year
+const footerCurrentYear = document.getElementById('js-current-year')
+if(footerCurrentYear){
+	footerCurrentYear.textContent = new Date().getFullYear().toString();
+}
 
 // Libraries
 AOS.init({
