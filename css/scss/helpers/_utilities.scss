@@ -3,9 +3,15 @@
 	src: url("../fonts/Montserrat-Regular.ttf");
 }
 
+@font-face {
+	font-family: Cascadia;
+	src: url("../fonts/CascadiaCode.ttf");
+}
+
 body {
 	font-family: Montserrat, sans-serif;
 	text-transform: capitalize;
+	position: relative;
 }
 
 ::selection {
