@@ -7,6 +7,33 @@ document.addEventListener("DOMContentLoaded", function () {
 		"This is a browser feature intended for developers. Do not paste any code here given to you by someone else. It may compromise your account or have other negative side effects. have a good day"
 	);
 
+	// scroll to top on backToTop button clicked
+	const backToTopButton = document.getElementById("js-back-to-top");
+	if (backToTopButton) {
+		backToTopButton.onclick = function () {
+			document.documentElement.scrollTo({
+				top: 0,
+				left: 0,
+				behavior: "smooth",
+			});
+		};
+
+		window.onscroll = backToTop;
+		backToTop();
+
+		// toggle bact-to-top button visibility
+		function backToTop() {
+			if (
+				document.body.scrollTop > 700 ||
+				document.documentElement.scrollTop > 700
+			) {
+				backToTopButton.style.display = "block";
+			} else {
+				backToTopButton.style.display = "none";
+			}
+		}
+	}
+
 	// Footer Current Year
 	const footerCurrentYear = document.getElementById("js-current-year");
 	if (footerCurrentYear) {
