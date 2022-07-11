@@ -33,4 +33,5 @@ document.addEventListener("DOMContentLoaded", function () {
 		mirror: true,
 		anchorPlacement: "top-bottom",
 	});
+	mixitup('#js-mixitup-container-id');
 });
