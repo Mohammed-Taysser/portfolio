@@ -39,15 +39,6 @@
   }
 }
 
-@keyframes up-down {
-    0% {
-        transform: translateY(10px);
-    }
-    100% {
-        transform: translateY(-10px);
-    }
-}
-
 @keyframes pulse{
   0%{
     transform: scale(1);
