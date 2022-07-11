@@ -1,0 +1,122 @@
+.about-me-section {
+	position: relative;
+
+	.about-me {
+		position: relative;
+
+		&::before {
+			content: "";
+			height: 100%;
+			width: 62%;
+			background-color: $main-color;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			clip-path: polygon(0 0, 70% 0%, 100% 100%, 0% 100%);
+			z-index: -1;
+			transition: all 0.3s ease-in-out;
+		}
+	}
+
+	.shapes {
+		.networking-shape {
+			position: absolute;
+			right: 0;
+			bottom: 0;
+			opacity: 0.1;
+			width: 200px;
+		}
+		.wave-shape {
+			position: absolute;
+			left: 15px;
+			bottom: 25px;
+		}
+		.points-shape {
+			position: absolute;
+			top: -30px;
+			left: -30px;
+		}
+	}
+}
+
+.my-skills {
+	.skills-wrapper {
+		display: flex;
+		justify-content: space-around;
+		flex-wrap: wrap;
+
+		.img {
+			position: relative;
+
+			&:focus::after,
+			&:hover::after {
+				opacity: 1;
+				transform: translate(-50%, -0.2rem);
+			}
+
+			&::after {
+				background: $main-color;
+				border-radius: 0.1rem;
+				bottom: 100%;
+				color: #fff;
+				content: attr(data-tooltip);
+				display: block;
+				font-size: 1rem;
+				left: 50%;
+				max-width: 320px;
+				opacity: 0;
+				overflow: hidden;
+				padding: 0.2rem 0.4rem;
+				pointer-events: none;
+				position: absolute;
+				text-overflow: ellipsis;
+				transform: translate(-50%, 0.4rem);
+				transition: opacity 0.2s, transform 0.2s;
+				white-space: pre;
+				z-index: 300;
+			}
+
+			img {
+				width: 80px;
+				height: 80px;
+				object-fit: contain;
+				position: relative;
+			}
+		}
+	}
+}
+
+.my-projects {
+	.single-project {
+		height: 100%;
+
+		hr {
+			background-color: #ccc;
+			margin: 0.3rem 0;
+		}
+
+		&:hover {
+			.img img {
+				transform: scale(1.2) rotate(-10deg);
+			}
+		}
+
+		.img {
+			position: relative;
+			overflow: hidden;
+
+			img {
+				width: 100%;
+				height: 280px;
+				object-fit: cover;
+				transition: 0.5s;
+
+				@media (max-width: 768px) {
+					& {
+						height: 350px;
+					}
+				}
+			}
+		}
+	}
+}
