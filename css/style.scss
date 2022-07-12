@@ -5,8 +5,13 @@
 @import 'scss/helpers/mixins';
 @import 'scss/helpers/keyframes';
 @import 'scss/helpers/utilities';
+@import 'scss/helpers/loading';
+@import 'scss/helpers/base';
 
 
 /* custom layout */
 @import 'scss/layout/navbar';
 @import 'scss/layout/footer';
+
+// dark mode
+@import 'scss/helpers/dark-mode';
