@@ -7,10 +7,55 @@ document.addEventListener("DOMContentLoaded", function () {
 		"This is a browser feature intended for developers. Do not paste any code here given to you by someone else. It may compromise your account or have other negative side effects. have a good day"
 	);
 
+	// detect stored theme
+	var themeToggleDarkIcon = document.getElementById("theme-toggle-dark-icon");
+	var themeToggleLightIcon = document.getElementById("theme-toggle-light-icon");
+
+	var themeToggleBtn = document.getElementById("theme-toggle");
+
+	if (
+		localStorage.getItem("theme") === "dark" ||
+		(!("theme" in localStorage) &&
+			window.matchMedia("(prefers-color-scheme: dark)").matches)
+	) {
+		document.body.classList.add("dark");
+		themeToggleDarkIcon?.classList.add("d-none");
+		themeToggleLightIcon?.classList.remove("d-none");
+	} else {
+		document.body.classList.remove("dark");
+		themeToggleDarkIcon?.classList.remove("d-none");
+		themeToggleLightIcon?.classList.add("d-none");
+	}
+
+	themeToggleBtn?.addEventListener("click", function () {
+		themeToggleDarkIcon?.classList.toggle("d-none");
+		themeToggleLightIcon?.classList.toggle("d-none");
+
+		// if set via local storage previously
+		if (localStorage.getItem("theme")) {
+			if (localStorage.getItem("theme") === "light") {
+				document.body.classList.add("dark");
+				localStorage.setItem("theme", "dark");
+			} else {
+				document.body.classList.remove("dark");
+				localStorage.setItem("theme", "light");
+			}
+		} else {
+			if (document.body.classList.contains("dark")) {
+				document.body.classList.remove("dark");
+				localStorage.setItem("theme", "light");
+			} else {
+				document.body.classList.add("dark");
+				localStorage.setItem("theme", "dark");
+			}
+		}
+	});
+
 	// scroll to top on backToTop button clicked
 	const backToTopButton = document.getElementById("js-back-to-top");
 	if (backToTopButton) {
-		backToTopButton.onclick = function () {
+		backToTopButton.onclick = function (evt) {
+			evt.preventDefault();
 			document.documentElement.scrollTo({
 				top: 0,
 				left: 0,
