@@ -1,4 +1,6 @@
 nav.navbar {
+	transition: 0.5s;
+
 	.navbar-brand {
 		padding: 0;
 
@@ -21,7 +23,7 @@ nav.navbar {
 			transition: 0.3s;
 			padding-top: 0;
 			padding-bottom: 0;
-	
+
 			&::before {
 				content: "";
 				position: absolute;
@@ -33,21 +35,21 @@ nav.navbar {
 				left: -5px;
 				transition: 0.3s;
 			}
-	
+
 			&.active,
 			&:focus,
 			&:hover {
 				color: $main-color;
 				background-color: rgba($main-color, 0.1);
 				border-radius: 20px;
-	
+
 				&::before {
 					border-color: $main-color;
 				}
 			}
-			@media (max-width: 768px){
-				&{
-					margin: 10px ;
+			@media (max-width: 768px) {
+				& {
+					margin: 10px;
 				}
 			}
 		}

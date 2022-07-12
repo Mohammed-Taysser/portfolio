@@ -53,6 +53,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
 	// scroll to top on backToTop button clicked
 	const backToTopButton = document.getElementById("js-back-to-top");
+	// navbar scrolled class
+	const navbar = document.getElementById("js-navbar-tabs-id");
+
 	if (backToTopButton) {
 		backToTopButton.onclick = function (evt) {
 			evt.preventDefault();
@@ -63,21 +66,13 @@ document.addEventListener("DOMContentLoaded", function () {
 			});
 		};
 
-		window.onscroll = backToTop;
-		backToTop();
-
-		// toggle bact-to-top button visibility
-		function backToTop() {
-			if (
-				document.body.scrollTop > 700 ||
-				document.documentElement.scrollTop > 700
-			) {
-				backToTopButton.style.display = "block";
-			} else {
-				backToTopButton.style.display = "none";
-			}
-		}
+		backToTop(backToTopButton);
 	}
+
+	window.onscroll = () => {
+		isNavbarScrolled(navbar);
+		backToTop(backToTopButton);
+	};
 
 	// Footer Current Year
 	const footerCurrentYear = document.getElementById("js-current-year");
@@ -108,3 +103,27 @@ document.addEventListener("DOMContentLoaded", function () {
 
 	mixitup("#js-mixitup-container-id");
 });
+
+function backToTop(backToTopButton) {
+	if (
+		document.body.scrollTop > 700 ||
+		document.documentElement.scrollTop > 700
+	) {
+		backToTopButton.style.display = "block";
+	} else {
+		backToTopButton.style.display = "none";
+	}
+}
+
+function isNavbarScrolled(navbar) {
+	if (
+		document.body.scrollTop > 200 ||
+		document.documentElement.scrollTop > 200
+	) {
+		navbar?.classList.add("py-4");
+		navbar?.classList.remove("py-5");
+	} else {
+		navbar?.classList.add("py-5");
+		navbar?.classList.remove("py-4");
+	}
+}
