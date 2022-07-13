@@ -87,6 +87,18 @@
 }
 
 .my-projects {
+
+	.filter-buttons-container{
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+
+		.skew-btn{
+			padding: 10px 15px;
+			margin: 10px;
+		}
+	}
+
 	.single-project {
 		height: 100%;
 		background-color: #fff;
