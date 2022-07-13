@@ -4,7 +4,7 @@ Portfolio Of My Project, Skills And More.
 
 ## TODO's
 
-- No Todo For Now 😉
+- Skills Logo (Find More Beautiful Or Make The Mall One Image)
 
 ## Misc
 

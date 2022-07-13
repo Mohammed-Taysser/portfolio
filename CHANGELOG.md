@@ -22,6 +22,8 @@
 - Add Dark Mode
 - JavaScript code linting is done using ESLint.
 - `.editorconfig` which helps developers define and maintain consistent coding styles between different editors and IDEs.
+- Add `manifest` for `PWA` Support
+- Serve images in modern formats `webp`
 
 ## 18 Aug 2021
 

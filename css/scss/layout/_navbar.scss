@@ -5,7 +5,7 @@ nav.navbar {
 		padding: 0;
 
 		.root {
-			font-family: Cascadia;
+			font-family: var(--bs-body-font-family);
 			text-transform: none;
 			background: rgba($color: $main-color, $alpha: 0.1);
 			border-radius: 0.2rem;
