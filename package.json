@@ -1,0 +1,28 @@
+{
+	"name": "portfolio",
+	"version": "1.0.1",
+	"description": "portfolio for my projects",
+	"scripts": {
+		"start": "sass -w -s compressed css/style.scss css/style.min.css ",
+		"lint": "eslint ."
+	},
+	"author": "",
+	"license": "MIT",
+	"dependencies": {
+		"sass": "^1.49.10"
+	},
+	"prettier": {
+		"singleQuote": true
+	},
+	"eslintConfig": {
+		"env": {
+			"browser": true,
+			"commonjs": true,
+			"es2021": true
+		},
+		"extends": "eslint:recommended",
+		"parserOptions": {
+			"ecmaVersion": "latest"
+		}
+	}
+}

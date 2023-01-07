@@ -1,7 +1,18 @@
 
 # CHANGELOG
 
-## 11 Jul 2022
+## TODO
+
+## History
+
+### 7 Jan 2023
+
+- add [`js-pmq`](https://www.npmjs.com/package/js-pmq) project
+- update skills section
+- remove unneeded skill
+- add mdn for skills section
+
+### 11 Jul 2022
 
 - Update bootstrap to v5
 - Add Bootstrap JS Files
@@ -25,6 +36,6 @@
 - Add `manifest` for `PWA` Support
 - Serve images in modern formats `webp`
 
-## 18 Aug 2021
+### 18 Aug 2021
 
 - Init Commit 🎉

@@ -1,3 +1,8 @@
+header {
+	background: center / cover no-repeat
+		url('../images/background/hero-header.svg');
+}
+
 .about-me-section {
 	position: relative;
 
@@ -5,13 +10,14 @@
 		position: relative;
 
 		&::before {
-			content: "";
+			content: '';
 			height: 100%;
 			width: 62%;
 			background-color: $main-color;
 			position: absolute;
 			bottom: 0;
 			left: 0;
+			-webkit-clip-path: polygon(0 0, 70% 0%, 100% 100%, 0% 100%);
 			clip-path: polygon(0 0, 70% 0%, 100% 100%, 0% 100%);
 			z-index: -1;
 			transition: all 0.3s ease-in-out;
@@ -20,17 +26,20 @@
 
 	.shapes {
 		.networking-shape {
+			right: -30px;
+			top: 50%;
+			transform: translateY(-50%);
 			position: absolute;
-			right: 0;
-			bottom: 0;
-			opacity: 0.1;
-			width: 200px;
+			z-index: -1;
+			max-width: 100%;
 		}
+
 		.wave-shape {
 			position: absolute;
 			left: 15px;
 			bottom: 25px;
 		}
+
 		.points-shape {
 			position: absolute;
 			top: -30px;
@@ -49,8 +58,9 @@
 			position: relative;
 
 			img {
-				width: 80px;
-				height: 80px;
+				width: 50px;
+				height: 50px;
+				-o-object-fit: contain;
 				object-fit: contain;
 				position: relative;
 			}
@@ -59,15 +69,16 @@
 }
 
 .my-projects {
-
-	.filter-buttons-container{
+	.filter-buttons-container {
 		display: flex;
 		justify-content: center;
 		flex-wrap: wrap;
+		background-color: rgba($main-color, 0.05);
 
-		.skew-btn{
-			padding: 10px 15px;
+		.skew-btn {
+			padding: 8px 13px;
 			margin: 10px;
+			border-radius: 50rem;
 		}
 	}
 
@@ -76,7 +87,6 @@
 		background-color: #fff;
 		z-index: 1;
 		position: relative;
-		
 
 		hr {
 			background-color: #ccc;
@@ -96,6 +106,7 @@
 			img {
 				width: 100%;
 				height: 280px;
+				-o-object-fit: cover;
 				object-fit: cover;
 				transition: 0.5s;
 
@@ -105,6 +116,89 @@
 					}
 				}
 			}
+		}
+	}
+}
+
+.mdn-svg-wrapper {
+	--mdn-primary: #52525e;
+	--mdn-circle-1: #c689ff;
+	--mdn-circle-2: #ffd567;
+	--mdn-circle-3: #88ffd1;
+	--mdn-circle-4: #ff9aa2;
+	--mdn-circle-5: #e0e0e6;
+
+	font-size: 1.5rem;
+	font-weight: 300;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+
+	.mdn-circle {
+		transform-origin: 50% 50%;
+
+		& > textPath > tspan {
+			fill: var(--mdn-primary);
+			-webkit-animation: mdn-color-change 50s infinite;
+			animation: mdn-color-change 50s infinite;
+			-webkit-animation-timing-function: ease-in-out;
+			animation-timing-function: ease-in-out;
+		}
+	}
+
+	.mdn-circle-1 {
+		-webkit-animation: rotation 505s linear infinite;
+		animation: rotation 505s linear infinite;
+		font-size: 1.5rem;
+
+		& > textPath > tspan {
+			fill: var(--mdn-circle-1);
+			-webkit-animation-delay: -15s;
+			animation-delay: -15s;
+		}
+	}
+
+	.mdn-circle-2 {
+		animation: rotation 480s linear infinite reverse;
+		font-size: 1.3rem;
+
+		& > textPath > tspan {
+			fill: var(--mdn-circle-2);
+			-webkit-animation-delay: -20s;
+			animation-delay: -20s;
+		}
+	}
+	.mdn-circle-3 {
+		-webkit-animation: rotation 515s linear infinite;
+		animation: rotation 515s linear infinite;
+		font-size: 1.2rem;
+
+		& > textPath > tspan {
+			fill: var(--mdn-circle-3);
+			-webkit-animation-delay: -30s;
+			animation-delay: -30s;
+		}
+	}
+	.mdn-circle-4 {
+		animation: rotation 425s linear infinite reverse;
+		font-size: 1.1rem;
+
+		& > textPath > tspan {
+			fill: var(--mdn-circle-4);
+			-webkit-animation-delay: -5s;
+			animation-delay: -5s;
+		}
+	}
+	.mdn-circle-5 {
+		-webkit-animation: rotation 415s linear infinite;
+		animation: rotation 415s linear infinite;
+		font-size: 1rem;
+
+		& > textPath > tspan {
+			fill: var(--mdn-circle-5);
+			-webkit-animation-delay: -40s;
+			animation-delay: -40s;
 		}
 	}
 }
