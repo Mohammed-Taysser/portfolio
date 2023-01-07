@@ -1,12 +1,13 @@
-<!DOCTYPE html><!-- HTML5 -->
+<!-- HTML5 -->
+<!DOCTYPE html>
 <html lang="en" dir="ltr">
 
 	<head>
+		<!-- Meta Website Description -->
+		<meta charset="UTF-8" />
 		<!-- Document Title -->
 		<title>Mohammed Taysser - Profile</title>
 		<!-- Set character encoding for the document -->
-		<meta charset="UTF-8" />
-		<!-- Meta Website Description -->
 		<meta name="description" content="Profile Design As Frontend Website For My Projects, Skills And More">
 		<meta name="keywords" content="HTML, CSS, JavaScript, Bootstrap, Frontend, Design, Profile">
 		<meta name="author" content="Mohammed Taysser">
@@ -27,9 +28,9 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
 		<!-- style sheet-->
-		<link rel="stylesheet" media='all' href="css/libs/bootstrap.min.css" />
-		<link rel="stylesheet" media='all' href="css/libs/aos.css" />
-		<link rel="stylesheet" media='all' href="css/style.min.css" />
+		<link rel="stylesheet" media="all" href="css/libs/bootstrap.min.css" />
+		<link rel="stylesheet" media="all" href="css/libs/aos.css" />
+		<link rel="stylesheet" media="all" href="css/style.min.css" />
 
 		<!-- PWA -->
 		<link rel="manifest" href="manifest.json" />
@@ -44,13 +45,13 @@
 
 	</head>
 
-	<body data-bs-spy="scroll" data-bs-target="#js-navbar-tabs-id" data-bs-offset="0" class='load'>
+	<body data-bs-spy="scroll" data-bs-target="#js-navbar-tabs-id" data-bs-offset="0" class="load">
 
 		<!-- Loading animation -->
 		<div class="loading-overlay"></div>
 		<div class="loading-container" id="js-loading-container">
 			<div class="loading-divider" aria-hidden="true"></div>
-			<p class="loading-text" aria-label="Loading">
+			<p class="loading-text">
 				<span class="letter" aria-hidden="true">L</span>
 				<span class="letter" aria-hidden="true">o</span>
 				<span class="letter" aria-hidden="true">a</span>
@@ -62,14 +63,9 @@
 		</div>
 
 		<!-- back to top -->
-		<a href="#bact-to-top" class="back-to-top text-white p-2 bg-aurora " id='js-back-to-top'>
-			<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" class="" height="1em"
-				width="1em" xmlns="http://www.w3.org/2000/svg">
-				<path
-					d="M12.001 1.993C6.486 1.994 2 6.48 2 11.994c.001 5.514 4.487 10 10 10 5.515 0 10.001-4.486 10.001-10s-4.486-10-10-10.001zM12 19.994c-4.41 0-7.999-3.589-8-8 0-4.411 3.589-8 8.001-8.001 4.411.001 8 3.59 8 8.001s-3.589 8-8.001 8z">
-				</path>
-				<path d="m12.001 8.001-4.005 4.005h3.005V16h2v-3.994h3.004z"></path>
-			</svg></a>
+		<a href="#bact-to-top" class="back-to-top text-white p-2 bg-aurora " title="back to top" id="js-back-to-top">
+			<img src="images/icons/svg/arrow-top.svg" alt="arrow-top" />
+		</a>
 
 		<!-- navbar -->
 		<nav class="navbar navbar-expand-md navbar-light bg-light py-4 nice-shadow fixed-top" id="js-navbar-tabs-id">
@@ -80,7 +76,7 @@
 				<button class="navbar-toggler p-0 border-0" type="button" data-bs-toggle="collapse"
 					data-bs-target="#main-navbar-id" aria-controls="main-navbar-id" aria-expanded="false"
 					aria-label="Toggle navigation">
-					<svg class="hamburger-svg" viewBox="0 0 100 100" width="60" onclick="this.classList.toggle('active')">
+					<svg class="hamburger-svg" viewbox="0 0 100 100" width="60" onclick="this.classList.toggle('active')">
 						<path class="line top"
 							d="m 70,33 h -40 c 0,0 -8.5,-0.149796 -8.5,8.5 0,8.649796 8.5,8.5 8.5,8.5 h 20 v -20" />
 						<path class="line middle" d="m 70,50 h -40" />
@@ -91,20 +87,20 @@
 				<div class="collapse navbar-collapse" id="main-navbar-id">
 					<ul class="navbar-nav ms-auto my-2 my-lg-0 align-items-center">
 						<li class="nav-item">
-							<a class="nav-link" href="#home">Home</a>
+							<a class="nav-link" href="#home" title="home">Home</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#about">about</a>
+							<a class="nav-link" href="#about" title="about">about</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#skills">skills</a>
+							<a class="nav-link" href="#skills" title="skills">skills</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#projects">projects</a>
+							<a class="nav-link" href="#projects" title="projects">projects</a>
 						</li>
 						<li class="nav-item">
 							<div id="theme-toggle" class="dark-mode-container" data-tooltip="toggle dark/light mode">
-								<svg class="sun" viewBox="0 0 24 24" id="theme-toggle-light-icon">
+								<svg class="sun" viewbox="0 0 24 24" id="theme-toggle-light-icon">
 									<g class="lines">
 										<line x1="1" y1="12" x2="2" y2="12"></line>
 										<line x1="4.2" y1="4.2" x2="4.9" y2="4.9"></line>
@@ -117,7 +113,7 @@
 									</g>
 									<circle cx="12" cy="12" r="6"></circle>
 								</svg>
-								<svg class="moon" viewBox="0 0 24 24" id="theme-toggle-dark-icon">
+								<svg class="moon" viewbox="0 0 24 24" id="theme-toggle-dark-icon">
 									<path
 										d="M18,16C12.5,16,8,11.5,8,6 c0-0.9,0.1-1.8,0.4-2.6C4.1,4.5,1,8.4,1,13c0,5.5,4.5,10,10,10c4.6,0,8.5-3.1,9.6-7.4C19.8,15.9,18.9,16,18,16z">
 									</path>
@@ -139,8 +135,7 @@
 		</nav>
 
 		<!-- header -->
-		<header class="hero-header" id="home"
-			style='background: center / cover no-repeat url("images/background/hero-header.svg")'>
+		<header class="hero-header" id="home">
 			<div class="container text-white">
 				<div class="row min-vh-100 justify-content-center align-content-center align-items-center">
 					<div class="col-md-7 my-3" data-aos="fade-up">
@@ -153,41 +148,26 @@
 							<p class="media-share">
 
 								<a href="http://linkedin.com/in/mohammed-taysser" target="_blank"
-									class='text-white text-decoration-none' title='linkedin'>
-									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
-										class="bi bi-linkedin" viewBox="0 0 16 16">
-										<path
-											d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
-									</svg>
+									class="text-white text-decoration-none" title="linkedin" rel="noopener">
+									<img src="images/icons/svg/linked-in.svg" alt="linked-in" />
 								</a>
 
-								<a href="github.com/mohammed-Taysser" target="_blank" class='text-white text-decoration-none'
-									title='github'>
-									<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24"
-										fill="currentColor">
-										<path fill-rule="evenodd" clip-rule="evenodd"
-											d="M12.026 2c-5.509 0-9.974 4.465-9.974 9.974 0 4.406 2.857 8.145 6.821 9.465.499.09.679-.217.679-.481 0-.237-.008-.865-.011-1.696-2.775.602-3.361-1.338-3.361-1.338-.452-1.152-1.107-1.459-1.107-1.459-.905-.619.069-.605.069-.605 1.002.07 1.527 1.028 1.527 1.028.89 1.524 2.336 1.084 2.902.829.091-.645.351-1.085.635-1.334-2.214-.251-4.542-1.107-4.542-4.93 0-1.087.389-1.979 1.024-2.675-.101-.253-.446-1.268.099-2.64 0 0 .837-.269 2.742 1.021a9.582 9.582 0 0 1 2.496-.336 9.554 9.554 0 0 1 2.496.336c1.906-1.291 2.742-1.021 2.742-1.021.545 1.372.203 2.387.099 2.64.64.696 1.024 1.587 1.024 2.675 0 3.833-2.33 4.675-4.552 4.922.355.308.675.916.675 1.846 0 1.334-.012 2.41-.012 2.737 0 .267.178.577.687.479C19.146 20.115 22 16.379 22 11.974 22 6.465 17.535 2 12.026 2z">
-										</path>
-									</svg>
+								<a href="https://github.com/mohammed-Taysser" target="_blank" class="text-white text-decoration-none"
+									rel="noopener" title="github">
+									<img src="images/icons/svg/github.svg" alt="github" />
 
 								</a>
-								<a href="mailto:mohamedtaysser983@gmail.com" title='gmail' target="_blank"
-									class='text-white text-decoration-none'>
-									<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24"
-										fill="currentColor">
-										<path
-											d="M20 4H6c-1.103 0-2 .897-2 2v5h2V8l6.4 4.8a1.001 1.001 0 0 0 1.2 0L20 8v9h-8v2h8c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2zm-7 6.75L6.666 6h12.668L13 10.75z">
-										</path>
-										<path d="M2 12h7v2H2zm2 3h6v2H4zm3 3h4v2H7z"></path>
-									</svg>
+								<a href="mailto:mohamedtaysser983@gmail.com" title="gmail" target="_blank"
+									class="text-white text-decoration-none">
+									<img src="images/icons/svg/email.svg" alt="email" />
 								</a>
 							</p>
 						</div>
 					</div>
 					<div class="col-md-5 col-8 my-3" data-aos="fade-down">
 						<div class="image">
-							<img src="images/icons/icon-avatar.webp" class="img-fluid border-transform" alt="my photo" width='100%'
-								height='100%'>
+							<img src="images/icons/icon-avatar.webp" class="img-fluid border-transform" alt="my avatar" width="100%"
+								height="100%">
 						</div>
 					</div>
 				</div>
@@ -197,69 +177,63 @@
 		<!-- about me -->
 		<section class="my-5 py-5 about-me-section" id="about">
 			<div class="shapes">
-				<img src="images/icons/networking.webp" alt="networking-shape" class='networking-shape'>
+				<img src="images/icons/svg/about-shape.svg" alt="points-shape" class="networking-shape">
 			</div>
 			<div class="container">
 				<div class="row">
 					<div class="col-md-6 my-3 order-2 order-md-1">
 						<div class="about-me py-5 ps-md-5">
 							<div class="shapes">
-								<img src="images/icons/points.webp" alt="points-shape" class='points-shape'>
-								<img src="images/icons/wave.webp" alt="wave-shape" class='wave-shape'>
+								<img src="images/icons/points.webp" alt="points-shape" class="points-shape">
+								<img src="images/icons/wave.webp" alt="wave-shape" class="wave-shape">
 							</div>
 							<div class="ratio ratio-1x1">
-								<img src="images/icons/about-me.webp" alt="about-us" class='img-fluid' data-aos="fade-up">
+								<img src="images/icons/about-me.webp" alt="about-us" class="img-fluid" data-aos="fade-up">
 							</div>
 						</div>
 					</div>
 					<div class="col-md-6 my-5 my-md-3 order-1 order-md-2">
 						<div class="wrapper" data-aos="fade-down">
-							<h2 class="header-with-point lead text-aurora" data-text='Choose'>about me</h2>
+							<h2 class="header-with-point lead text-aurora" data-text="Choose">about me</h2>
 							<p class="text-muted mt-5 lead">I'am mohamed taysser, Frontend web developer.
 								Well-versed in
 								great number of languages and tools including HTML5,
 								CSS3,
 								JavaScript, Python, SQL and More. Very good background in web layout and principles. Interesting
 								on
-								writting secure and clean code. Seek to learn more and more about today technology.</p>
+								writing secure and clean code. Seek to learn more and more about today technology.</p>
 							<ul class="list-unstyled tech-feature-list">
 								<li class="py-1">
 									<span class="icon icon-xs mr-2 text-aurora">
-										<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-											class="bi bi-check2-all" viewBox="0 0 16 16">
-											<path
-												d="M12.354 4.354a.5.5 0 0 0-.708-.708L5 10.293 1.854 7.146a.5.5 0 1 0-.708.708l3.5 3.5a.5.5 0 0 0 .708 0l7-7zm-4.208 7-.896-.897.707-.707.543.543 6.646-6.647a.5.5 0 0 1 .708.708l-7 7a.5.5 0 0 1-.708 0z" />
-											<path d="m5.354 7.146.896.897-.707.707-.897-.896a.5.5 0 1 1 .708-.708z" />
-										</svg>
-									</span><strong>Creative</strong> Websites Design
+										<img src="images/icons/svg/check.svg" alt="check icon" />
+									</span>
+									<strong>Creative</strong> Websites Design
 								</li>
-								<li class="py-1"><span class="icon icon-xs mr-2 text-aurora">
-										<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-											class="bi bi-check2-all" viewBox="0 0 16 16">
-											<path
-												d="M12.354 4.354a.5.5 0 0 0-.708-.708L5 10.293 1.854 7.146a.5.5 0 1 0-.708.708l3.5 3.5a.5.5 0 0 0 .708 0l7-7zm-4.208 7-.896-.897.707-.707.543.543 6.646-6.647a.5.5 0 0 1 .708.708l-7 7a.5.5 0 0 1-.708 0z" />
-											<path d="m5.354 7.146.896.897-.707.707-.897-.896a.5.5 0 1 1 .708-.708z" />
-										</svg>
-									</span><strong>Proficient </strong> in Frontend Development</li>
-								<li class="py-1"><span class="icon icon-xs mr-2 text-aurora">
-										<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-											class="bi bi-check2-all" viewBox="0 0 16 16">
-											<path
-												d="M12.354 4.354a.5.5 0 0 0-.708-.708L5 10.293 1.854 7.146a.5.5 0 1 0-.708.708l3.5 3.5a.5.5 0 0 0 .708 0l7-7zm-4.208 7-.896-.897.707-.707.543.543 6.646-6.647a.5.5 0 0 1 .708.708l-7 7a.5.5 0 0 1-.708 0z" />
-											<path d="m5.354 7.146.896.897-.707.707-.897-.896a.5.5 0 1 1 .708-.708z" />
-										</svg>
-									</span><strong>Software</strong> Development Fundamentals</li>
-								<li class="py-1"><span class="icon icon-xs mr-2 text-aurora">
-										<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-											class="bi bi-check2-all" viewBox="0 0 16 16">
-											<path
-												d="M12.354 4.354a.5.5 0 0 0-.708-.708L5 10.293 1.854 7.146a.5.5 0 1 0-.708.708l3.5 3.5a.5.5 0 0 0 .708 0l7-7zm-4.208 7-.896-.897.707-.707.543.543 6.646-6.647a.5.5 0 0 1 .708.708l-7 7a.5.5 0 0 1-.708 0z" />
-											<path d="m5.354 7.146.896.897-.707.707-.897-.896a.5.5 0 1 1 .708-.708z" />
-										</svg>
-									</span><strong>SEO</strong> Optimization Knowledge</li>
+								<li class="py-1">
+									<span class="icon icon-xs mr-2 text-aurora">
+										<img src="images/icons/svg/check.svg" alt="check icon" />
+									</span>
+									<strong>Proficient </strong> in Frontend Development
+								</li>
+								<li class="py-1">
+									<span class="icon icon-xs mr-2 text-aurora">
+										<img src="images/icons/svg/check.svg" alt="check icon" />
+									</span>
+									<strong>Software</strong> Development Fundamentals
+								</li>
+								<li class="py-1">
+									<span class="icon icon-xs mr-2 text-aurora">
+										<img src="images/icons/svg/check.svg" alt="check icon" />
+									</span>
+									<strong>SEO</strong> Optimization Knowledge
+								</li>
 							</ul>
 							<a href="https://github.com/Mohammed-Taysser" class="mt-3 runner-btn">
-								<span></span><span></span><span></span> <span></span> Continue Reading
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+								Continue Reading
 							</a>
 						</div>
 					</div>
@@ -269,119 +243,155 @@
 
 		<!-- my skills -->
 		<section class="my-skills py-5 my-5" id="skills">
-			<div class="container py-5 my-5">
-				<h2 class="header-with-point text-center" data-text='Familiar With'>my skills</h2>
-				<div class="skills-wrapper mt-5">
-					<div class="img">
-						<img src="images/skills/html.svg" alt="html5" class='img-fluid m-3' data-aos-delay="300" data-aos="fade-up">
+			<div class="container">
+				<h2 class="header-with-point text-center" data-text="Skills">my skills</h2>
+				<div class="row align-items-center">
+					<div class="col-md-6 my-3">
+						<div class="mdn-svg-wrapper" data-aos-delay="600" data-aos="fade-down">
+							<svg width="675" class="img-fluid" height="675" viewbox="0 0 675 675" fill="none"
+								xmlns="http://www.w3.org/2000/svg" class="mdn-svg">
+								<defs>
+									<path d="M337.5,337.5 m-320,0 a320,320 0 1,1 640,0 a320,320 0 1,1 -640,0" id="circle1"></path>
+									<path d="M337.5,337.5 m-280,0 a280,280 0 1,1 560,0 a280,280 0 1,1 -560,0" id="circle2"></path>
+									<path d="M337.5,337.5 m-240,0 a240,240 0 1,1 480,0 a240,240 0 1,1 -480,0" id="circle3"></path>
+									<path d="M337.5,337.5 m-200,0 a200,200 0 1,1 400,0 a200,200 0 1,1 -400,0" id="circle4"></path>
+									<path d="M337.5,337.5 m-160,0 a160,160 0 1,1 320,0 a160,160 0 1,1 -320,0" id="circle5"></path>
+								</defs>
+								<text class="mdn-circle mdn-circle-1" dy="70" textLength="2010">
+									<textPath textLength="2010" href="#circle1">&nbsp;&nbsp;&nbsp;/<tspan>/</tspan>/<tspan>/</tspan>/
+										<tspan>/</tspan>/<tspan>/</tspan>/<tspan>/</tspan>/<tspan>/</tspan>&nbsp;&nbsp;&nbsp;/<tspan>/
+										</tspan>/<tspan>/</tspan>/<tspan>/</tspan>/<tspan>/</tspan>/<tspan>/</tspan>/<tspan>/</tspan>
+										&nbsp;&nbsp;&nbsp;/<tspan>/</tspan>/<tspan>/</tspan>/<tspan>/</tspan>/<tspan>/</tspan>/<tspan>/
+										</tspan>/<tspan>/</tspan>&nbsp;&nbsp;&nbsp;/<tspan>/</tspan>/<tspan>/</tspan>/<tspan>/</tspan>/
+										<tspan>/</tspan>/<tspan>/</tspan>/<tspan>/</tspan>&nbsp;&nbsp;&nbsp;/<tspan>/</tspan>/<tspan>/
+										</tspan>/<tspan>/</tspan>/<tspan>/</tspan>/<tspan>/</tspan>/<tspan>/</tspan>&nbsp;&nbsp;&nbsp;/
+										<tspan>/</tspan>/<tspan>/</tspan>/<tspan>/</tspan>/<tspan>/</tspan>/<tspan>/</tspan>/<tspan>/
+										</tspan>&nbsp;&nbsp;&nbsp;/<tspan>/</tspan>/<tspan>/</tspan>/<tspan>/</tspan>/<tspan>/</tspan>/
+										<tspan>/</tspan>/<tspan>/</tspan>
+									</textPath>
+								</text>
+								<text class="mdn-circle mdn-circle-2" dy="70" textLength="1760">
+									<textPath textLength="1760" href="#circle2">&nbsp;&nbsp;+<tspan>+</tspan>+<tspan>+</tspan>+<tspan>+
+										</tspan>&nbsp;&nbsp;+<tspan>+</tspan>+<tspan>+</tspan>+<tspan>+</tspan>&nbsp;&nbsp;+<tspan>+</tspan>
+										+<tspan>+</tspan>+<tspan>+</tspan>&nbsp;&nbsp;+<tspan>+</tspan>+<tspan>+</tspan>+<tspan>+</tspan>
+										&nbsp;&nbsp;+<tspan>+</tspan>+<tspan>+</tspan>+<tspan>+</tspan>&nbsp;&nbsp;+<tspan>+</tspan>+<tspan>
+											+</tspan>+<tspan>+</tspan>&nbsp;&nbsp;+<tspan>+</tspan>+<tspan>+</tspan>+<tspan>+</tspan>
+									</textPath>
+								</text>
+								<text class="mdn-circle mdn-circle-3" dy="70" textLength="1507">
+									<textPath textLength="1507" href="#circle3">
+										<tspan>{</tspan>{<tspan>{</tspan>{&nbsp;<tspan>}</tspan>}<tspan>}</tspan>}&nbsp;&nbsp;<tspan>{
+										</tspan>{<tspan>{</tspan>{&nbsp;<tspan>}</tspan>}<tspan>}</tspan>}&nbsp;&nbsp;<tspan>{</tspan>{
+										<tspan>{</tspan>{&nbsp;<tspan>}</tspan>}<tspan>}</tspan>}&nbsp;&nbsp;<tspan>{</tspan>{<tspan>{
+										</tspan>{&nbsp;<tspan>}</tspan>}<tspan>}</tspan>}&nbsp;&nbsp;<tspan>{</tspan>{<tspan>{</tspan>
+										{&nbsp;<tspan>}</tspan>}<tspan>}</tspan>}&nbsp;&nbsp;<tspan>{</tspan>{<tspan>{</tspan>{&nbsp;<tspan>
+											}</tspan>}<tspan>}</tspan>}&nbsp;&nbsp;
+									</textPath>
+								</text>
+								<text class="mdn-circle mdn-circle-4" dy="70" textLength="1257">
+									<textPath textLength="1257" href="#circle4">&nbsp;&nbsp;&nbsp;<tspan>../../</tspan>
+										&nbsp;&nbsp;&nbsp;../../ &nbsp;&nbsp;&nbsp;<tspan>../../</tspan> &nbsp;&nbsp;&nbsp;../../
+										&nbsp;&nbsp;&nbsp;<tspan>../../</tspan> &nbsp;&nbsp;&nbsp;../../ &nbsp;&nbsp;&nbsp;<tspan>../../
+										</tspan> &nbsp;&nbsp;&nbsp;../../ </textPath>
+								</text>
+								<text class="mdn-circle mdn-circle-5" dy="70" textLength="1005">
+									<textPath textLength="1005" href="#circle5">
+										<tspan>&lt;/&gt;</tspan>&lt;/&gt;<tspan>&lt;/&gt;</tspan>&lt;/&gt;<tspan>&lt;/&gt;</tspan>&lt;/&gt;
+										<tspan>&lt;/&gt;</tspan>&lt;/&gt;<tspan>&lt;/&gt;</tspan>&lt;/&gt;<tspan>&lt;/&gt;</tspan>&lt;/&gt;
+										<tspan>&lt;/&gt;</tspan>&lt;/&gt;<tspan>&lt;/&gt;</tspan>&lt;/&gt;<tspan>&lt;/&gt;</tspan>&lt;/&gt;
+										<tspan>&lt;/&gt;</tspan>&lt;/&gt;<tspan>&lt;/&gt;</tspan>&lt;/&gt;<tspan>&lt;/&gt;</tspan>&lt;/&gt;
+										<tspan>&lt;/&gt;</tspan>&lt;/&gt;<tspan>&lt;/&gt;</tspan>&lt;/&gt;<tspan>&lt;/&gt;</tspan>&lt;/&gt;
+										<tspan>&lt;/&gt;</tspan>&lt;/&gt;
+									</textPath>
+								</text>
+							</svg>
+						</div>
 					</div>
-					<div class="img">
-						<img src="images/skills/css.svg" alt="css" class='img-fluid m-3' data-aos-delay="600" data-aos="fade-up">
-					</div>
-					<div class="img">
-						<img src="images/skills/js.svg" alt="javascript" class='img-fluid m-3' data-aos-delay="900"
-							data-aos="fade-up">
-					</div>
-					<div class="img">
-						<img src="images/skills/jquery.svg" alt="jquery" class='img-fluid m-3' data-aos-delay="1200"
-							data-aos="fade-up">
-					</div>
-					<div class="img">
-						<img src="images/skills/bootstrap.svg" alt="bootstrap" class='img-fluid m-3' data-aos-delay="1500"
-							data-aos="fade-up">
-					</div>
-					<div class="img">
-						<img src="images/skills/sass.svg" alt="sass" class='img-fluid m-3' data-aos-delay="1800" data-aos="fade-up">
-					</div>
-					<div class="img">
-						<img src="images/skills/gulp.svg" alt="gulp" class='img-fluid m-3' data-aos-delay="2100" data-aos="fade-up">
-					</div>
-					<div class="img">
-						<img src="images/skills/pug.webp" alt="pug.js" class='img-fluid m-3' data-aos-delay="2400"
-							data-aos="fade-up">
-					</div>
-					<div class="img">
-						<img src="images/skills/git.svg" alt="git" class='img-fluid m-3' data-aos-delay="2700" data-aos="fade-up">
-					</div>
-					<div class="img">
-						<img src="images/skills/github.svg" alt="github" class='img-fluid m-3' data-aos-delay="3000"
-							data-aos="fade-up">
-					</div>
-					<div class="img">
-						<img src="images/skills/react.svg" alt="react" class='img-fluid m-3' data-aos-delay="300"
-							data-aos="fade-up">
-					</div>
-					<div class="img">
-						<img src="images/skills/redux.svg" alt="redux" class='img-fluid m-3' data-aos-delay="600"
-							data-aos="fade-up">
-					</div>
-					<div class="img">
-						<img src="images/skills/python.svg" alt="python" class='img-fluid m-3' data-aos-delay="900"
-							data-aos="fade-up">
-					</div>
-					<div class="img">
-						<img src="images/skills/mongodb.svg" alt="mongodb" class='img-fluid m-3' data-aos="fade-up"
-							data-aos-delay="1200">
-					</div>
-					<div class="img">
-						<img src="images/skills/express.svg" alt="express" class='img-fluid m-3' data-aos="fade-up"
-							data-aos-delay="1500">
-					</div>
-					<div class="img">
-						<img src="images/skills/nodejs.svg" alt="nodejs" class='img-fluid m-3' data-aos-delay="1800"
-							data-aos="fade-up">
-					</div>
-					<div class="img">
-						<img src="images/skills/jwt.webp" alt="jwt" class='img-fluid m-3' data-aos="fade-up" data-aos-delay="2100">
-					</div>
-					<div class="img">
-						<img src="images/skills/ubuntu.svg" alt="ubuntu" class='img-fluid m-3' data-aos-delay="2400"
-							data-aos="fade-up">
-					</div>
-					<div class="img">
-						<img src="images/skills/windows.svg" alt="windows" class='img-fluid m-3' data-aos-delay="2700"
-							data-aos="fade-up">
-					</div>
-					<div class="img">
-						<img src="images/skills/vscode.svg" alt="vscode" class='img-fluid m-3' data-aos-delay="3000"
-							data-aos="fade-up">
-					</div>
-					<div class="img">
-						<img src="images/skills/postman.webp" alt="postman" class='img-fluid m-3' data-aos-delay="300"
-							data-aos="fade-up">
-					</div>
-					<div class="img">
-						<img src="images/skills/markdown.svg" alt="markdown" class='img-fluid m-3' data-aos-delay="600"
-							data-aos="fade-up">
-					</div>
-					<div class="img">
-						<img src="images/skills/vscodium.webp" alt="vscodium" class='img-fluid m-3' data-aos-delay="900"
-							data-aos="fade-up">
-					</div>
-					<div class="img">
-						<img src="images/skills/firefox-developer-edition.png" alt="firefox dev" class='img-fluid m-3'
-							data-aos-delay="1200" data-aos="fade-up">
-					</div>
-					<div class="img">
-						<img src="images/skills/gimp.svg" alt="gimp" class='img-fluid m-3' data-aos-delay="1500" data-aos="fade-up">
-					</div>
-					<div class="img">
-						<img src="images/skills/npm.svg" alt="npm" class='img-fluid m-3' data-aos-delay="1800" data-aos="fade-up">
-					</div>
-					<div class="img">
-						<img src="images/skills/yarn.svg" alt="yarn" class='img-fluid m-3' data-aos-delay="2100" data-aos="fade-up">
-					</div>
-					<div class="img">
-						<img src="images/skills/django.svg" alt="django" class='img-fluid m-3' data-aos-delay="2400" data-aos="fade-up">
-					</div>
-					<div class="img">
-						<img src="images/skills/eslint.svg" alt="eslint" class='img-fluid m-3' data-aos-delay="2700" data-aos="fade-up">
-					</div>
-					<div class="img">
-						<img src="images/skills/heroku.svg" alt="heroku" class='img-fluid m-3' data-aos-delay="3000" data-aos="fade-up">
-					</div>
-					<div class="img">
-						<img src="images/skills/jest.svg" alt="jest" class='img-fluid m-3' data-aos-delay="300" data-aos="fade-up">
+					<div class="col-md-6 my-3">
+						<div class="">
+							<div class="skills-wrapper mt-5">
+								<div class="img">
+									<img src="images/skills/html.svg" alt="html5" class="img-fluid m-3" data-aos-delay="300"
+										data-aos="fade-up">
+								</div>
+								<div class="img">
+									<img src="images/skills/css.svg" alt="css" class="img-fluid m-3" data-aos-delay="600"
+										data-aos="fade-up">
+								</div>
+								<div class="img">
+									<img src="images/skills/js.svg" alt="javascript" class="img-fluid m-3" data-aos-delay="900"
+										data-aos="fade-up">
+								</div>
+								<div class="img">
+									<img src="images/skills/jquery.svg" alt="jquery" class="img-fluid m-3" data-aos-delay="1200"
+										data-aos="fade-up">
+								</div>
+								<div class="img">
+									<img src="images/skills/bootstrap.svg" alt="bootstrap" class="img-fluid m-3" data-aos-delay="1500"
+										data-aos="fade-up">
+								</div>
+								<div class="img">
+									<img src="images/skills/sass.svg" alt="sass" class="img-fluid m-3" data-aos-delay="1800"
+										data-aos="fade-up">
+								</div>
+								<div class="img">
+									<img src="images/skills/gulp.svg" alt="gulp" class="img-fluid m-3" data-aos-delay="2100"
+										data-aos="fade-up">
+								</div>
+								<div class="img">
+									<img src="images/skills/pug.webp" alt="pug.js" class="img-fluid m-3" data-aos-delay="2400"
+										data-aos="fade-up">
+								</div>
+								<div class="img">
+									<img src="images/skills/git.svg" alt="git" class="img-fluid m-3" data-aos-delay="2700"
+										data-aos="fade-up">
+								</div>
+								<div class="img">
+									<img src="images/skills/github.svg" alt="github" class="img-fluid m-3" data-aos-delay="3000"
+										data-aos="fade-up">
+								</div>
+								<div class="img">
+									<img src="images/skills/react.svg" alt="react" class="img-fluid m-3" data-aos-delay="300"
+										data-aos="fade-up">
+								</div>
+								<div class="img">
+									<img src="images/skills/redux.svg" alt="redux" class="img-fluid m-3" data-aos-delay="600"
+										data-aos="fade-up">
+								</div>
+								<div class="img">
+									<img src="images/skills/python.svg" alt="python" class="img-fluid m-3" data-aos-delay="900"
+										data-aos="fade-up">
+								</div>
+								<div class="img">
+									<img src="images/skills/mongodb.svg" alt="mongodb" class="img-fluid m-3" data-aos="fade-up"
+										data-aos-delay="1200">
+								</div>
+								<div class="img">
+									<img src="images/skills/express.svg" alt="express" class="img-fluid m-3" data-aos="fade-up"
+										data-aos-delay="1500">
+								</div>
+								<div class="img">
+									<img src="images/skills/nodejs.svg" alt="nodejs" class="img-fluid m-3" data-aos-delay="1800"
+										data-aos="fade-up">
+								</div>
+								<div class="img">
+									<img src="images/skills/jwt.webp" alt="jwt" class="img-fluid m-3" data-aos="fade-up"
+										data-aos-delay="2100">
+								</div>
+								<div class="img">
+									<img src="images/skills/ubuntu.svg" alt="ubuntu" class="img-fluid m-3" data-aos-delay="2400"
+										data-aos="fade-up">
+								</div>
+								<div class="img">
+									<img src="images/skills/markdown.svg" alt="markdown" class="img-fluid m-3" data-aos-delay="2700"
+										data-aos="fade-up">
+								</div>
+								<div class="img">
+									<img src="images/skills/jest.svg" alt="jest" class="img-fluid m-3" data-aos-delay="3000"
+										data-aos="fade-up">
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -390,17 +400,18 @@
 		<!-- my projects -->
 		<section class="my-projects py-5 overflow-hidden position-relative" id="projects">
 
-			<div class="container my-5" id='js-mixitup-container-id'>
-				<h2 class="header-with-point text-center" data-text='Projects'>my projects</h2>
+			<div class="container my-5" id="js-mixitup-container-id">
+				<h2 class="header-with-point text-center" data-text="Projects">my projects</h2>
 
 				<div class="my-5 pt-5">
 
 					<div class="filter-buttons-container">
-						<button type="button" class='skew-btn' data-filter="all">All</button>
-						<button type="button" class='skew-btn' data-filter=".nodejs-project">node.js</button>
-						<button type="button" class='skew-btn' data-filter=".react-project">react</button>
-						<button type="button" class='skew-btn' data-filter=".bootstrap-project">bootstrap</button>
-						<button type="button" class='skew-btn' data-filter=".freelance-project">freelance</button>
+						<button type="button" class="skew-btn" data-filter="all">All</button>
+						<button type="button" class="skew-btn" data-filter=".nodejs-project">node.js</button>
+						<button type="button" class="skew-btn" data-filter=".react-project">react</button>
+						<button type="button" class="skew-btn" data-filter=".typescript-project">typescript</button>
+						<button type="button" class="skew-btn" data-filter=".bootstrap-project">bootstrap</button>
+						<button type="button" class="skew-btn" data-filter=".freelance-project">freelance</button>
 					</div>
 
 					<div class="row justify-content-center align-items-stretch mt-5">
@@ -409,20 +420,14 @@
 							<div class="single-project nice-shadow">
 								<div class="img">
 									<img src="images/projects/bg-project-paperCuts.webp" alt="paperCuts project"
-										class='img-fluid rounded-top'>
+										class="img-fluid rounded-top">
 								</div>
 								<div class="content p-4 rounded">
 									<div class="d-flex justify-content-between align-items-center">
 										<a class="project-title my-3 fw-bold bg-underline h3" href="https://papercuts.vercel.app/"
-											target="_blank">paperCuts</a>
+											target="_blank" rel='noopener'>paperCuts</a>
 										<span class="text-muted">
-											<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-												class="bi bi-journals" viewBox="0 0 16 16">
-												<path
-													d="M5 0h8a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2 2 2 0 0 1-2 2H3a2 2 0 0 1-2-2h1a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1H1a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v9a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1H3a2 2 0 0 1 2-2z" />
-												<path
-													d="M1 6v-.5a.5.5 0 0 1 1 0V6h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0V9h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 2.5v.5H.5a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1H2v-.5a.5.5 0 0 0-1 0z" />
-											</svg>
+											<img src="images/icons/svg/journals.svg" alt="journal" />
 											<small>Multiple page</small>
 										</span>
 									</div>
@@ -430,10 +435,10 @@
 									<p class="text-muted my-4">first e-commerce website built with react, a lot of feature like order,
 										events, wishlist ...etc, also use JWT & express for authentication.</p>
 									<div class="my-3 d-flex justify-content-between align-content-center align-items-center">
-										<a href="https://papercuts.vercel.app/" class="bubbly-btn" target="_blank">live
+										<a href="https://papercuts.vercel.app/" class="bubbly-btn" target="_blank" rel='noopener'>live
 											demo</a>
-										<a href="https://github.com/Mohammed-Taysser/paperCuts" class="bg-underline hovered"
-											target="_blank">github
+										<a href="https://github.com/Mohammed-Taysser/paperCuts" class="bg-underline hovered" target="_blank"
+											rel='noopener'>github
 											link</a>
 									</div>
 								</div>
@@ -444,33 +449,28 @@
 							<div class="single-project nice-shadow">
 								<div class="img">
 									<img src="images/projects/bg-project-paperCuts-server.webp" alt="paperCuts server project"
-										class='img-fluid rounded-top'>
+										class="img-fluid rounded-top">
 								</div>
 								<div class="content p-4 rounded">
 									<div class="d-flex justify-content-between align-items-center">
 										<a class="project-title my-3 fw-bold bg-underline h3" href="https://papercuts-server.herokuapp.com/"
-											target="_blank">paperCuts server</a>
+											target="_blank" rel='noopener'>paperCuts server</a>
 										<span class="text-muted">
-											<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-												class="bi bi-hdd-stack" viewBox="0 0 16 16">
-												<path
-													d="M14 10a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1v-1a1 1 0 0 1 1-1h12zM2 9a2 2 0 0 0-2 2v1a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-1a2 2 0 0 0-2-2H2z" />
-												<path
-													d="M5 11.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm-2 0a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zM14 3a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h12zM2 2a2 2 0 0 0-2 2v1a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H2z" />
-												<path d="M5 4.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm-2 0a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0z" />
-											</svg>
+											<img src="images/icons/svg/server.svg" alt="server" />
 											<small>server</small>
 										</span>
 									</div>
 									<hr>
 									<p class="text-muted my-4">server for <a href="https://github.com/Mohammed-Taysser/paperCuts"
-											class="bg-underline" target="_blank">paperCuts</a> created while learning MERN stack in order to
+											class="bg-underline" target="_blank" rel='noopener'>paperCuts</a> created while learning MERN
+										stack in order to
 										replace Json-server package.</p>
 									<div class="my-3 d-flex justify-content-between align-content-center align-items-center">
-										<a href="https://papercuts-server.herokuapp.com/" class="bubbly-btn" target="_blank">live
+										<a href="https://papercuts-server.herokuapp.com/" class="bubbly-btn" target="_blank"
+											rel='noopener'>live
 											demo</a>
 										<a href="https://github.com/Mohammed-Taysser/paperCuts-server" class="bg-underline hovered"
-											target="_blank">github
+											target="_blank" rel='noopener'>github
 											link</a>
 									</div>
 								</div>
@@ -481,20 +481,15 @@
 							<div class="single-project nice-shadow">
 								<div class="img">
 									<img src="images/projects/bg-project-gutenberry.webp" alt="Gutenberry project"
-										class='img-fluid rounded-top'>
+										class="img-fluid rounded-top">
 								</div>
 								<div class="content p-4 rounded">
 									<div class="d-flex justify-content-between align-items-center">
 										<a class="project-title my-3 fw-bold bg-underline h3"
-											href="https://mohammed-taysser.github.io/Gutenberry/" target="_blank">Gutenberry</a>
+											href="https://mohammed-taysser.github.io/Gutenberry/" target="_blank"
+											rel='noopener'>Gutenberry</a>
 										<span class="text-muted">
-											<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-												class="bi bi-journals" viewBox="0 0 16 16">
-												<path
-													d="M5 0h8a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2 2 2 0 0 1-2 2H3a2 2 0 0 1-2-2h1a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1H1a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v9a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1H3a2 2 0 0 1 2-2z" />
-												<path
-													d="M1 6v-.5a.5.5 0 0 1 1 0V6h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0V9h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 2.5v.5H.5a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1H2v-.5a.5.5 0 0 0-1 0z" />
-											</svg>
+											<img src="images/icons/svg/journals.svg" alt="journal" />
 											<small>multiple page</small>
 										</span>
 									</div>
@@ -502,10 +497,11 @@
 									<p class="text-muted my-4">more than expect effort needed, as use hard code html, css and js to build
 										it at end so start to learn framework</p>
 									<div class="my-3 d-flex justify-content-between align-content-center align-items-center">
-										<a href="https://mohammed-taysser.github.io/Gutenberry/" class="bubbly-btn" target="_blank">live
+										<a href="https://mohammed-taysser.github.io/Gutenberry/" class="bubbly-btn" target="_blank"
+											rel='noopener'>live
 											demo</a>
 										<a href="https://github.com/Mohammed-Taysser/Gutenberry" class="bg-underline hovered"
-											target="_blank">github
+											target="_blank" rel='noopener'>github
 											link</a>
 									</div>
 								</div>
@@ -516,20 +512,14 @@
 							<div class="single-project nice-shadow">
 								<div class="img">
 									<img src="images/projects/bg-project-vezeeta.webp" alt="vezeeta project"
-										class='img-fluid rounded-top'>
+										class="img-fluid rounded-top">
 								</div>
 								<div class="content p-4 rounded">
 									<div class="d-flex justify-content-between align-items-center">
 										<a class="project-title my-3 fw-bold bg-underline h3"
-											href="https://mohammed-taysser.github.io/vezeeta/" target="_blank">vezeeta</a>
+											href="https://mohammed-taysser.github.io/vezeeta/" target="_blank" rel='noopener'>vezeeta</a>
 										<span class="text-muted">
-											<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-												class="bi bi-journals" viewBox="0 0 16 16">
-												<path
-													d="M5 0h8a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2 2 2 0 0 1-2 2H3a2 2 0 0 1-2-2h1a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1H1a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v9a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1H3a2 2 0 0 1 2-2z" />
-												<path
-													d="M1 6v-.5a.5.5 0 0 1 1 0V6h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0V9h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 2.5v.5H.5a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1H2v-.5a.5.5 0 0 0-1 0z" />
-											</svg>
+											<img src="images/icons/svg/journals.svg" alt="journal" />
 											<small>multiple page</small>
 										</span>
 									</div>
@@ -538,10 +528,11 @@
 										build
 										especially for back end.</p>
 									<div class="my-3 d-flex justify-content-between align-content-center align-items-center">
-										<a href="https://mohammed-taysser.github.io/vezeeta/" class="bubbly-btn" target="_blank">live
+										<a href="https://mohammed-taysser.github.io/vezeeta/" class="bubbly-btn" target="_blank"
+											rel='noopener'>live
 											demo</a>
-										<a href="https://github.com/Mohammed-Taysser/vezeeta" class="bg-underline hovered"
-											target="_blank">github
+										<a href="https://github.com/Mohammed-Taysser/vezeeta" class="bg-underline hovered" target="_blank"
+											rel='noopener'>github
 											link</a>
 									</div>
 								</div>
@@ -552,20 +543,14 @@
 							<div class="single-project nice-shadow">
 								<div class="img">
 									<img src="images/projects/bg-project-dj-music.webp" alt="DJ-Music project"
-										class='img-fluid rounded-top'>
+										class="img-fluid rounded-top">
 								</div>
 								<div class="content p-4 rounded">
 									<div class="d-flex justify-content-between align-items-center">
 										<a class="project-title my-3 fw-bold bg-underline h3"
-											href="https://mohammed-taysser.github.io/DJ-Music/" target="_blank">DJ-Music</a>
+											href="https://mohammed-taysser.github.io/DJ-Music/" target="_blank" rel='noopener'>DJ-Music</a>
 										<span class="text-muted">
-											<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-												class="bi bi-journals" viewBox="0 0 16 16">
-												<path
-													d="M5 0h8a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2 2 2 0 0 1-2 2H3a2 2 0 0 1-2-2h1a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1H1a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v9a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1H3a2 2 0 0 1 2-2z" />
-												<path
-													d="M1 6v-.5a.5.5 0 0 1 1 0V6h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0V9h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 2.5v.5H.5a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1H2v-.5a.5.5 0 0 0-1 0z" />
-											</svg>
+											<img src="images/icons/svg/journals.svg" alt="journal" />
 											<small>multiple page</small>
 										</span>
 									</div>
@@ -573,10 +558,11 @@
 									<p class="text-muted my-4">more than expect effort needed, as use hard code html, css and js to build
 										it at end so start to learn framework</p>
 									<div class="my-3 d-flex justify-content-between align-content-center align-items-center">
-										<a href="https://mohammed-taysser.github.io/DJ-Music/" class="bubbly-btn" target="_blank">live
+										<a href="https://mohammed-taysser.github.io/DJ-Music/" class="bubbly-btn" target="_blank"
+											rel='noopener'>live
 											demo</a>
-										<a href="https://github.com/Mohammed-Taysser/DJ-Music" class="bg-underline hovered"
-											target="_blank">github
+										<a href="https://github.com/Mohammed-Taysser/DJ-Music" class="bg-underline hovered" target="_blank"
+											rel='noopener'>github
 											link</a>
 									</div>
 								</div>
@@ -587,20 +573,14 @@
 							<div class="single-project nice-shadow">
 								<div class="img">
 									<img src="images/projects/bg-project-techmag.webp" alt="TECHMAG project"
-										class='img-fluid rounded-top'>
+										class="img-fluid rounded-top">
 								</div>
 								<div class="content p-4 rounded">
 									<div class="d-flex justify-content-between align-items-center">
 										<a class="project-title my-3 fw-bold bg-underline h3"
-											href="https://mohammed-taysser.github.io/TECHMAG/" target="_blank">TECHMAG</a>
+											href="https://mohammed-taysser.github.io/TECHMAG/" target="_blank" rel='noopener'>TECHMAG</a>
 										<span class="text-muted">
-											<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-												class="bi bi-journals" viewBox="0 0 16 16">
-												<path
-													d="M5 0h8a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2 2 2 0 0 1-2 2H3a2 2 0 0 1-2-2h1a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1H1a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v9a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1H3a2 2 0 0 1 2-2z" />
-												<path
-													d="M1 6v-.5a.5.5 0 0 1 1 0V6h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0V9h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 2.5v.5H.5a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1H2v-.5a.5.5 0 0 0-1 0z" />
-											</svg>
+											<img src="images/icons/svg/journals.svg" alt="journal" />
 											<small>single page</small>
 										</span>
 									</div>
@@ -608,10 +588,11 @@
 									<p class="text-muted my-4">more than expect effort needed, as use hard code html, css and js to build
 										it at end so start to learn framework</p>
 									<div class="my-3 d-flex justify-content-between align-content-center align-items-center">
-										<a href="https://mohammed-taysser.github.io/TECHMAG/" class="bubbly-btn" target="_blank">live
+										<a href="https://mohammed-taysser.github.io/TECHMAG/" class="bubbly-btn" target="_blank"
+											rel='noopener'>live
 											demo</a>
-										<a href="https://github.com/Mohammed-Taysser/TECHMAG" class="bg-underline hovered"
-											target="_blank">github
+										<a href="https://github.com/Mohammed-Taysser/TECHMAG" class="bg-underline hovered" target="_blank"
+											rel='noopener'>github
 											link</a>
 									</div>
 								</div>
@@ -621,20 +602,14 @@
 						<div class="col-xg-3 col-lg-4 col-md-6 my-3 mix bootstrap-project" data-order="7">
 							<div class="single-project nice-shadow">
 								<div class="img">
-									<img src="images/projects/bg-project-yassen.webp" alt="YASSEN project" class='img-fluid rounded-top'>
+									<img src="images/projects/bg-project-yassen.webp" alt="YASSEN project" class="img-fluid rounded-top">
 								</div>
 								<div class="content  p-4 rounded">
 									<div class="d-flex justify-content-between align-items-center">
 										<a class="project-title my-3 fw-bold bg-underline h3"
-											href="https://mohammed-taysser.github.io/YASSEN/" target="_blank">YASSEN</a>
+											href="https://mohammed-taysser.github.io/YASSEN/" target="_blank" rel='noopener'>YASSEN</a>
 										<span class="text-muted">
-											<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-												class="bi bi-journals" viewBox="0 0 16 16">
-												<path
-													d="M5 0h8a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2 2 2 0 0 1-2 2H3a2 2 0 0 1-2-2h1a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1H1a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v9a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1H3a2 2 0 0 1 2-2z" />
-												<path
-													d="M1 6v-.5a.5.5 0 0 1 1 0V6h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0V9h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 2.5v.5H.5a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1H2v-.5a.5.5 0 0 0-1 0z" />
-											</svg>
+											<img src="images/icons/svg/journals.svg" alt="journal" />
 											<small>single page</small>
 										</span>
 									</div>
@@ -642,10 +617,11 @@
 									<p class="text-muted my-4">different lookup to html page with powerful services counter that count on
 										scroll and reach the section.</p>
 									<div class="my-3 d-flex justify-content-between align-content-center align-items-center">
-										<a href="https://mohammed-taysser.github.io/YASSEN/" class="bubbly-btn" target="_blank">live
+										<a href="https://mohammed-taysser.github.io/YASSEN/" class="bubbly-btn" target="_blank"
+											rel='noopener'>live
 											demo</a>
-										<a href="https://github.com/Mohammed-Taysser/YASSEN" class="bg-underline hovered"
-											target="_blank">github
+										<a href="https://github.com/Mohammed-Taysser/YASSEN" class="bg-underline hovered" target="_blank"
+											rel='noopener'>github
 											link</a>
 									</div>
 								</div>
@@ -655,20 +631,14 @@
 						<div class="col-xg-3 col-lg-4 col-md-6 my-3 mix bootstrap-project" data-order="8">
 							<div class="single-project nice-shadow">
 								<div class="img">
-									<img src="images/projects/bg-project-atom.webp" alt="ATOM project" class='img-fluid rounded-top'>
+									<img src="images/projects/bg-project-atom.webp" alt="ATOM project" class="img-fluid rounded-top">
 								</div>
 								<div class="content  p-4 rounded">
 									<div class="d-flex justify-content-between align-items-center">
 										<a class="project-title my-3 fw-bold bg-underline h3"
-											href="https://mohammed-taysser.github.io/ATOM/" target="_blank">ATOM</a>
+											href="https://mohammed-taysser.github.io/ATOM/" target="_blank" rel='noopener'>ATOM</a>
 										<span class="text-muted">
-											<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-												class="bi bi-journals" viewBox="0 0 16 16">
-												<path
-													d="M5 0h8a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2 2 2 0 0 1-2 2H3a2 2 0 0 1-2-2h1a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1H1a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v9a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1H3a2 2 0 0 1 2-2z" />
-												<path
-													d="M1 6v-.5a.5.5 0 0 1 1 0V6h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0V9h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 2.5v.5H.5a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1H2v-.5a.5.5 0 0 0-1 0z" />
-											</svg>
+											<img src="images/icons/svg/journals.svg" alt="journal" />
 											<small>single page</small>
 										</span>
 									</div>
@@ -676,10 +646,11 @@
 									<p class="text-muted my-4">use vanilla JavaScript to apply functionality like model, custom
 										bootstrap, animation and side menu.</p>
 									<div class="my-3 d-flex justify-content-between align-content-center align-items-center">
-										<a href="https://mohammed-taysser.github.io/ATOM/" class="bubbly-btn" target="_blank">live
+										<a href="https://mohammed-taysser.github.io/ATOM/" class="bubbly-btn" target="_blank"
+											rel='noopener'>live
 											demo</a>
-										<a href="https://github.com/Mohammed-Taysser/ATOM" class="bg-underline hovered"
-											target="_blank">github
+										<a href="https://github.com/Mohammed-Taysser/ATOM" class="bg-underline hovered" target="_blank"
+											rel='noopener'>github
 											link</a>
 									</div>
 								</div>
@@ -689,30 +660,25 @@
 						<div class="col-xg-3 col-lg-4 col-md-6 my-3 mix bootstrap-project" data-order="9">
 							<div class="single-project nice-shadow">
 								<div class="img">
-									<img src="images/projects/bg-project-axit.webp" alt="AXIT project" class='img-fluid rounded-top'>
+									<img src="images/projects/bg-project-axit.webp" alt="AXIT project" class="img-fluid rounded-top">
 								</div>
 								<div class="content  p-4 rounded">
 									<div class="d-flex justify-content-between align-items-center">
 										<a class="project-title my-3 fw-bold bg-underline h3"
-											href="https://mohammed-taysser.github.io/AXIT/" target="_blank">AXIT</a>
+											href="https://mohammed-taysser.github.io/AXIT/" target="_blank" rel='noopener'>AXIT</a>
 										<span class="text-muted">
-											<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-												class="bi bi-journals" viewBox="0 0 16 16">
-												<path
-													d="M5 0h8a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2 2 2 0 0 1-2 2H3a2 2 0 0 1-2-2h1a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1H1a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v9a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1H3a2 2 0 0 1 2-2z" />
-												<path
-													d="M1 6v-.5a.5.5 0 0 1 1 0V6h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0V9h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 2.5v.5H.5a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1H2v-.5a.5.5 0 0 0-1 0z" />
-											</svg>
+											<img src="images/icons/svg/journals.svg" alt="journal" />
 											<small>single page</small>
 										</span>
 									</div>
 									<hr>
 									<p class="text-muted my-4">it's a learn project with el-zero using html, css, JavaScript.</p>
 									<div class="my-3 d-flex justify-content-between align-content-center align-items-center">
-										<a href="https://mohammed-taysser.github.io/AXIT/" class="bubbly-btn" target="_blank">live
+										<a href="https://mohammed-taysser.github.io/AXIT/" class="bubbly-btn" target="_blank"
+											rel='noopener'>live
 											demo</a>
-										<a href="https://github.com/Mohammed-Taysser/AXIT" class="bg-underline hovered"
-											target="_blank">github
+										<a href="https://github.com/Mohammed-Taysser/AXIT" class="bg-underline hovered" target="_blank"
+											rel='noopener'>github
 											link</a>
 									</div>
 								</div>
@@ -723,20 +689,15 @@
 							<div class="single-project nice-shadow">
 								<div class="img">
 									<img src="images/projects/bg-project-elite-corp.webp" alt="elite-corp project"
-										class='img-fluid rounded-top'>
+										class="img-fluid rounded-top">
 								</div>
 								<div class="content  p-4 rounded">
 									<div class="d-flex justify-content-between align-items-center">
 										<a class="project-title my-3 fw-bold bg-underline h3"
-											href="https://mohammed-taysser.github.io/elite-corp/" target="_blank">elite corp</a>
+											href="https://mohammed-taysser.github.io/elite-corp/" target="_blank" rel='noopener'>elite
+											corp</a>
 										<span class="text-muted">
-											<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-												class="bi bi-journals" viewBox="0 0 16 16">
-												<path
-													d="M5 0h8a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2 2 2 0 0 1-2 2H3a2 2 0 0 1-2-2h1a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1H1a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v9a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1H3a2 2 0 0 1 2-2z" />
-												<path
-													d="M1 6v-.5a.5.5 0 0 1 1 0V6h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0V9h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 2.5v.5H.5a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1H2v-.5a.5.5 0 0 0-1 0z" />
-											</svg>
+											<img src="images/icons/svg/journals.svg" alt="journal" />
 											<small>single page</small>
 										</span>
 									</div>
@@ -744,10 +705,11 @@
 									<p class="text-muted my-4">use vanilla JavaScript to apply functionality like model, custom
 										bootstrap, animation and side menu.</p>
 									<div class="my-3 d-flex justify-content-between align-content-center align-items-center">
-										<a href="https://mohammed-taysser.github.io/elite-corp/" class="bubbly-btn" target="_blank">live
+										<a href="https://mohammed-taysser.github.io/elite-corp/" class="bubbly-btn" target="_blank"
+											rel='noopener'>live
 											demo</a>
 										<a href="https://github.com/Mohammed-Taysser/elite-corp" class="bg-underline hovered"
-											target="_blank">github
+											target="_blank" rel='noopener'>github
 											link</a>
 									</div>
 								</div>
@@ -758,20 +720,14 @@
 							<div class="single-project nice-shadow">
 								<div class="img">
 									<img src="images/projects/bg-project-sadat.webp" alt="elite-corp project"
-										class='img-fluid rounded-top'>
+										class="img-fluid rounded-top">
 								</div>
 								<div class="content  p-4 rounded">
 									<div class="d-flex justify-content-between align-items-center">
-										<a class="project-title my-3 fw-bold bg-underline h3" href="https://sadat.vip/"
-											target="_blank">SADAT.VIP</a>
+										<a class="project-title my-3 fw-bold bg-underline h3" href="https://sadat.vip/" target="_blank"
+											rel='noopener'>SADAT.VIP</a>
 										<span class="text-muted">
-											<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-												class="bi bi-journals" viewBox="0 0 16 16">
-												<path
-													d="M5 0h8a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2 2 2 0 0 1-2 2H3a2 2 0 0 1-2-2h1a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1H1a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v9a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1H3a2 2 0 0 1 2-2z" />
-												<path
-													d="M1 6v-.5a.5.5 0 0 1 1 0V6h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0V9h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 2.5v.5H.5a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1H2v-.5a.5.5 0 0 0-1 0z" />
-											</svg>
+											<img src="images/icons/svg/journals.svg" alt="journal" />
 											<small>multiple page</small>
 										</span>
 									</div>
@@ -780,7 +736,7 @@
 										VIP = // [V]ery [I]mportant [P]rogrammer <br>
 										Act like VIP & become a VIP ;)</p>
 									<div class="my-3 d-flex justify-content-between align-content-center align-items-center">
-										<a href="https://sadat.vip/" class="bubbly-btn" target="_blank">live
+										<a href="https://sadat.vip/" class="bubbly-btn" target="_blank" rel='noopener'>live
 											demo</a>
 									</div>
 								</div>
@@ -791,30 +747,27 @@
 							<div class="single-project nice-shadow">
 								<div class="img">
 									<img src="images/projects/bg-project-scandiweb.webp" alt="scandiweb project"
-										class='img-fluid rounded-top'>
+										class="img-fluid rounded-top">
 								</div>
 								<div class="content p-4 rounded">
 									<div class="d-flex justify-content-between align-items-center">
-										<a class="project-title my-3 fw-bold bg-underline h3" href="https://github.com/Mohammed-Taysser/scandiweb-react-task"
-											target="_blank">scandiweb</a>
+										<a class="project-title my-3 fw-bold bg-underline h3"
+											href="https://github.com/Mohammed-Taysser/scandiweb-react-task" target="_blank"
+											rel='noopener'>scandiweb</a>
 										<span class="text-muted">
-											<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-												class="bi bi-journals" viewBox="0 0 16 16">
-												<path
-													d="M5 0h8a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2 2 2 0 0 1-2 2H3a2 2 0 0 1-2-2h1a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1H1a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v9a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1H3a2 2 0 0 1 2-2z" />
-												<path
-													d="M1 6v-.5a.5.5 0 0 1 1 0V6h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0V9h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 2.5v.5H.5a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1H2v-.5a.5.5 0 0 0-1 0z" />
-											</svg>
+											<img src="images/icons/svg/journals.svg" alt="journal" />
 											<small>Multiple page</small>
 										</span>
 									</div>
 									<hr>
-									<p class="text-muted my-4">This task will put you face-to-face to some common tasks in the world of React development and possibly will get you acknowledged with a bit of new technologies.</p>
+									<p class="text-muted my-4">This task will put you face-to-face to some common tasks in the world of
+										React development and possibly will get you acknowledged with a bit of new technologies.</p>
 									<div class="my-3 d-flex justify-content-between align-content-center align-items-center">
-										<a href="https://scandiweb-task-react.vercel.app/" class="bubbly-btn" target="_blank">live
+										<a href="https://scandiweb-task-react.vercel.app/" class="bubbly-btn" target="_blank"
+											rel='noopener'>live
 											demo</a>
 										<a href="https://github.com/Mohammed-Taysser/scandiweb-react-task" class="bg-underline hovered"
-											target="_blank">github
+											target="_blank" rel='noopener'>github
 											link</a>
 									</div>
 								</div>
@@ -824,31 +777,26 @@
 						<div class="col-xg-3 col-lg-4 col-md-6 my-3 mix react-project" data-order="13">
 							<div class="single-project nice-shadow">
 								<div class="img">
-									<img src="images/projects/bg-project-goog.webp" alt="goog project"
-										class='img-fluid rounded-top'>
+									<img src="images/projects/bg-project-goog.webp" alt="goog project" class="img-fluid rounded-top">
 								</div>
 								<div class="content p-4 rounded">
 									<div class="d-flex justify-content-between align-items-center">
 										<a class="project-title my-3 fw-bold bg-underline h3" href="https://goog-search.vercel.app/"
-											target="_blank">GooG</a>
+											target="_blank" rel='noopener'>GooG</a>
 										<span class="text-muted">
-											<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-												class="bi bi-journals" viewBox="0 0 16 16">
-												<path
-													d="M5 0h8a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2 2 2 0 0 1-2 2H3a2 2 0 0 1-2-2h1a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1H1a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v9a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1H3a2 2 0 0 1 2-2z" />
-												<path
-													d="M1 6v-.5a.5.5 0 0 1 1 0V6h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0V9h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 2.5v.5H.5a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1H2v-.5a.5.5 0 0 0-1 0z" />
-											</svg>
+											<img src="images/icons/svg/journals.svg" alt="journal" />
 											<small>Single page</small>
 										</span>
 									</div>
 									<hr>
-									<p class="text-muted my-4">With the ability to search for up-to-date results, news, images, and videos, modern UI, dark mode, this completely responsive Google Clone is the perfect project you can build to master the use of modern React.js. </p>
+									<p class="text-muted my-4">With the ability to search for up-to-date results, news, images, and
+										videos, modern UI, dark mode, this completely responsive Google Clone is the perfect project you can
+										build to master the use of modern React.js. </p>
 									<div class="my-3 d-flex justify-content-between align-content-center align-items-center">
-										<a href="https://goog-search.vercel.app/" class="bubbly-btn" target="_blank">live
+										<a href="https://goog-search.vercel.app/" class="bubbly-btn" target="_blank" rel='noopener'>live
 											demo</a>
-										<a href="https://github.com/Mohammed-Taysser/goog" class="bg-underline hovered"
-											target="_blank">github
+										<a href="https://github.com/Mohammed-Taysser/goog" class="bg-underline hovered" target="_blank"
+											rel='noopener'>github
 											link</a>
 									</div>
 								</div>
@@ -859,30 +807,27 @@
 							<div class="single-project nice-shadow">
 								<div class="img">
 									<img src="images/projects/bg-project-expense-traker.webp" alt="expense-tracker project"
-										class='img-fluid rounded-top'>
+										class="img-fluid rounded-top">
 								</div>
 								<div class="content p-4 rounded">
 									<div class="d-flex justify-content-between align-items-center">
-										<a class="project-title my-3 fw-bold bg-underline h3" href="https://expense-tracker-seechly.vercel.app/"
-											target="_blank">expense tracker</a>
+										<a class="project-title my-3 fw-bold bg-underline h3"
+											href="https://expense-tracker-seechly.vercel.app/" target="_blank" rel='noopener'>expense
+											tracker</a>
 										<span class="text-muted">
-											<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-												class="bi bi-journals" viewBox="0 0 16 16">
-												<path
-													d="M5 0h8a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2 2 2 0 0 1-2 2H3a2 2 0 0 1-2-2h1a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1H1a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v9a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1H3a2 2 0 0 1 2-2z" />
-												<path
-													d="M1 6v-.5a.5.5 0 0 1 1 0V6h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0V9h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 2.5v.5H.5a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1H2v-.5a.5.5 0 0 0-1 0z" />
-											</svg>
+											<img src="images/icons/svg/journals.svg" alt="journal" />
 											<small>Single page</small>
 										</span>
 									</div>
 									<hr>
-									<p class="text-muted my-4">We are going to build a Complex Expense Budget Tracker. While building it, you're going to learn many advanced React & JavaScript topics.</p>
+									<p class="text-muted my-4">We are going to build a Complex Expense Budget Tracker. While building it,
+										you're going to learn many advanced React & JavaScript topics.</p>
 									<div class="my-3 d-flex justify-content-between align-content-center align-items-center">
-										<a href="https://expense-tracker-seechly.vercel.app/" class="bubbly-btn" target="_blank">live
+										<a href="https://expense-tracker-seechly.vercel.app/" class="bubbly-btn" target="_blank"
+											rel='noopener'>live
 											demo</a>
 										<a href="https://github.com/Mohammed-Taysser/expense-tracker" class="bg-underline hovered"
-											target="_blank">github
+											target="_blank" rel='noopener'>github
 											link</a>
 									</div>
 								</div>
@@ -893,30 +838,27 @@
 							<div class="single-project nice-shadow">
 								<div class="img">
 									<img src="images/projects/bg-project-covid-19-tracker.webp" alt="expense-tracker project"
-										class='img-fluid rounded-top'>
+										class="img-fluid rounded-top">
 								</div>
 								<div class="content p-4 rounded">
 									<div class="d-flex justify-content-between align-items-center">
-										<a class="project-title my-3 fw-bold bg-underline h3" href="https://react-covid19-tracker.vercel.app/"
-											target="_blank">covid-19 tracker</a>
+										<a class="project-title my-3 fw-bold bg-underline h3"
+											href="https://react-covid19-tracker.vercel.app/" target="_blank" rel='noopener'>covid-19
+											tracker</a>
 										<span class="text-muted">
-											<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-												class="bi bi-journals" viewBox="0 0 16 16">
-												<path
-													d="M5 0h8a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2 2 2 0 0 1-2 2H3a2 2 0 0 1-2-2h1a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1H1a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v9a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1H3a2 2 0 0 1 2-2z" />
-												<path
-													d="M1 6v-.5a.5.5 0 0 1 1 0V6h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0V9h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 2.5v.5H.5a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1H2v-.5a.5.5 0 0 0-1 0z" />
-											</svg>
+											<img src="images/icons/svg/journals.svg" alt="journal" />
 											<small>Single page</small>
 										</span>
 									</div>
 									<hr>
-									<p class="text-muted my-4">Build single page with chart & ability to view and virtualize data using chart.js, also see country confirmed & recovered and deaths status.</p>
+									<p class="text-muted my-4">Build single page with chart & ability to view and virtualize data using
+										chart.js, also see country confirmed & recovered and deaths status.</p>
 									<div class="my-3 d-flex justify-content-between align-content-center align-items-center">
-										<a href="https://react-covid19-tracker.vercel.app/" class="bubbly-btn" target="_blank">live
+										<a href="https://react-covid19-tracker.vercel.app/" class="bubbly-btn" target="_blank"
+											rel='noopener'>live
 											demo</a>
 										<a href="https://github.com/Mohammed-Taysser/covid-19-tracker" class="bg-underline hovered"
-											target="_blank">github
+											target="_blank" rel='noopener'>github
 											link</a>
 									</div>
 								</div>
@@ -927,26 +869,54 @@
 							<div class="single-project nice-shadow">
 								<div class="img">
 									<img src="images/projects/bg-project-tube-info.webp" alt="tube-info project"
-										class='img-fluid rounded-top'>
+										class="img-fluid rounded-top">
 								</div>
 								<div class="content p-4 rounded">
 									<div class="d-flex justify-content-between align-items-center">
 										<a class="project-title my-3 fw-bold bg-underline h3" href="https://www.npmjs.com/package/tube-info"
-											target="_blank">tube-info</a>
+											target="_blank" rel='noopener'>tube-info</a>
 										<span class="text-muted">
-											<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-seam" viewBox="0 0 16 16">
-												<path d="M8.186 1.113a.5.5 0 0 0-.372 0L1.846 3.5l2.404.961L10.404 2l-2.218-.887zm3.564 1.426L5.596 5 8 5.961 14.154 3.5l-2.404-.961zm3.25 1.7-6.5 2.6v7.922l6.5-2.6V4.24zM7.5 14.762V6.838L1 4.239v7.923l6.5 2.6zM7.443.184a1.5 1.5 0 0 1 1.114 0l7.129 2.852A.5.5 0 0 1 16 3.5v8.662a1 1 0 0 1-.629.928l-7.185 2.874a.5.5 0 0 1-.372 0L.63 13.09a1 1 0 0 1-.63-.928V3.5a.5.5 0 0 1 .314-.464L7.443.184z"/>
-											</svg>
+											<img src="images/icons/svg/package.svg" alt="package" />
 											<small>package</small>
 										</span>
 									</div>
 									<hr>
-									<p class="text-muted my-4">Node.js command line app for exporting video/playlist data from a YouTube to a JSON/CSV file with extra features..</p>
+									<p class="text-muted my-4">Node.js command line app for exporting video/playlist data from a YouTube
+										to a JSON/CSV file with extra features.</p>
 									<div class="my-3 d-flex justify-content-between align-content-center align-items-center">
-										<a href="https://www.npmjs.com/package/tube-info" class="bubbly-btn" target="_blank">live
+										<a href="https://www.npmjs.com/package/tube-info" class="bubbly-btn" target="_blank"
+											rel='noopener'>live
 											demo</a>
-										<a href="https://github.com/Mohammed-Taysser/tube-info" class="bg-underline hovered"
-											target="_blank">github
+										<a href="https://github.com/Mohammed-Taysser/tube-info" class="bg-underline hovered" target="_blank"
+											rel='noopener'>github
+											link</a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-xg-3 col-lg-4 col-md-6 my-3 mix typescript-project" data-order="17">
+							<div class="single-project nice-shadow">
+								<div class="img">
+									<img src="images/projects/bg-project-js-pmq.webp" alt="js-pmq project" class="img-fluid rounded-top">
+								</div>
+								<div class="content p-4 rounded">
+									<div class="d-flex justify-content-between align-items-center">
+										<a class="project-title my-3 fw-bold bg-underline h3" href="https://www.npmjs.com/package/js-pmq"
+											target="_blank" rel='noopener'>js-pmq</a>
+										<span class="text-muted">
+											<img src="images/icons/svg/package.svg" alt="package" />
+											<small>package</small>
+										</span>
+									</div>
+									<hr>
+									<p class="text-muted my-4">A simple NPM package to get popular movie quotes.</p>
+									<div class="my-3 d-flex justify-content-between align-content-center align-items-center">
+										<a href="https://www.npmjs.com/package/js-pmq" class="bubbly-btn" target="_blank"
+											rel='noopener'>live
+											demo</a>
+										<a href="https://github.com/Mohammed-Taysser/pmq" class="bg-underline hovered" target="_blank"
+											rel='noopener'>github
 											link</a>
 									</div>
 								</div>
@@ -972,18 +942,12 @@
 		<footer class="py-4 nice-shadow text-center text-muted">
 			<div class="container">
 				Copyright © 2021-<span id="js-current-year">000</span> All rights reserved |
-				<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
-					class="bi code bi-code-slash text-aurora" viewBox="0 0 16 16">
-					<path
-						d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z" />
-				</svg>
+				<img src="images/icons/svg/code.svg" alt="code" />
 				with
-				<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-heart-fill"
-					viewBox="0 0 16 16">
-					<path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
-				</svg>
+				<img src="images/icons/svg/heart.svg" class="heart" alt="heart" />
 
-				by <a href="https://github.com/Mohammed-Taysser" class="bg-underline" target="_blank">Mohammed Taysser</a>
+				by <a href="https://github.com/Mohammed-Taysser" class="bg-underline" target="_blank" rel='noopener'>Mohammed
+					Taysser</a>
 			</div>
 		</footer>
 
