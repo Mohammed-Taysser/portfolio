@@ -2,15 +2,11 @@
 
 Portfolio Of My Project, Skills And More.
 
-## TODO's
-
-- Skills Logo (Find More Beautiful Or Make The Mall One Image)
-
 ## Misc
 
 ### Compile Scss file
 
-`**!important**`: You must pre install sass compiler first 🤔.
+`!important`: You must pre install sass compiler first 🤔.
 
 you don't know how to install sass. see [`sass-lang`](https://sass-lang.com/install) documentation for more details.
 
