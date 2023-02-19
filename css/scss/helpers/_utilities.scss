@@ -12,7 +12,7 @@
 
 body {
 	font-family: Montserrat, sans-serif;
-	text-transform: capitalize;
+	transition: 0.4s;
 	position: relative;
 }
 
@@ -172,7 +172,6 @@ a.bg-underline {
 	text-transform: uppercase;
 	overflow: hidden;
 	transition: 0.5s;
-	margin-top: 40px;
 	letter-spacing: 4px;
 
 	&:hover {
@@ -391,15 +390,14 @@ a.bg-underline {
 		z-index: -1;
 		position: absolute;
 		border-radius: 50%;
-		-webkit-animation-timing-function: linear;
-		animation-timing-function: linear;
-		-webkit-animation: 10s infinite;
-		animation: 10s infinite;
+		-webkit-animation: 10s infinite linear;
+		        animation: 10s infinite linear;
 		border: 0;
 		background-color: $main-color;
 
 		&.circle-1 {
-			@include square(500px);
+			width: 500px;
+			height: 500px;
 			opacity: 0.3;
 			bottom: -254px;
 			left: -255px;
@@ -407,7 +405,8 @@ a.bg-underline {
 			animation-name: circle-animation-1;
 		}
 		&.circle-2 {
-			@include square(120px);
+			height: 120px;
+			width: 120px;
 			opacity: 0.5;
 			bottom: 214px;
 			left: -69px;
@@ -415,7 +414,8 @@ a.bg-underline {
 			animation-name: circle-animation-2;
 		}
 		&.circle-3 {
-			@include square(30px);
+			width: 30px;
+			height: 30px;
 			opacity: 0.6;
 			bottom: 245px;
 			left: 108px;
@@ -423,7 +423,8 @@ a.bg-underline {
 			animation-name: circle-animation-3;
 		}
 		&.circle-4 {
-			@include square(220px);
+			height: 220px;
+			width: 220px;
 			background-color: transparent;
 			border: solid 2px $main-color;
 			opacity: 0.6;
@@ -433,7 +434,8 @@ a.bg-underline {
 			animation-name: circle-animation-3;
 		}
 		&.circle-5 {
-			@include square(50px);
+			height: 50px;
+			width: 50px;
 			opacity: 0.5;
 			bottom: 30px;
 			left: 298px;
@@ -441,7 +443,8 @@ a.bg-underline {
 			animation-name: circle-animation-2;
 		}
 		&.circle-6 {
-			@include square(300px);
+			height: 300px;
+			width: 300px;
 			background-color: transparent;
 			border: solid 2px $main-color;
 			opacity: 0.6;
@@ -451,7 +454,8 @@ a.bg-underline {
 			animation-name: circle-animation-3;
 		}
 		&.circle-7 {
-			@include square(165px);
+			width: 165px;
+			height: 165px;
 			opacity: 0.45;
 			top: 71px;
 			right: -106px;
@@ -459,7 +463,8 @@ a.bg-underline {
 			animation-name: circle-animation-1;
 		}
 		&.circle-8 {
-			@include square(20px);
+			height: 20px;
+			width: 20px;
 			opacity: 0.7;
 			top: 183px;
 			right: 78px;
