@@ -36,6 +36,10 @@ document.addEventListener('DOMContentLoaded', function () {
 	}
 
 	// Libraries
+	[].slice
+		.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+		.map((tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl));
+
 	animateOnScroll();
 
 	mixitup('#js-mixitup-container-id');
