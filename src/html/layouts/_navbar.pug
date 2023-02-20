@@ -1,0 +1,40 @@
+nav#js-navbar-tabs-id.navbar.navbar-expand-md.navbar-light.bg-light.py-2.nice-shadow.fixed-top
+  .container
+    a.navbar-brand(href='#home' title='homepage')
+      img(src='images/icons/favicon.png' alt='favicon' width='70px' height='70px')
+    button.navbar-toggler.p-0.border-0(type='button' data-bs-toggle='collapse' data-bs-target='#main-navbar-id' aria-controls='main-navbar-id' aria-expanded='false' aria-label='Toggle navigation')
+      svg.hamburger-svg(viewbox='0 0 100 100' width='60' onclick="this.classList.toggle('active')")
+        path.line.top(d='m 70,33 h -40 c 0,0 -8.5,-0.149796 -8.5,8.5 0,8.649796 8.5,8.5 8.5,8.5 h 20 v -20')
+        path.line.middle(d='m 70,50 h -40')
+        path.line.bottom(d='m 30,67 h 40 c 0,0 8.5,0.149796 8.5,-8.5 0,-8.649796 -8.5,-8.5 -8.5,-8.5 h -20 v 20')
+    #main-navbar-id.collapse.navbar-collapse
+      ul.navbar-nav.ms-auto.my-2.my-lg-0.align-items-center
+        li.nav-item
+          a.nav-link(href='#home' title='Home') Home
+        li.nav-item
+          a.nav-link(href='#about' title='About') About
+        li.nav-item
+          a.nav-link(href='#skills' title='Skills') Skills
+        li.nav-item
+          a.nav-link(href='#projects' title='Projects') Projects
+        li.nav-item
+          #theme-toggle.dark-mode-container(data-tooltip='toggle dark/light mode')
+            svg#theme-toggle-light-icon.sun(viewbox='0 0 24 24')
+              g.lines
+                line(x1='1' y1='12' x2='2' y2='12')
+                line(x1='4.2' y1='4.2' x2='4.9' y2='4.9')
+                line(x1='12' y1='1' x2='12' y2='2')
+                line(x1='19.8' y1='4.2' x2='19.1' y2='4.9')
+                line(x1='23' y1='12' x2='22' y2='12')
+                line(x1='19.8' y1='19.8' x2='19.1' y2='19.1')
+                line(x1='12' y1='23' x2='12' y2='22')
+                line(x1='4.2' y1='19.8' x2='4.9' y2='19.1')
+              circle(cx='12' cy='12' r='6')
+            svg#theme-toggle-dark-icon.moon(viewbox='0 0 24 24')
+              path(d='M18,16C12.5,16,8,11.5,8,6 c0-0.9,0.1-1.8,0.4-2.6C4.1,4.5,1,8.4,1,13c0,5.5,4.5,10,10,10c4.6,0,8.5-3.1,9.6-7.4C19.8,15.9,18.9,16,18,16z')
+              g.star-1
+                line(x1='15' y1='1' x2='15' y2='5')
+                line(x1='13' y1='3' x2='17' y2='3')
+              g.star-2
+                line(x1='21' y1='7' x2='21' y2='11')
+                line(x1='19' y1='9' x2='23' y2='9')

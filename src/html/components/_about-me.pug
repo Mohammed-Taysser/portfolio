@@ -1,0 +1,77 @@
+- 
+	const KNOWLEDGE = [
+		{
+			title: 'Creative',
+			subtitle: 'Websites Design',
+		},
+		{
+			title: 'Proficient',
+			subtitle: 'in Frontend Development',
+		},
+		{
+			title: 'Software',
+			subtitle: 'Development Fundamentals',
+		},
+		{
+			title: 'SEO',
+			subtitle: 'Optimization Knowledge',
+		},
+		{
+			title: 'Responsive',
+			subtitle: 'and mobile-ready',
+		},
+		{
+			title: 'Full-stack',
+			subtitle: 'web apps',
+		},
+		{
+			title: 'Authentication',
+			subtitle: 'and API Integration',
+		},
+		{
+			title: 'W3C',
+			subtitle: 'validated coding',
+		},
+	]
+
+section#about.my-5.py-5.about-me-section
+	.shapes
+		img.networking-shape(src='images/icons/about-shape.svg' alt='points-shape')
+	.container
+		.row
+			.col-md-6.my-3.order-2.order-md-1
+				.about-me.py-5.ps-md-5
+					.shapes
+						img.points-shape(src='images/icons/points.webp' alt='points-shape')
+						img.wave-shape(src='images/icons/wave.webp' alt='wave-shape')
+					.ratio.ratio-1x1
+						img.img-fluid(src='images/icons/about-me.webp' alt='about-us' data-aos='fade-up')
+			.col-md-6.my-5.my-md-3.order-1.order-md-2
+				.wrapper(data-aos='fade-down')
+					h2.header-with-point.lead.text-aurora(data-text='Knowledge') About me
+					p.text-muted.mt-5.lead
+						| I&apos;am mohamed taysser, Frontend web developer.
+						| Well-versed in
+						| great number of languages and tools including HTML5,
+						| CSS3,
+						| JavaScript, Python, SQL and More. Very good background in web layout and principles. Interesting
+						| on
+						| writing secure and clean code. Seek to learn more and more about today technology.
+					ul.list-unstyled.tech-feature-list.mt-3
+						each item, index in KNOWLEDGE
+							li.py-1(data-aos='fade-up' data-aos-delay= (index+1) * 300 )
+								span.icon.icon-xs.mr-2.text-aurora
+									svg.me-2.bi.bi-check2-all(xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='#e80566' viewbox='0 0 16 16')
+										path(d='M12.354 4.354a.5.5 0 0 0-.708-.708L5 10.293 1.854 7.146a.5.5 0 1 0-.708.708l3.5 3.5a.5.5 0 0 0 .708 0l7-7zm-4.208 7-.896-.897.707-.707.543.543 6.646-6.647a.5.5 0 0 1 .708.708l-7 7a.5.5 0 0 1-.708 0z')
+										path(d='m5.354 7.146.896.897-.707.707-.897-.896a.5.5 0 1 1 .708-.708z')
+								strong=item.title
+								|  #{item.subtitle}
+						
+					.mt-3.d-md-flex.align-items-center
+						a.runner-btn(href='https://github.com/Mohammed-Taysser')
+							span
+							span
+							span
+							span
+							| &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Continue Reading <i class="fa-solid fa-angles-right"></i>
+						a.bubbly-btn.mx-md-2.mt-3.mt-md-0(href='https://drive.google.com/file/d/1p6dy_uU1lv6ymVqFgHs03m8aDopRvDHQ/view?usp=sharing' target='_blank' rel='noopener' download='') Download CV
