@@ -2,6 +2,12 @@
 
 Portfolio Of My Project, Skills And More.
 
+## Features
+
+- No jQuery require
+- Minify both html, css and javascript
+- build with PWA in mind
+
 ## Misc
 
 ### Compile Scss file
