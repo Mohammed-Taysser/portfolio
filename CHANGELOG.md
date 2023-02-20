@@ -3,7 +3,28 @@
 
 ## TODO
 
+- [ ] update images
+- [ ] add contact section
+- [ ] add Qualifications section Education & Work Experience as timeline (date - title - info)
+- [ ] use masonry for project
+
 ## History
+
+### 20 Feb 2023
+
+- update project taps
+- update paperCuts server project image
+- add favicon to navbar
+- separate skills to tools & learning and frontend & backend
+- update paperCuts-server project live demo
+- Minify html & css & javascript
+- test with lighthouse
+- add project highlight tools
+- replace image with font-awesome to reduce quota
+- use pug.js for save effort and non-repeat
+- add [`shareme`](https://shareme-psi.vercel.app/) project
+- add [`tline`](https://www.npmjs.com/package/tline) project
+- replace navbar brand with favicon
 
 ### 7 Jan 2023
 
