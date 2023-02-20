@@ -3,13 +3,22 @@
 	"version": "1.0.1",
 	"description": "portfolio for my projects",
 	"scripts": {
-		"start": "sass -w -s compressed css/style.scss css/style.min.css ",
-		"lint": "eslint ."
+		"start": "sass -w -s compressed src/scss/style.scss css/style.min.css & pug -w src/html/pages/index.pug -o .",
+		"lint": "eslint .",
+		"minify:js": "uglifyjs src/js/script.js -o js/script.min.js -c --source-map --verbose --warn --v8 --webkit --ie",
+		"minify:image:skills":"imagemin src/images/skills -o images/skills",
+		"minify:image:projects":"imagemin src/images/projects -o images/projects",
+		"minify:image:icons":"imagemin src/images/icons -o images/icons",
+		"minify:image:background":"imagemin src/images/background -o images/background"
 	},
-	"author": "",
+	"author": "Mohammed Taysser",
 	"license": "MIT",
 	"dependencies": {
-		"sass": "^1.49.10"
+		"imagemin-cli": "^7.0.0",
+		"pug": "^3.0.2",
+		"pug-cli": "^1.0.0-alpha6",
+		"sass": "^1.49.10",
+		"uglify-js": "^3.17.4"
 	},
 	"prettier": {
 		"singleQuote": true
