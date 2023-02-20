@@ -37,7 +37,11 @@ a {
 	font-family: var(--bs-body-font-family);
 }
 
-a.bg-underline {
+.bg-underline {
+	background-color: transparent;
+	border: 0;
+	color: $main-color;
+	outline: 0;
 	background-image: linear-gradient(
 		transparent 50%,
 		rgba($main-color, 0.2) 50%
@@ -51,8 +55,10 @@ a.bg-underline {
 	&:hover {
 		background-size: 100% 100%;
 	}
+
 	&.hovered {
 		background-size: 100% 100%;
+
 		&:hover {
 			background-size: 0% 100%;
 		}
@@ -322,76 +328,13 @@ a.bg-underline {
 	}
 }
 
-.skew-btn {
-	text-transform: uppercase;
-	text-decoration: none;
-	text-align: center;
-	display: inline-block;
-	background-color: transparent;
-	padding: 12px 32px 10px;
-	font-weight: 700;
-	transition: 0.35s ease;
-	color: $main-color;
-	min-width: 140px;
-	border: 2px solid $main-color;
-	box-sizing: border-box;
-	border-radius: 0;
-	letter-spacing: 0.1em;
-	z-index: 2;
-	overflow: hidden;
-	position: relative;
-
-	span {
-		position: relative;
-		z-index: 1;
-	}
-
-	&::before {
-		content: '';
-		position: absolute;
-		width: 0;
-		height: 100%;
-		z-index: -1;
-		top: 0;
-		left: 50%;
-		transition: 0.35s ease;
-		background-color: $main-color;
-		transform: translate(-50%, 0) skew(25deg);
-		background-image: $main-color;
-	}
-
-	&:hover {
-		color: #fff;
-
-		&::before {
-			width: 150%;
-		}
-	}
-
-	&.skew,
-	&.mixitup-control-active {
-		color: #fff;
-
-		&::before {
-			width: 150%;
-		}
-
-		&:hover {
-			color: $main-color;
-			&::before {
-				width: 0;
-			}
-		}
-	}
-}
-
 .circle-animation {
 	.circle {
 		z-index: -1;
 		position: absolute;
 		border-radius: 50%;
 		-webkit-animation: 10s infinite linear;
-		        animation: 10s infinite linear;
+		animation: 10s infinite linear;
 		border: 0;
 		background-color: $main-color;
 
@@ -478,6 +421,7 @@ a.bg-underline {
 	position: fixed;
 	bottom: 30px;
 	right: 30px;
+	border-radius: 50%;
 	z-index: 100;
 	color: #fff;
 	width: 40px;

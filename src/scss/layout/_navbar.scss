@@ -40,7 +40,7 @@ nav.navbar {
 			&:focus,
 			&:hover {
 				color: $main-color;
-				background-color: rgba($main-color, 0.1);
+				// background-color: rgba($main-color, 0.1);
 				border-radius: 20px;
 
 				&::before {
@@ -62,7 +62,10 @@ nav.navbar {
 	.hamburger-svg {
 		cursor: pointer;
 		transition: transform 400ms;
-		user-select: none;
+		-webkit-user-select: none;
+		   -moz-user-select: none;
+		    -ms-user-select: none;
+		        user-select: none;
 
 		&.active {
 			transform: rotate(45deg);
