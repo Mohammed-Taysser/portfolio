@@ -3,12 +3,18 @@
 
 ## TODO
 
-- [ ] update images
 - [ ] add contact section
 - [ ] add Qualifications section Education & Work Experience as timeline (date - title - info)
 - [ ] use masonry for project
+- [ ] find suitable design for skills section
 
 ## History
+
+### 24 Mar 2023
+
+- add blog section
+- refactor projects page
+- add [`cryptoverse`](https://cryptoverse-in-react.vercel.app/) project
 
 ### 20 Feb 2023
 
