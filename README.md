@@ -6,7 +6,8 @@ Portfolio Of My Project, Skills And More.
 
 - No jQuery require
 - Minify both html, css and javascript
-- build with PWA in mind
+- Build with PWA in mind
+- Fully responsive with Modern Design
 
 ## Misc
 
@@ -28,7 +29,7 @@ sass -w -s compressed css/style.scss css/style.min.css
 2. Create your feature branch: git checkout -b featureName
 3. Commit your changes: git commit -am 'Some commit message'
 4. Push to the branch: git push origin featureName
-5. Submit a pull request 😉😉
+5. Submit a pull request 😉
 
 ## License 📜
 
