@@ -1,6 +1,6 @@
 {
 	"short_name": "portfolio",
-	"name": "my portfolio",
+	"name": "My Portfolio",
 	"dir": "ltl",
 	"lang": "en",
 	"scope": "/",
@@ -37,6 +37,7 @@
 		"portfolio",
 		"frontend",
 		"Projects",
-		"Skills"
+		"Skills",
+		"Blogs"
 	]
 }

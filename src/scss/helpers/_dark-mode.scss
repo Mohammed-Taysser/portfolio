@@ -23,8 +23,9 @@ body.dark {
 		}
 	}
 
-	.my-projects {
-		.single-project {
+	.my-projects,
+	.my-blogs {
+		.single-item {
 			background-color: rgba(44, 49, 68, 0.678);
 		}
 	}

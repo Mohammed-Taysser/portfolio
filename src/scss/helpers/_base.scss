@@ -49,21 +49,21 @@ header {
 	}
 }
 
-.my-projects {
-
+.my-projects,
+.my-blogs {
 	.filter-buttons-container {
 		display: flex;
 		justify-content: center;
 		flex-wrap: wrap;
 
-		.bg-underline {	
+		.bg-underline {
 			&.mixitup-control-active {
 				background-size: 100% 100%;
 			}
 		}
 	}
 
-	.single-project {
+	.single-item {
 		height: 100%;
 		background-color: #fff;
 		z-index: 1;
