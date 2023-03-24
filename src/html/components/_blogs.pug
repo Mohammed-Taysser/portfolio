@@ -1,0 +1,31 @@
+- 
+	const FEEDS = [
+		{
+			title: 'How To Make Your Own NPM Package ',
+			info: 'Publishing a NPM package is actually simple, for this tutorial I used a simple example with more complex topics, you can make them as complex as you see fit. Don\'t forget to add test for the package.', 
+			img: 'images/blogs/how-to-make-your-own-npm-package.webp',
+			url: 'https://dev.to/mohammedtaysser/how-to-make-your-own-npm-package-4dm2',
+		},
+
+	]
+
+
+section#blogs.my-blogs.py-5.overflow-hidden.position-relative
+	.container.my-5
+		h2.header-with-point.text-center(data-text='Feeds') My Blogs
+		.row.justify-content-center.align-items-stretch.mt-5
+			each feed, index in FEEDS
+				div( class=`col-xg-3 col-lg-4 col-md-6 my-3 mix ${feed.filter}` data-order=index)
+					.single-item.nice-shadow
+						.img
+							img.img-fluid.rounded-top(src=feed.img alt=feed.title)
+						.content.p-4.rounded
+							a.item-title.my-3.fw-bold.hovered.bg-underline.h3(href=feed.url target='_blank' rel='noopener')=feed.title
+							p.text-muted.my-4=feed.info
+
+
+	.circle-animation
+		.circle.circle-1
+		.circle.circle-2
+		.circle.circle-3
+		.circle.circle-4
