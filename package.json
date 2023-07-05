@@ -1,37 +1,28 @@
 {
-	"name": "portfolio",
-	"version": "1.0.1",
-	"description": "portfolio for my projects",
-	"scripts": {
-		"start": "sass -w -s compressed src/scss/style.scss css/style.min.css & pug -w src/html/pages/index.pug -o .",
-		"lint": "eslint .",
-		"minify:js": "uglifyjs src/js/script.js -o js/script.min.js -c --source-map --verbose --warn --v8 --webkit --ie",
-		"minify:image:skills":"imagemin src/images/skills -o images/skills",
-		"minify:image:projects":"imagemin src/images/projects -o images/projects",
-		"minify:image:icons":"imagemin src/images/icons -o images/icons",
-		"minify:image:background":"imagemin src/images/background -o images/background"
-	},
-	"author": "Mohammed Taysser",
-	"license": "MIT",
-	"dependencies": {
-		"imagemin-cli": "^7.0.0",
-		"pug": "^3.0.2",
-		"pug-cli": "^1.0.0-alpha6",
-		"sass": "^1.49.10",
-		"uglify-js": "^3.17.4"
-	},
-	"prettier": {
-		"singleQuote": true
-	},
-	"eslintConfig": {
-		"env": {
-			"browser": true,
-			"commonjs": true,
-			"es2021": true
-		},
-		"extends": "eslint:recommended",
-		"parserOptions": {
-			"ecmaVersion": "latest"
-		}
-	}
+  "name": "portfolio",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.37",
+    "@types/react-dom": "^18.0.11",
+    "@typescript-eslint/eslint-plugin": "^5.59.0",
+    "@typescript-eslint/parser": "^5.59.0",
+    "@vitejs/plugin-react": "^4.0.0",
+    "eslint": "^8.38.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.3.4",
+    "typescript": "^5.0.2",
+    "vite": "^4.3.9"
+  }
 }
