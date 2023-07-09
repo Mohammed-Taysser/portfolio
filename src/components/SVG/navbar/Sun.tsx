@@ -10,7 +10,7 @@ import { SVGProps } from 'react';
  */
 function Sun(props: SVGProps<SVGSVGElement>) {
 	return (
-		<svg className={`sun ${props.className} `} viewBox='0 0 24 24' {...props}>
+		<svg {...props} className={`sun ${props.className} `} viewBox='0 0 24 24'>
 			<g className='lines'>
 				<line x1='1' y1='12' x2='2' y2='12'></line>
 				<line x1='4.2' y1='4.2' x2='4.9' y2='4.9'></line>
