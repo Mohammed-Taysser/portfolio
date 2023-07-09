@@ -6,13 +6,13 @@ import wave from '../assets/images/icons/wave.webp';
 import { FEATURES } from '../constants/about';
 import SectionTitle from './SectionTitle';
 import CONFIG from '../constants/config';
-import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 function AboutMe() {
 	return (
 		<section className='my-5 py-5 about-me-section' id='about'>
 			<div className='shapes'>
-				<LazyLoadImage
+				<img
+					loading='lazy'
 					className='networking-shape'
 					src={aboutShape}
 					alt='points-shape'
@@ -23,19 +23,22 @@ function AboutMe() {
 					<div className='col-lg-6 my-5 order-2 order-lg-1'>
 						<div className='about-me py-5 ps-md-5'>
 							<div className='shapes'>
-								<LazyLoadImage
+								<img
+									loading='lazy'
 									className='points-shape'
 									src={points}
 									alt='points-shape'
 								/>
-								<LazyLoadImage
+								<img
+									loading='lazy'
 									className='wave-shape'
 									src={wave}
 									alt='wave-shape'
 								/>
 							</div>
 							<div className='ratio ratio-1x1'>
-								<LazyLoadImage
+								<img
+									loading='lazy'
 									className='img-fluid'
 									src={about}
 									alt='about-us'
