@@ -76,3 +76,23 @@ interface SingleFeed {
 	url: string;
 	publishAt: Date;
 }
+
+interface Skill {
+	title: string;
+	icon: IconType;
+	variant: 'frontend' | 'backend' | 'tool';
+}
+
+interface FrontendSkill extends Skill {
+	variant: 'frontend';
+}
+
+interface BackendSkill extends Skill {
+	variant: 'backend';
+}
+
+interface SkillProps {
+	icon: IconType;
+	title: string;
+	skills: Skill[];
+}
