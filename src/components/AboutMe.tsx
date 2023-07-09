@@ -43,11 +43,11 @@ function AboutMe() {
 								code. seek to learn more and more about today technology.
 							</p>
 							<ul className='list-unstyled tech-feature-list mt-4'>
-								{FEATURES.map((feature) => (
+								{FEATURES.map((feature, index) => (
 									<li
 										className='py-1'
 										data-aos='fade-up'
-										data-aos-delay='300'
+										data-aos-delay={(index + 1) * 300}
 										key={feature.title}
 									>
 										<span className='icon icon-xs me-2 text-aurora'>
