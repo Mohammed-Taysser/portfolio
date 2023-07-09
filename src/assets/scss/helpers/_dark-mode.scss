@@ -10,15 +10,27 @@ body.dark {
 		color: var(--text-color) !important;
 	}
 
+	.mobile-dropdown {
+		&::after {
+			background-color: var(--bg-color);
+		}
+
+		&:before {
+			background-color: rgba(20, 21, 26, 0.6);
+		}
+
+		.nav-content .nav-list .nav-list-item {
+			a {
+				color: #fff;
+			}
+		}
+	}
+
 	nav.navbar {
 		background-color: var(--bg-color) !important;
 
 		.hamburger-svg .line {
 			stroke: var(--text-color);
-		}
-
-		.offcanvas {
-			background-color: var(--bg-color);
 		}
 
 		.nav-item {
@@ -31,7 +43,7 @@ body.dark {
 	.my-projects,
 	.my-blogs {
 		.single-item {
-			background-color: rgba(44, 49, 68, 0.678);
+			background-color: #0b111e;
 		}
 	}
 }
