@@ -19,10 +19,6 @@ function App() {
 		// Remove loading animation after content load
 		document.body.classList.remove('load');
 
-		/* `AOS.init();` is initializing the AOS (Animate On Scroll) library. AOS is a
-		library that allows you to animate elements on your webpage as they come into
-		view when scrolling. By calling `AOS.init()`, you are initializing the library
-		and enabling the animations defined in your HTML markup. */
 		AOS.init({
 			// Global settings:
 			disable: false,
@@ -43,10 +39,6 @@ function App() {
 			anchorPlacement: 'top-bottom',
 		});
 
-		/* This code is selecting all elements in the document that have the attribute
-`			data-bs-toggle="tooltip"`. It then iterates over each selected element and
-			creates a new `Tooltip` object for each element. This is using the Bootstrap
-			library to initialize tooltips for those elements. */
 		document
 			.querySelectorAll('[data-bs-toggle="tooltip"]')
 			.forEach((element) => new Tooltip(element));
