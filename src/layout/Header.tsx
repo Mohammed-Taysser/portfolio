@@ -6,11 +6,11 @@ import CONFIG from '../constants/config';
 function Header() {
 	return (
 		<header className='hero-header' id='home'>
-			<div className='container my-md-5 py-md-5'>
-				<div className='my-md-5 py-md-5 row justify-content-center align-content-center align-items-center'>
+			<div className='container'>
+				<div className='row justify-content-center align-content-center align-items-center'>
 					<div className='col-md-7 my-3' data-aos='fade-up'>
-						<div className='mt-5 mt-md-0'>
-							<h1 className='fw-bold display-4 pt-5 pt-md-0'>
+						<div className=''>
+							<h1 className='fw-bold display-4'>
 								Hi 👋 <br /> I&apos;am{' '}
 								<span className='hovered bg-underline'>Mohammed</span>
 								<br />
@@ -58,6 +58,7 @@ function Header() {
 								className='img-fluid border-transform'
 								src={avatar}
 								alt='my avatar'
+								loading='lazy'
 								width='100%'
 								height='100%'
 							/>
