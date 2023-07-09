@@ -1,0 +1,175 @@
+.about-me-section {
+	position: relative;
+	overflow: hidden;
+
+	.about-me {
+		position: relative;
+
+		&::before {
+			content: '';
+			height: 100%;
+			width: 62%;
+			background-color: $aurora-color;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			clip-path: polygon(0 0, 70% 0%, 100% 100%, 0% 100%);
+			z-index: -1;
+			transition: all 0.3s ease-in-out;
+		}
+	}
+
+	.shapes {
+		.networking-shape {
+			right: -30px;
+			top: 50%;
+			transform: translateY(-50%);
+			position: absolute;
+			z-index: -1;
+			max-width: 100%;
+		}
+
+		.wave-shape {
+			position: absolute;
+			left: 15px;
+			bottom: 25px;
+		}
+
+		.points-shape {
+			position: absolute;
+			top: -30px;
+			left: -30px;
+		}
+	}
+}
+
+.my-projects {
+	.filter-buttons-container {
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		gap: 20px;
+
+		.bg-underline {
+			&.mixitup-control-active {
+				background-size: 100% 100%;
+			}
+		}
+	}
+
+	.single-item {
+		height: 100%;
+		background-color: #fff;
+		z-index: 1;
+		position: relative;
+
+		hr {
+			border-color: #ddd;
+			margin: 0.3rem 0;
+		}
+
+		.project-info {
+			min-height: 62px;
+			max-height: 62px;
+			display: -webkit-box;
+			-webkit-box-orient: vertical;
+			text-overflow: ellipsis;
+			-webkit-line-clamp: 3;
+			overflow: hidden;
+		}
+
+		&:hover {
+			.img img {
+				transform: scale(1.2) rotate(-10deg);
+			}
+		}
+
+		.img {
+			position: relative;
+			overflow: hidden;
+
+			img {
+				width: 100%;
+				height: 280px;
+				-o-object-fit: cover;
+				object-fit: cover;
+				transition: 0.5s;
+
+				@media (max-width: 768px) {
+					& {
+						height: 350px;
+					}
+				}
+			}
+		}
+	}
+}
+
+.my-blogs {
+	overflow: hidden;
+	position: relative;
+
+	.single-item {
+		height: 100%;
+		background-color: #fff;
+		z-index: 1;
+		position: relative;
+
+		.feed-info {
+			display: -webkit-box;
+			-webkit-box-orient: vertical;
+			text-overflow: ellipsis;
+			-webkit-line-clamp: 3;
+			overflow: hidden;
+		}
+
+		&:hover {
+			.img {
+				&::before {
+					transform: translate3d(0, 0, 0);
+				}
+				img {
+					transform: scale(1.05);
+				}
+			}
+		}
+
+		.img {
+			position: relative;
+			display: block;
+			border-top-left-radius: 10px;
+			border-top-right-radius: 10px;
+			overflow: hidden;
+			z-index: 1;
+
+			&:before {
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				content: '';
+				background-color: rgba(22, 36, 61, 0.3);
+				border-top-left-radius: 10px;
+				border-top-right-radius: 10px;
+				transition: all 500ms ease;
+				transform: translate3d(0, -100%, 0);
+				z-index: 1;
+			}
+
+			img {
+				width: 100%;
+				height: 280px;
+				-o-object-fit: cover;
+				object-fit: cover;
+				transition: 0.5s;
+
+				@media (max-width: 768px) {
+					& {
+						height: 350px;
+					}
+				}
+			}
+		}
+	}
+}
