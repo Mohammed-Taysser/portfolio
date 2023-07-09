@@ -1,5 +1,13 @@
 import { SVGProps } from 'react';
 
+/**
+ * The Moon function is a TypeScript React component that renders an SVG of a moon
+ * with two stars.
+ * @param props - The `props` parameter is an object that contains the properties
+ * passed to the `Moon` component. In this case, it is expected to be of type
+ * `SVGProps<SVGSVGElement>`, which means it should include all the properties that
+ * can be applied to an SVG element. These properties
+ */
 function Moon(props: SVGProps<SVGSVGElement>) {
 	return (
 		<svg className={`moon ${props.className}`} viewBox='0 0 24 24' {...props}>
@@ -15,5 +23,9 @@ function Moon(props: SVGProps<SVGSVGElement>) {
 		</svg>
 	);
 }
+
+Moon.defaultProps = {
+	className: '',
+};
 
 export default Moon;

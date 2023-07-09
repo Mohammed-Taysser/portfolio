@@ -1,5 +1,13 @@
 import { SVGProps } from 'react';
 
+/**
+ * The Sun component is a SVG element that represents a sun with lines radiating
+ * from it.
+ * @param props - The props parameter is an object that contains the properties
+ * passed to the Sun component. In this case, it is expected to be of type
+ * SVGProps<SVGSVGElement>, which means it should contain all the properties that
+ * can be applied to an SVG element.
+ */
 function Sun(props: SVGProps<SVGSVGElement>) {
 	return (
 		<svg className={`sun ${props.className} `} viewBox='0 0 24 24' {...props}>
@@ -17,5 +25,9 @@ function Sun(props: SVGProps<SVGSVGElement>) {
 		</svg>
 	);
 }
+
+Sun.defaultProps = {
+	className: '',
+};
 
 export default Sun;

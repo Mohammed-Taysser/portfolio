@@ -1,5 +1,13 @@
 import { SVGProps } from 'react';
 
+/**
+ * The Hamburger function is a React component that renders an SVG element
+ * representing a hamburger menu icon.
+ * @param props - The "props" parameter is an object that contains the properties
+ * passed to the Hamburger component. It is of type SVGProps<SVGSVGElement>, which
+ * means it is an object that can accept any valid SVG attributes and event
+ * handlers for an SVG element.
+ */
 function Hamburger(props: SVGProps<SVGSVGElement>) {
 	return (
 		<svg
@@ -20,5 +28,9 @@ function Hamburger(props: SVGProps<SVGSVGElement>) {
 		</svg>
 	);
 }
+
+Hamburger.defaultProps = {
+	className: '',
+};
 
 export default Hamburger;
