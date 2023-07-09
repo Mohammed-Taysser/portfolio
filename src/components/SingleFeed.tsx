@@ -1,8 +1,10 @@
+import { LazyLoadImage } from "react-lazy-load-image-component";
+
 function SingleFeed(props: { feed: SingleFeed }) {
 	return (
 		<div className='single-item nice-shadow'>
 			<div className='img'>
-				<img
+				<LazyLoadImage
 					className='img-fluid rounded-top'
 					src={props.feed.img}
 					alt={props.feed.title}

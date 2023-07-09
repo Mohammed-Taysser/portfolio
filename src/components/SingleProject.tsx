@@ -1,10 +1,11 @@
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 import { TAGS } from '../constants/projects';
 
 function SingleProject(props: { project: SingleProject }) {
 	return (
 		<div className='single-item nice-shadow'>
 			<div className='img'>
-				<img
+				<LazyLoadImage
 					className='img-fluid rounded-top'
 					src={props.project.img}
 					alt={props.project.title}
