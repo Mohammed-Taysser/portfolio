@@ -1,17 +1,18 @@
+import AOS from 'aos';
 import { Tooltip } from 'bootstrap';
 import { useEffect } from 'react';
-import AOS from 'aos';
 import AboutMe from '../components/AboutMe';
 import BackToTop from '../components/BackToTop';
 import Feed from '../components/Feed';
 import Projects from '../components/Projects';
+import Skills from '../components/Skills';
 import { ThemeProvider } from '../context/theme';
 import Footer from '../layout/Footer';
 import Header from '../layout/Header';
 import Navbar from '../layout/Navbar';
 
-import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import 'aos/dist/aos.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import '../assets/scss/style.scss';
 
 function App() {
@@ -50,6 +51,7 @@ function App() {
 			<BackToTop />
 			<Header />
 			<AboutMe />
+			<Skills />
 			<Projects />
 			<Feed />
 			<Footer />
