@@ -1,18 +1,19 @@
 import mixitup from 'mixitup';
-import { useEffect } from 'react';
+import { useEffect, useRef } from 'react';
 import { FILTERS, PROJECTS } from '../constants/projects';
 import SingleProject from './SingleProject';
 import SectionTitle from './SectionTitle';
 
 function Projects() {
+	const filterRef = useRef(null)
 	useEffect(() => {
 		// initializing the MixItUp library on the element with the id `js-mixitup-container-id`.
-		mixitup('#js-mixitup-container-id');
+		mixitup(filterRef.current);
 	}, []);
 
 	return (
 		<section className='my-projects py-5' id='projects'>
-			<div className='container my-5' id='js-mixitup-container-id'>
+			<div className='container my-5' ref={filterRef}>
 				<SectionTitle center subtitle='Projects' title='My Projects' />
 				<div className='my-5 pt-5'>
 					<div className='filter-buttons-container'>
