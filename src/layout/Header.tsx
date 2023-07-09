@@ -2,7 +2,6 @@ import { BsEnvelopeAt, BsGithub } from 'react-icons/bs';
 import { FiLinkedin } from 'react-icons/fi';
 import avatar from '../assets/images/icons/avatar.webp';
 import CONFIG from '../constants/config';
-import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 function Header() {
 	return (
@@ -15,7 +14,7 @@ function Header() {
 								Hi 👋 <br /> I&apos;am{' '}
 								<span className='hovered bg-underline'>Mohammed</span>
 								<br />
-								<span>Web Developer</span>
+								<span>Frontend Developer</span>
 							</h1>
 							<div className='row px-0 mt-3 g-1'>
 								<div className='col-auto'>
@@ -55,12 +54,13 @@ function Header() {
 					</div>
 					<div className='col-md-5 my-3' data-aos='fade-down'>
 						<div className='image'>
-							<LazyLoadImage
+							<img
 								className='img-fluid border-transform'
 								src={avatar}
 								alt='my avatar'
 								width='100%'
 								height='100%'
+								loading='lazy'
 							/>
 						</div>
 					</div>
