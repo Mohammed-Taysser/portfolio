@@ -16,7 +16,7 @@ function SingleSkill(props: SkillProps) {
 						title={skill.title}
 						aria-label={skill.title}
 					>
-						{skill.icon}
+						<skill.icon.name {...skill.icon.props} size='3rem' />
 					</div>
 				))}
 			</div>

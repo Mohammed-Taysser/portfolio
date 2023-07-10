@@ -1,122 +1,24 @@
-import cryptoverse from '../assets/images/projects/bg-project-cryptoverse.webp';
-import driller from '../assets/images/projects/bg-project-driller.webp';
-import shareme from '../assets/images/projects/bg-project-shareme.webp';
-import tline from '../assets/images/projects/bg-project-tline.webp';
-import pmq from '../assets/images/projects/bg-project-js-pmq.webp';
-import sadat from '../assets/images/projects/bg-project-sadat.webp';
-import scandiweb from '../assets/images/projects/bg-project-scandiweb.webp';
-import paperCuts from '../assets/images/projects/bg-project-paperCuts.webp';
-import tubeInfo from '../assets/images/projects/bg-project-tube-info.webp';
-import paperCutsServer from '../assets/images/projects/bg-project-paperCuts-server.webp';
-import gutenberry from '../assets/images/projects/bg-project-gutenberry.webp';
-import djMusic from '../assets/images/projects/bg-project-dj-music.webp';
-import vezeeta from '../assets/images/projects/bg-project-vezeeta.webp';
-import techmag from '../assets/images/projects/bg-project-techmag.webp';
-import yassen from '../assets/images/projects/bg-project-yassen.webp';
 import atom from '../assets/images/projects/bg-project-atom.webp';
 import axit from '../assets/images/projects/bg-project-axit.webp';
+import covid19Tracker from '../assets/images/projects/bg-project-covid-19-tracker.webp';
+import cryptoverse from '../assets/images/projects/bg-project-cryptoverse.webp';
+import djMusic from '../assets/images/projects/bg-project-dj-music.webp';
+import driller from '../assets/images/projects/bg-project-driller.webp';
 import eliteCorp from '../assets/images/projects/bg-project-elite-corp.webp';
 import expenseTraker from '../assets/images/projects/bg-project-expense-traker.webp';
 import goog from '../assets/images/projects/bg-project-goog.webp';
-import covid19Tracker from '../assets/images/projects/bg-project-covid-19-tracker.webp';
-
-import {
-	FaBootstrap,
-	FaGulp,
-	FaNodeJs,
-	FaNpm,
-	FaReact,
-	FaSass,
-} from 'react-icons/fa';
-import {
-	SiAntdesign,
-	SiBulma,
-	SiExpress,
-	SiGraphql,
-	SiJsonwebtokens,
-	SiMongodb,
-	SiMui,
-	SiPug,
-	SiRedux,
-	SiTailwindcss,
-	SiTypescript,
-} from 'react-icons/si';
-
-/* The `TAGS` constant is an object that defines various tags used in the project.
-Each tag has a title and an icon associated with it. The title represents the
-name of the tag, while the icon is a React component that displays an icon
-related to the tag. These tags are used to categorize and filter the projects in
-the `PROJECTS` array. */
-const TAGS: Tags = {
-	react: {
-		title: 'React.Js',
-		icon: <FaReact size='1.5rem' fill='#61dafb' />,
-	},
-	npm: {
-		title: 'Npm',
-		icon: <FaNpm size='1.5rem' fill='#cb3837' />,
-	},
-	typescript: {
-		title: 'Typescript',
-		icon: <SiTypescript size='1.5rem' fill='#007acc' />,
-	},
-	nodejs: {
-		title: 'Node.Js',
-		icon: <FaNodeJs size='1.5rem' fill='#83cd29' />,
-	},
-	mongodb: {
-		title: 'MongoDB',
-		icon: <SiMongodb size='1.5rem' fill='#439934' />,
-	},
-	bootstrap: {
-		title: 'Bootstrap',
-		icon: <FaBootstrap size='1.5rem' fill='#7952b3' />,
-	},
-	gulp: {
-		title: 'Gulp.Js',
-		icon: <FaGulp size='1.5rem' fill='#de4749' />,
-	},
-	bulma: {
-		title: 'Bulma',
-		icon: <SiBulma size='1.5rem' fill='#00d1b2' />,
-	},
-	graphql: {
-		title: 'GraphQL',
-		icon: <SiGraphql size='1.5rem' fill='#e434aa' />,
-	},
-	express: {
-		title: 'Express.Js',
-		icon: <SiExpress size='1.5rem' fill='#404040' />,
-	},
-	redux: {
-		title: 'Redux',
-		icon: <SiRedux size='1.5rem' fill='#764abc' />,
-	},
-	sass: {
-		title: 'Sass',
-		icon: <FaSass size='1.5rem' fill='#ce6f9f' />,
-	},
-	tailwindcss: {
-		title: 'Tailwind CSS',
-		icon: <SiTailwindcss size='1.5rem' fill='#38b2ac' />,
-	},
-	pug: {
-		title: 'Pug.Js',
-		icon: <SiPug size='1.5rem' fill='#56332b' />,
-	},
-	materialui: {
-		title: 'Material UI',
-		icon: <SiMui size='1.5rem' fill='#1c7fb6' />,
-	},
-	jwt: {
-		title: 'JWT',
-		icon: <SiJsonwebtokens size='1.5rem' fill='#fd6fa2' />,
-	},
-	'ant.design': {
-		title: 'Ant Design',
-		icon: <SiAntdesign size='1.5rem' fill='#0d6fff' />,
-	},
-};
+import gutenberry from '../assets/images/projects/bg-project-gutenberry.webp';
+import pmq from '../assets/images/projects/bg-project-js-pmq.webp';
+import paperCutsServer from '../assets/images/projects/bg-project-paperCuts-server.webp';
+import paperCuts from '../assets/images/projects/bg-project-paperCuts.webp';
+import sadat from '../assets/images/projects/bg-project-sadat.webp';
+import scandiweb from '../assets/images/projects/bg-project-scandiweb.webp';
+import shareme from '../assets/images/projects/bg-project-shareme.webp';
+import techmag from '../assets/images/projects/bg-project-techmag.webp';
+import tline from '../assets/images/projects/bg-project-tline.webp';
+import tubeInfo from '../assets/images/projects/bg-project-tube-info.webp';
+import vezeeta from '../assets/images/projects/bg-project-vezeeta.webp';
+import yassen from '../assets/images/projects/bg-project-yassen.webp';
 
 const FILTERS: FilterConstant = {
 	react: {
@@ -137,11 +39,6 @@ const FILTERS: FilterConstant = {
 	},
 };
 
-/* The above code is defining an array of objects called `PROJECTS`. Each object
-represents a single project and contains information such as the project title,
-description, image, URLs (GitHub and demo), tags, and filters. The `PROJECTS`
-array is used to store multiple projects and can be used to display and filter
-projects in a React application. */
 const PROJECTS: SingleProject[] = [
 	{
 		title: 'Cryptoverse',
@@ -375,4 +272,4 @@ const PROJECTS: SingleProject[] = [
 	},
 ];
 
-export { PROJECTS, TAGS, FILTERS };
+export { FILTERS, PROJECTS };

@@ -15,34 +15,6 @@ type MixItUpProjectFilter =
 	| 'bootstrap-project'
 	| 'other-project';
 
-type ProjectTags =
-	| 'react'
-	| 'tailwindcss'
-	| 'ant.design'
-	| 'typescript'
-	| 'redux'
-	| 'bootstrap'
-	| 'npm'
-	| 'sass'
-	| 'nodejs'
-	| 'pug'
-	| 'graphql'
-	| 'express'
-	| 'mongodb'
-	| 'jwt'
-	| 'gulp'
-	| 'bulma'
-	| 'materialui';
-
-interface SingleTag {
-	title: string;
-	icon: IconType;
-}
-
-type Tags = {
-	[key in ProjectTags]: SingleTag;
-};
-
 interface SingleProject {
 	title: string;
 	info: string;
@@ -79,6 +51,7 @@ interface SingleFeed {
 
 interface Skill {
 	title: string;
+	slug: string;
 	icon: IconType;
 	variant: 'frontend' | 'backend' | 'tool';
 }

@@ -1,4 +1,4 @@
-import { TAGS } from '../constants/projects';
+import { LANGUAGES } from '../constants';
 
 function SingleProject(props: { project: SingleProject }) {
 	return (
@@ -21,19 +21,25 @@ function SingleProject(props: { project: SingleProject }) {
 					{props.project.title}
 				</a>
 				<div className='row px-0 align-items-center mt-3 mb-2'>
-					{props.project.tags.map((tag) => (
-						<div className='col-auto' key={tag}>
-							<span
-								data-bs-toggle='tooltip'
-								role='tooltip'
-								data-bs-placement='top'
-								title={TAGS[tag].title}
-								aria-label={TAGS[tag].title}
-							>
-								{TAGS[tag].icon}
-							</span>
-						</div>
-					))}
+					{props.project.tags.map((tag) => {
+						const skill = LANGUAGES.find((lang) => lang.slug === tag);
+						if (!skill) {
+							return tag;
+						}
+						return (
+							<div className='col-auto' key={tag}>
+								<span
+									data-bs-toggle='tooltip'
+									role='tooltip'
+									data-bs-placement='top'
+									title={skill.title}
+									aria-label={skill.title}
+								>
+									<skill.icon.name {...skill.icon.props} />
+								</span>
+							</div>
+						);
+					})}
 				</div>
 				<hr />
 				<p className='text-muted my-4 project-info'>{props.project.info}</p>
