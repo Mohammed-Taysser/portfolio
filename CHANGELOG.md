@@ -1,14 +1,25 @@
-
 # CHANGELOG
 
 ## TODO
 
 - [ ] add contact section
-- [ ] add Qualifications section Education & Work Experience as timeline (date - title - info)
-- [ ] use masonry for project
-- [ ] find suitable design for skills section
+- [ ] add [Qualifications](https://codepen.io/xichen/pen/wzpeMM) section Education & Work Experience as timeline (date - title - info)
+- [ ] apply [Alphabet soup](https://codepen.io/mohmmedtaysser/pen/rNQYVwg?editors=1010) effect on hero section
 
 ## History
+
+### 5 Jul 2023
+
+- Migrate to react
+- Start using typescript
+- Change avatar
+- find suitable design for skills section
+- Improve icons
+- Update logo
+- Update main color
+- apply lazy on images
+- replace project tag by skills
+- add defaultProps & docs for components
 
 ### 24 Mar 2023
 
