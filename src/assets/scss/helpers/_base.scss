@@ -69,13 +69,16 @@
 		}
 
 		.project-info {
-			min-height: 62px;
-			max-height: 62px;
 			display: -webkit-box;
 			-webkit-box-orient: vertical;
 			text-overflow: ellipsis;
 			-webkit-line-clamp: 3;
 			overflow: hidden;
+
+			@media (min-width: 768px) {
+				min-height: 62px;
+				max-height: 62px;
+			}
 		}
 
 		&:hover {
@@ -121,6 +124,11 @@
 			text-overflow: ellipsis;
 			-webkit-line-clamp: 3;
 			overflow: hidden;
+
+			@media (min-width: 768px) {
+				min-height: 62px;
+				max-height: 62px;
+			}
 		}
 
 		&:hover {
