@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import favicon from '../assets/images/icons/favicon-full.png';
 import whiteFavicon from '../assets/images/icons/favicon-white.png';
 import Hamburger from '../components/SVG/navbar/Hamburger';
@@ -8,11 +8,34 @@ import { UseThemeContext } from '../context/theme';
 
 function Navbar() {
 	const { theme } = UseThemeContext();
+	const dropdownWrapperRef = useRef<HTMLDivElement>(null);
+	const dropdownToggleRef = useRef<HTMLButtonElement>(null);
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+	useEffect(() => {
+		// Assign click handler to listen the click to close the dropdown when clicked outside
+		document.addEventListener('click', onClickOutside);
+
+		return () => {
+			// Remove the listener
+			document.removeEventListener('click', onClickOutside);
+		};
+	}, []);
 
 	const onMenuBtnClick = () => {
 		document.body.classList.toggle('mobile-menu-active');
 		setIsMenuOpen((prev) => !prev);
+	};
+
+	const onClickOutside = (evt: MouseEvent) => {
+		const isClickOutside =
+			!dropdownWrapperRef?.current?.contains(evt.target as Node) &&
+			!dropdownToggleRef?.current?.contains(evt.target as Node);
+
+		if (isClickOutside) {
+			setIsMenuOpen(false);
+			document.body.classList.remove('mobile-menu-active');
+		}
 	};
 
 	return (
@@ -33,6 +56,7 @@ function Navbar() {
 					type='button'
 					aria-label='Toggle navigation'
 					onClick={onMenuBtnClick}
+					ref={dropdownToggleRef}
 				>
 					<Hamburger className={isMenuOpen ? 'active' : ''} />
 				</button>
@@ -41,7 +65,7 @@ function Navbar() {
 					<Navigation />
 				</div>
 
-				<MobileDropdown />
+				<MobileDropdown ref={dropdownWrapperRef} />
 			</div>
 		</nav>
 	);

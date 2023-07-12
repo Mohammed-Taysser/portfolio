@@ -1,9 +1,10 @@
+import { LegacyRef, forwardRef } from 'react';
 import { NAVIGATION } from '../../constants/navbar';
 import DarkModeBtn from './DarkModeBtn';
 
-function MobileDropdown() {
+const MobileDropdown = forwardRef((_props, ref: LegacyRef<HTMLDivElement>) => {
 	return (
-		<div className='mobile-dropdown'>
+		<div className='mobile-dropdown' ref={ref}>
 			<div className='nav-content'>
 				<ul className='nav-list'>
 					{NAVIGATION.map((link) => (
@@ -16,13 +17,13 @@ function MobileDropdown() {
 
 					<li className='nav-list-item'>
 						<div className='d-flex ps-5'>
-							<DarkModeBtn />
+							<DarkModeBtn noTooltip />
 						</div>
 					</li>
 				</ul>
 			</div>
 		</div>
 	);
-}
+});
 
 export default MobileDropdown;

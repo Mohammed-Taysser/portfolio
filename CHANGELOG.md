@@ -8,6 +8,10 @@
 
 ## History
 
+### 12 Jul 2023
+
+- apply close mobile menu on outside click
+
 ### 5 Jul 2023
 
 - Migrate to react
