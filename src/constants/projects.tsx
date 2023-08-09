@@ -9,7 +9,7 @@ import expenseTraker from '../assets/images/projects/bg-project-expense-traker.w
 import goog from '../assets/images/projects/bg-project-goog.webp';
 import gutenberry from '../assets/images/projects/bg-project-gutenberry.webp';
 import pmq from '../assets/images/projects/bg-project-js-pmq.webp';
-import paperCutsServer from '../assets/images/projects/bg-project-paperCuts-server.webp';
+// import paperCutsServer from '../assets/images/projects/bg-project-paperCuts-server.webp';
 import paperCuts from '../assets/images/projects/bg-project-paperCuts.webp';
 import sadat from '../assets/images/projects/bg-project-sadat.webp';
 import scandiweb from '../assets/images/projects/bg-project-scandiweb.webp';
@@ -19,6 +19,7 @@ import tline from '../assets/images/projects/bg-project-tline.webp';
 import tubeInfo from '../assets/images/projects/bg-project-tube-info.webp';
 import vezeeta from '../assets/images/projects/bg-project-vezeeta.webp';
 import yassen from '../assets/images/projects/bg-project-yassen.webp';
+import circle from '../assets/images/projects/bg-project-circle.webp';
 
 const FILTERS: FilterConstant = {
 	react: {
@@ -40,6 +41,39 @@ const FILTERS: FilterConstant = {
 };
 
 const PROJECTS: SingleProject[] = [
+	{
+		title: 'Circle',
+		info: 'Circle is a social media app that allows users to connect with friends and family members from all over the world. With Circle, users can share photos, videos, and messages with their friends, as well as join groups based on their interests and hobbies.',
+		img: circle,
+		urls: {
+			github: 'https://github.com/Mohammed-Taysser/circle',
+			demo: 'https://circle-react.vercel.app/',
+		},
+		tags: ['react', 'typescript', 'sass', 'mantine', 'tailwindcss'],
+		filter: ['react-project'],
+	},
+	{
+		title: 'Scandiweb',
+		info: 'This task will put you face-to-face to some common tasks in the world of React development and possibly will get you acknowledged with a bit of new technologies.',
+		img: scandiweb,
+		urls: {
+			github: 'https://github.com/Mohammed-Taysser/scandiweb-react-task',
+			demo: 'https://scandiweb-task-react.vercel.app/',
+		},
+		tags: ['react', 'bootstrap', 'sass', 'graphql'],
+		filter: ['react-project'],
+	},
+	{
+		title: 'PaperCuts',
+		info: 'First e-commerce website built with react, a lot of feature like order, events, wishlist ...etc, also use JWT &amp; express for authentication.',
+		img: paperCuts,
+		urls: {
+			github: 'https://github.com/Mohammed-Taysser/paperCuts',
+			demo: 'https://papercuts.vercel.app/',
+		},
+		tags: ['react', 'bootstrap', 'redux', 'sass'],
+		filter: ['react-project'],
+	},
 	{
 		title: 'Cryptoverse',
 		info: "Cryptocurrency app show the currencies list with it's status, market and exchanges also latest news and articles",
@@ -149,39 +183,17 @@ const PROJECTS: SingleProject[] = [
 		tags: ['react', 'bootstrap', 'sass'],
 		filter: ['react-project'],
 	},
-	{
-		title: 'Scandiweb',
-		info: 'This task will put you face-to-face to some common tasks in the world of React development and possibly will get you acknowledged with a bit of new technologies.',
-		img: scandiweb,
-		urls: {
-			github: 'https://github.com/Mohammed-Taysser/scandiweb-react-task',
-			demo: 'https://scandiweb-task-react.vercel.app/',
-		},
-		tags: ['react', 'bootstrap', 'sass', 'graphql'],
-		filter: ['react-project'],
-	},
-	{
-		title: 'PaperCuts',
-		info: 'First e-commerce website built with react, a lot of feature like order, events, wishlist ...etc, also use JWT &amp; express for authentication.',
-		img: paperCuts,
-		urls: {
-			github: 'https://github.com/Mohammed-Taysser/paperCuts',
-			demo: 'https://papercuts.vercel.app/',
-		},
-		tags: ['react', 'bootstrap', 'redux', 'sass'],
-		filter: ['react-project'],
-	},
-	{
-		title: 'PaperCuts-server',
-		info: 'Server for paperCuts created while learning MERN stack in order to replace Json-server package.',
-		img: paperCutsServer,
-		urls: {
-			github: 'https://github.com/Mohammed-Taysser/paperCuts-server',
-			demo: 'https://papercuts-server.onrender.com/',
-		},
-		tags: ['nodejs', 'express', 'mongodb', 'jwt'],
-		filter: ['nodejs-project'],
-	},
+	// {
+	// 	title: 'PaperCuts-server',
+	// 	info: 'Server for paperCuts created while learning MERN stack in order to replace Json-server package.',
+	// 	img: paperCutsServer,
+	// 	urls: {
+	// 		github: 'https://github.com/Mohammed-Taysser/paperCuts-server',
+	// 		demo: 'https://papercuts-server.onrender.com/',
+	// 	},
+	// 	tags: ['nodejs', 'express', 'mongodb', 'jwt'],
+	// 	filter: ['nodejs-project'],
+	// },
 	{
 		title: 'Gutenberry',
 		info: 'More than expect effort needed, as use hard code html, css and js to build it at end so start to learn framework',
