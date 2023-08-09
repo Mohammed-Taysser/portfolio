@@ -3,10 +3,17 @@
 ## TODO
 
 - [ ] add contact section
+- [ ] find suitable BG to hero section
 - [ ] add [Qualifications](https://codepen.io/xichen/pen/wzpeMM) section Education & Work Experience as timeline (date - title - info)
 - [ ] apply [Alphabet soup](https://codepen.io/mohmmedtaysser/pen/rNQYVwg?editors=1010) effect on hero section
 
 ## History
+
+### 9 August 2023
+
+- hide paperCuts-server project until complete docs
+- add circle project
+- add scroll animation to navbar (reduce padding on scroll)
 
 ### 12 Jul 2023
 
