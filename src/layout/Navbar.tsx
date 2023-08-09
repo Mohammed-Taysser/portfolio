@@ -11,16 +11,33 @@ function Navbar() {
 	const dropdownWrapperRef = useRef<HTMLDivElement>(null);
 	const dropdownToggleRef = useRef<HTMLButtonElement>(null);
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
+	const [navbarScroll, setNavbarScroll] = useState(false);
 
 	useEffect(() => {
 		// Assign click handler to listen the click to close the dropdown when clicked outside
 		document.addEventListener('click', onClickOutside);
+
+		window.addEventListener('scroll', onWindowScroll);
 
 		return () => {
 			// Remove the listener
 			document.removeEventListener('click', onClickOutside);
 		};
 	}, []);
+
+	const onWindowScroll = () => {
+		if (window.innerWidth > 768) {
+			const isScrolled =
+				document.body.scrollTop > 200 ||
+				document.documentElement.scrollTop > 200;
+
+			if (isScrolled) {
+				setNavbarScroll(true);
+			} else {
+				setNavbarScroll(false);
+			}
+		}
+	};
 
 	const onMenuBtnClick = () => {
 		document.body.classList.toggle('mobile-menu-active');
@@ -39,7 +56,11 @@ function Navbar() {
 	};
 
 	return (
-		<nav className='navbar navbar-expand-md navbar-light bg-light py-3 nice-shadow fixed-top'>
+		<nav
+			className={`navbar navbar-expand-md navbar-light bg-light ${
+				navbarScroll ? 'scrolled' : ''
+			} nice-shadow fixed-top`}
+		>
 			<div className='container position-relative'>
 				<a className='navbar-brand' href='#home' title='homepage'>
 					<img

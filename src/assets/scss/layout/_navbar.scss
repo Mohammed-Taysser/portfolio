@@ -1,6 +1,24 @@
 nav.navbar {
+	transition: 0.5s;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+
 	.navbar-brand {
-		padding: 0;
+		img {
+			transition: 0.5s;
+			width: 124px;
+			height: 70px;
+		}
+	}
+
+	&.scrolled {
+		padding-top: 0.9rem;
+		padding-bottom: 0.9rem;
+
+		.navbar-brand img {
+			width: 114px;
+			height: 60px;
+		}
 	}
 
 	.nav-item {
