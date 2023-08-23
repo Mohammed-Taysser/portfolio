@@ -11,6 +11,7 @@ import gutenberry from '../assets/images/projects/bg-project-gutenberry.webp';
 import pmq from '../assets/images/projects/bg-project-js-pmq.webp';
 // import paperCutsServer from '../assets/images/projects/bg-project-paperCuts-server.webp';
 import paperCuts from '../assets/images/projects/bg-project-paperCuts.webp';
+import takenshot from '../assets/images/projects/bg-project-takenshot.webp';
 import sadat from '../assets/images/projects/bg-project-sadat.webp';
 import scandiweb from '../assets/images/projects/bg-project-scandiweb.webp';
 import shareme from '../assets/images/projects/bg-project-shareme.webp';
@@ -34,9 +35,9 @@ const FILTERS: FilterConstant = {
 		filter: 'bootstrap-project',
 		label: 'Bootstrap',
 	},
-	other: {
-		filter: 'other-project',
-		label: 'Other',
+	freelance: {
+		filter: 'freelance-project',
+		label: 'Freelance',
 	},
 };
 
@@ -148,7 +149,17 @@ const PROJECTS: SingleProject[] = [
 			demo: 'https://sadat.vip/',
 		},
 		tags: ['bootstrap', 'sass', 'pug'],
-		filter: ['other-project'],
+		filter: ['freelance-project'],
+	},
+	{
+		title: 'Takenshot',
+		info: 'Takenshot Feel The Reality',
+		img: takenshot,
+		urls: {
+			demo: 'https://takenshot.com/',
+		},
+		tags: ['bootstrap'],
+		filter: ['freelance-project'],
 	},
 	{
 		title: 'GooG',
