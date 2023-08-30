@@ -27,6 +27,7 @@ import {
 	SiMongodb,
 	SiMui,
 	SiNextdotjs,
+	SiPostcss,
 	SiPug,
 	SiPython,
 	SiRedux,
@@ -110,6 +111,18 @@ const LANGUAGES: Skill[] = [
 		},
 		variant: 'frontend',
 		slug: 'react',
+	},
+	{
+		title: 'Postcss',
+		icon: {
+			name: SiPostcss,
+			props: {
+				fill: '#dd3a0a',
+				size: '1.5rem',
+			},
+		},
+		variant: 'frontend',
+		slug: 'postcss',
 	},
 	{
 		title: 'Typescript',

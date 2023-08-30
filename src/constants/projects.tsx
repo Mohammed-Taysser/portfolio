@@ -10,17 +10,18 @@ import goog from '../assets/images/projects/bg-project-goog.webp';
 import gutenberry from '../assets/images/projects/bg-project-gutenberry.webp';
 import pmq from '../assets/images/projects/bg-project-js-pmq.webp';
 // import paperCutsServer from '../assets/images/projects/bg-project-paperCuts-server.webp';
+import circle from '../assets/images/projects/bg-project-circle.webp';
+import gym from '../assets/images/projects/bg-project-gym.webp';
 import paperCuts from '../assets/images/projects/bg-project-paperCuts.webp';
-import takenshot from '../assets/images/projects/bg-project-takenshot.webp';
 import sadat from '../assets/images/projects/bg-project-sadat.webp';
 import scandiweb from '../assets/images/projects/bg-project-scandiweb.webp';
 import shareme from '../assets/images/projects/bg-project-shareme.webp';
+import takenshot from '../assets/images/projects/bg-project-takenshot.webp';
 import techmag from '../assets/images/projects/bg-project-techmag.webp';
 import tline from '../assets/images/projects/bg-project-tline.webp';
 import tubeInfo from '../assets/images/projects/bg-project-tube-info.webp';
 import vezeeta from '../assets/images/projects/bg-project-vezeeta.webp';
 import yassen from '../assets/images/projects/bg-project-yassen.webp';
-import circle from '../assets/images/projects/bg-project-circle.webp';
 
 const FILTERS: FilterConstant = {
 	react: {
@@ -51,6 +52,17 @@ const PROJECTS: SingleProject[] = [
 			demo: 'https://circle-react.vercel.app/',
 		},
 		tags: ['react', 'typescript', 'sass', 'mantine', 'tailwindcss'],
+		filter: ['react-project'],
+	},
+	{
+		title: 'Golds GYM',
+		info: 'Golds GYM is a premier fitness website that offers a comprehensive platform for fitness enthusiasts and individuals seeking to improve their health. The site provides a wide range of resources, including workout plans, nutrition advice, and personal training services.',
+		img: gym,
+		urls: {
+			github: 'https://github.com/Mohammed-Taysser/gym',
+			demo: 'https://gym-fitness-react.vercel.app/',
+		},
+		tags: ['react', 'typescript', 'materialui', 'redux', 'postcss'],
 		filter: ['react-project'],
 	},
 	{
