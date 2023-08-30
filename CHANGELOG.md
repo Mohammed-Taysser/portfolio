@@ -3,11 +3,17 @@
 ## TODO
 
 - [ ] add contact section (emailJs)
+- [ ] add projects languages types
 - [ ] find suitable BG to hero section
 - [ ] add [Qualifications](https://codepen.io/xichen/pen/wzpeMM) section Education & Work Experience as timeline (date - title - info)
 - [ ] apply [Alphabet soup](https://codepen.io/mohmmedtaysser/pen/rNQYVwg?editors=1010) effect on hero section
 
 ## History
+
+### 30 August 2023
+
+- add Golds GYM project
+- add postcss to languages & tools
 
 ### 23 August 2023
 
