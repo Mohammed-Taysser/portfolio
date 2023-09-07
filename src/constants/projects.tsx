@@ -9,7 +9,7 @@ import expenseTraker from '../assets/images/projects/bg-project-expense-traker.w
 import goog from '../assets/images/projects/bg-project-goog.webp';
 import gutenberry from '../assets/images/projects/bg-project-gutenberry.webp';
 import pmq from '../assets/images/projects/bg-project-js-pmq.webp';
-// import paperCutsServer from '../assets/images/projects/bg-project-paperCuts-server.webp';
+import paperCutsServer from '../assets/images/projects/bg-project-paperCuts-server.webp';
 import circle from '../assets/images/projects/bg-project-circle.webp';
 import gym from '../assets/images/projects/bg-project-gym.webp';
 import paperCuts from '../assets/images/projects/bg-project-paperCuts.webp';
@@ -206,17 +206,17 @@ const PROJECTS: SingleProject[] = [
 		tags: ['react', 'bootstrap', 'sass'],
 		filter: ['react-project'],
 	},
-	// {
-	// 	title: 'PaperCuts-server',
-	// 	info: 'Server for paperCuts created while learning MERN stack in order to replace Json-server package.',
-	// 	img: paperCutsServer,
-	// 	urls: {
-	// 		github: 'https://github.com/Mohammed-Taysser/paperCuts-server',
-	// 		demo: 'https://papercuts-server.onrender.com/',
-	// 	},
-	// 	tags: ['nodejs', 'express', 'mongodb', 'jwt'],
-	// 	filter: ['nodejs-project'],
-	// },
+	{
+		title: 'PaperCuts-server',
+		info: 'Server for paperCuts created while learning MERN stack in order to replace Json-server package.',
+		img: paperCutsServer,
+		urls: {
+			github: 'https://github.com/Mohammed-Taysser/paperCuts-server',
+			demo: 'https://papercuts-server.onrender.com/docs',
+		},
+		tags: ['nodejs', 'express', 'mongodb', 'jwt'],
+		filter: ['nodejs-project'],
+	},
 	{
 		title: 'Gutenberry',
 		info: 'More than expect effort needed, as use hard code html, css and js to build it at end so start to learn framework',
