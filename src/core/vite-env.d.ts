@@ -13,6 +13,7 @@ type MixItUpProjectFilter =
 	| 'react-project'
 	| 'nodejs-project'
 	| 'bootstrap-project'
+	| 'next-project'
 	| 'freelance-project';
 
 interface SingleProject {

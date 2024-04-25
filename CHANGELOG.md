@@ -10,10 +10,20 @@
 
 ## History
 
+### 25 April 2024
+
+- Add `shuhna` project
+
+### 28 September 2023
+
+- Drop ['TECHMAG', 'elite-corp', 'axit'] Projects
+- Add Next.js Filter
+- Add `NTF` Project
+
 ### 30 August 2023
 
-- add Golds GYM project
-- add postcss to languages & tools
+- add Golds `GYM` project
+- add `postcss` to languages & tools
 
 ### 23 August 2023
 

@@ -1,23 +1,21 @@
 import atom from '../assets/images/projects/bg-project-atom.webp';
-import axit from '../assets/images/projects/bg-project-axit.webp';
+import circle from '../assets/images/projects/bg-project-circle.webp';
 import covid19Tracker from '../assets/images/projects/bg-project-covid-19-tracker.webp';
 import cryptoverse from '../assets/images/projects/bg-project-cryptoverse.webp';
 import djMusic from '../assets/images/projects/bg-project-dj-music.webp';
 import driller from '../assets/images/projects/bg-project-driller.webp';
-import eliteCorp from '../assets/images/projects/bg-project-elite-corp.webp';
 import expenseTraker from '../assets/images/projects/bg-project-expense-traker.webp';
 import goog from '../assets/images/projects/bg-project-goog.webp';
 import gutenberry from '../assets/images/projects/bg-project-gutenberry.webp';
+import gym from '../assets/images/projects/bg-project-gym.webp';
 import pmq from '../assets/images/projects/bg-project-js-pmq.webp';
 import paperCutsServer from '../assets/images/projects/bg-project-paperCuts-server.webp';
-import circle from '../assets/images/projects/bg-project-circle.webp';
-import gym from '../assets/images/projects/bg-project-gym.webp';
 import paperCuts from '../assets/images/projects/bg-project-paperCuts.webp';
 import sadat from '../assets/images/projects/bg-project-sadat.webp';
 import scandiweb from '../assets/images/projects/bg-project-scandiweb.webp';
 import shareme from '../assets/images/projects/bg-project-shareme.webp';
+import shuhna from '../assets/images/projects/bg-project-shuhna.webp';
 import takenshot from '../assets/images/projects/bg-project-takenshot.webp';
-import techmag from '../assets/images/projects/bg-project-techmag.webp';
 import tline from '../assets/images/projects/bg-project-tline.webp';
 import tubeInfo from '../assets/images/projects/bg-project-tube-info.webp';
 import vezeeta from '../assets/images/projects/bg-project-vezeeta.webp';
@@ -26,7 +24,11 @@ import yassen from '../assets/images/projects/bg-project-yassen.webp';
 const FILTERS: FilterConstant = {
 	react: {
 		filter: 'react-project',
-		label: 'React',
+		label: 'React.js',
+	},
+	next: {
+		filter: 'next-project',
+		label: 'Next.js',
 	},
 	nodejs: {
 		filter: 'nodejs-project',
@@ -43,6 +45,16 @@ const FILTERS: FilterConstant = {
 };
 
 const PROJECTS: SingleProject[] = [
+	{
+		title: 'Shuhna',
+		info: 'Your first destination to achieve the highest sales and discounts, costs and get the best customer experience, Hence the highest return on investment',
+		img: shuhna,
+		urls: {
+			demo: 'https://shuhna.co/',
+		},
+		tags: ['next', 'typescript', 'sass', 'ant.design', 'tailwindcss'],
+		filter: ['next-project', 'freelance-project'],
+	},
 	{
 		title: 'Circle',
 		info: 'Circle is a social media app that allows users to connect with friends and family members from all over the world. With Circle, users can share photos, videos, and messages with their friends, as well as join groups based on their interests and hobbies.',
@@ -251,17 +263,6 @@ const PROJECTS: SingleProject[] = [
 		filter: ['bootstrap-project'],
 	},
 	{
-		title: 'TECHMAG',
-		info: 'More than expect effort needed, as use hard code html, css and js to build it at end so start to learn framework',
-		img: techmag,
-		urls: {
-			github: 'https://github.com/Mohammed-Taysser/TECHMAG',
-			demo: 'https://mohammed-taysser.github.io/TECHMAG/',
-		},
-		tags: ['bootstrap'],
-		filter: ['bootstrap-project'],
-	},
-	{
 		title: 'YASSEN',
 		info: 'Different lookup to html page with powerful services counter that count on scroll and reach the section.',
 		img: yassen,
@@ -281,28 +282,6 @@ const PROJECTS: SingleProject[] = [
 			demo: 'https://mohammed-taysser.github.io/ATOM/',
 		},
 		tags: ['bootstrap', 'gulp', 'sass', 'pug'],
-		filter: ['bootstrap-project'],
-	},
-	{
-		title: 'AXIT',
-		info: "It's a learn project with el-zero using html, css, JavaScript.",
-		img: axit,
-		urls: {
-			github: 'https://github.com/Mohammed-Taysser/AXIT',
-			demo: 'https://mohammed-taysser.github.io/AXIT/',
-		},
-		tags: ['bootstrap'],
-		filter: ['bootstrap-project'],
-	},
-	{
-		title: 'Elite Corp',
-		info: 'Use vanilla JavaScript to apply functionality like model, custom bootstrap, animation and side menu.',
-		img: eliteCorp,
-		urls: {
-			github: 'https://github.com/Mohammed-Taysser/elite-corp',
-			demo: 'https://mohammed-taysser.github.io/elite-corp/',
-		},
-		tags: ['bootstrap'],
 		filter: ['bootstrap-project'],
 	},
 ];
