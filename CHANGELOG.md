@@ -10,6 +10,16 @@
 
 ## History
 
+### 25 January 2025
+
+- Add `NTF` Project
+- Add `Chakra UI` Skill
+- Add `prisma` skill
+- Add `Sqllite` skill
+- Add `Docker` skill
+- Add `Nginx` skill
+- Update avatar
+
 ### 25 April 2024
 
 - Add `shuhna` project

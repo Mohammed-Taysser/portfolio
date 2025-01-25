@@ -9,7 +9,7 @@ function SingleSkill(props: SkillProps) {
 				{props.skills.map((skill, index) => (
 					<div
 						className='col-auto'
-						key={index}
+						key={skill.slug}
 						data-bs-toggle='tooltip'
 						role='tooltip'
 						data-bs-placement='top'

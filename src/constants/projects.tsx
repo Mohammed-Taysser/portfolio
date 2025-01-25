@@ -20,6 +20,7 @@ import tline from '../assets/images/projects/bg-project-tline.webp';
 import tubeInfo from '../assets/images/projects/bg-project-tube-info.webp';
 import vezeeta from '../assets/images/projects/bg-project-vezeeta.webp';
 import yassen from '../assets/images/projects/bg-project-yassen.webp';
+import nft from '../assets/images/projects/bg-project-nft.webp';
 
 const FILTERS: FilterConstant = {
 	react: {
@@ -54,6 +55,17 @@ const PROJECTS: SingleProject[] = [
 		},
 		tags: ['next', 'typescript', 'sass', 'ant.design', 'tailwindcss'],
 		filter: ['next-project', 'freelance-project'],
+	},
+	{
+		title: 'NFT',
+		info: 'Discover a digital realm where creativity meets blockchain on our NFT website. Immerse yourself in a vibrant marketplace where artists tokenize their unique works, transforming art into one-of-a-kind digital assets. From stunning visuals to rare collectibles, our platform bridges the gap between creators and collectors. Dive into a decentralized ec',
+		img: nft,
+		urls: {
+			demo: 'https://nft-xi-two.vercel.app/',
+			github: 'https://github.com/Mohammed-Taysser/nft',
+		},
+		tags: ['next', 'typescript', 'sass', 'chakra.ui', 'tailwindcss'],
+		filter: ['next-project'],
 	},
 	{
 		title: 'Circle',

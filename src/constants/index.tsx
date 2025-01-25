@@ -1,3 +1,4 @@
+import { BiLogoPostgresql } from 'react-icons/bi';
 import {
 	FaBootstrap,
 	FaGulp,
@@ -10,7 +11,9 @@ import {
 import {
 	SiAntdesign,
 	SiBulma,
+	SiChakraui,
 	SiCss3,
+	SiDocker,
 	SiEslint,
 	SiExpress,
 	SiFigma,
@@ -27,17 +30,19 @@ import {
 	SiMongodb,
 	SiMui,
 	SiNextdotjs,
+	SiNginx,
 	SiPostcss,
+	SiPrisma,
 	SiPug,
 	SiPython,
 	SiRedux,
 	SiSocketdotio,
+	SiSqlite,
 	SiTailwindcss,
 	SiTypescript,
 	SiYarn,
 } from 'react-icons/si';
 import { TbBrandMantine } from 'react-icons/tb';
-import { BiLogoPostgresql } from 'react-icons/bi';
 
 const LANGUAGES: Skill[] = [
 	{
@@ -147,6 +152,18 @@ const LANGUAGES: Skill[] = [
 		},
 		variant: 'frontend',
 		slug: 'bootstrap',
+	},
+	{
+		title: 'Chakra UI',
+		icon: {
+			name: SiChakraui,
+			props: {
+				fill: '#00d1b2',
+				size: '1.5rem',
+			},
+		},
+		variant: 'frontend',
+		slug: 'chakra.ui',
 	},
 	{
 		title: 'Gulp.Js',
@@ -315,6 +332,17 @@ const LANGUAGES: Skill[] = [
 		slug: 'socketio',
 	},
 	{
+		title: 'Prisma',
+		icon: {
+			name: SiPrisma,
+			props: {
+				size: '1.5rem',
+			},
+		},
+		variant: 'backend',
+		slug: 'prisma',
+	},
+	{
 		title: 'Express.Js',
 		icon: {
 			name: SiExpress,
@@ -336,6 +364,18 @@ const LANGUAGES: Skill[] = [
 		},
 		variant: 'backend',
 		slug: 'jwt',
+	},
+	{
+		title: 'React native',
+		icon: {
+			name: FaReact,
+			props: {
+				fill: '#61dafb',
+				size: '1.5rem',
+			},
+		},
+		variant: 'frontend',
+		slug: 'react-native',
 	},
 	{
 		title: 'Python',
@@ -360,6 +400,42 @@ const LANGUAGES: Skill[] = [
 		},
 		variant: 'backend',
 		slug: 'postgresql',
+	},
+	{
+		title: 'Docker',
+		icon: {
+			name: SiDocker,
+			props: {
+				fill: '#2496ed',
+				size: '1.5rem',
+			},
+		},
+		variant: 'tool',
+		slug: 'docker',
+	},
+	{
+		title: 'Sqllite',
+		icon: {
+			name: SiSqlite,
+			props: {
+				size: '1.5rem',
+				fill: '#003755',
+			},
+		},
+		variant: 'backend',
+		slug: 'sqlite',
+	},
+	{
+		title: 'Nginx',
+		icon: {
+			name: SiNginx,
+			props: {
+				fill: '#009639',
+				size: '1.5rem',
+			},
+		},
+		variant: 'tool',
+		slug: 'nginx',
 	},
 	{
 		title: 'Npm',
