@@ -46,6 +46,15 @@ body.dark {
 			background-color: #0b111e;
 		}
 	}
+
+	input.form-control,
+	textarea.form-control {
+		background: #0b111e;
+
+		&:focus {
+			background: #0b111e;
+		}
+	}
 }
 
 .dark-mode-container {
