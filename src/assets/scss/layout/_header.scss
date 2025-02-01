@@ -5,6 +5,10 @@ header.hero-header {
 	background-repeat: no-repeat;
 	background-size: cover;
 
+	.main-heading {
+		color: #000;
+	}
+
 	& > .container > .row {
 		min-height: calc(100vh - 98px);
 	}

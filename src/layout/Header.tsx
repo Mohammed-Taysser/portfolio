@@ -18,7 +18,7 @@ function Header() {
 				<div className='row justify-content-center align-content-center align-items-center'>
 					<div className='col-md-7 my-3' data-aos='fade-up'>
 						<div className=''>
-							<h1 className='fw-bold display-4'>
+							<h1 className='fw-bold display-4 main-heading'>
 								Hi 👋 <br /> I&apos;am{' '}
 								<span className='hovered bg-underline'>Mohammed</span>
 								<br />
