@@ -37,10 +37,9 @@ import {
 	SiPython,
 	SiRedux,
 	SiSocketdotio,
-	SiSqlite,
 	SiTailwindcss,
 	SiTypescript,
-	SiYarn,
+	SiYarn
 } from 'react-icons/si';
 import { TbBrandMantine } from 'react-icons/tb';
 
@@ -412,18 +411,6 @@ const LANGUAGES: Skill[] = [
 		},
 		variant: 'tool',
 		slug: 'docker',
-	},
-	{
-		title: 'Sqllite',
-		icon: {
-			name: SiSqlite,
-			props: {
-				size: '1.5rem',
-				fill: '#003755',
-			},
-		},
-		variant: 'backend',
-		slug: 'sqlite',
 	},
 	{
 		title: 'Nginx',

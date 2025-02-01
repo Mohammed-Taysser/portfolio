@@ -1,6 +1,9 @@
 header.hero-header {
 	position: relative;
 	margin-top: 98px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 
 	& > .container > .row {
 		min-height: calc(100vh - 98px);

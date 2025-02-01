@@ -1,11 +1,19 @@
 import { BsEnvelopeAt, BsGithub } from 'react-icons/bs';
 import { FiLinkedin } from 'react-icons/fi';
+import Typewriter from 'typewriter-effect';
+import heroBG from '../assets/images/background/bg-hero-header.webp';
 import avatar from '../assets/images/icons/avatar.webp';
 import CONFIG from '../constants/config';
 
 function Header() {
 	return (
-		<header className='hero-header' id='home'>
+		<header
+			className='hero-header'
+			style={{
+				backgroundImage: `linear-gradient(to top, rgba(255, 255, 255, 0.97) 10%, rgba(255, 255, 255, 0.73) 80%), url(${heroBG})`,
+			}}
+			id='home'
+		>
 			<div className='container'>
 				<div className='row justify-content-center align-content-center align-items-center'>
 					<div className='col-md-7 my-3' data-aos='fade-up'>
@@ -14,7 +22,20 @@ function Header() {
 								Hi 👋 <br /> I&apos;am{' '}
 								<span className='hovered bg-underline'>Mohammed</span>
 								<br />
-								<span>Frontend Developer</span>
+								<Typewriter
+									options={{
+										strings: [
+											'Frontend Developer',
+											'Software Engineer',
+											'Full-stack Developer',
+											'React.js Developer',
+											'Next.js Developer',
+											'Node.js Developer',
+										],
+										autoStart: true,
+										loop: true,
+									}}
+								/>
 							</h1>
 							<div className='row px-0 mt-3 g-1'>
 								<div className='col-auto'>
