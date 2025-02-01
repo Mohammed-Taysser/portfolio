@@ -6,7 +6,7 @@ function SingleSkill(props: SkillProps) {
 				<h3 className='h4 my-0 mx-3'>{props.title}</h3>
 			</div>
 			<div className='row py-5 px-3 mx-0 gy-4'>
-				{props.skills.map((skill, index) => (
+				{props.skills.map((skill) => (
 					<div
 						className='col-auto'
 						key={skill.slug}

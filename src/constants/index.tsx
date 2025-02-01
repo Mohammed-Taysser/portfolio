@@ -34,7 +34,6 @@ import {
 	SiPostcss,
 	SiPrisma,
 	SiPug,
-	SiPython,
 	SiRedux,
 	SiSocketdotio,
 	SiTailwindcss,

@@ -13,6 +13,8 @@
 - Add hero section background image
 - Add "hand writing" effect on hero section
 - add contact section (emailJs)
+- drop python
+- drop sqlite
 
 ### 25 January 2025
 
