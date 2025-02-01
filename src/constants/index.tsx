@@ -377,18 +377,6 @@ const LANGUAGES: Skill[] = [
 		slug: 'react-native',
 	},
 	{
-		title: 'Python',
-		icon: {
-			name: SiPython,
-			props: {
-				fill: '#386f9f',
-				size: '1.5rem',
-			},
-		},
-		variant: 'backend',
-		slug: 'python',
-	},
-	{
 		title: 'Postgresql',
 		icon: {
 			name: BiLogoPostgresql,

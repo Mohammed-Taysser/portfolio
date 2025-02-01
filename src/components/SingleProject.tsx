@@ -24,7 +24,7 @@ function SingleProject(props: { project: SingleProject }) {
 					{props.project.tags.map((tag) => {
 						const skill = LANGUAGES.find((lang) => lang.slug === tag);
 						if (!skill) {
-							return tag;
+							return null;
 						}
 						return (
 							<div className='col-auto' key={tag}>

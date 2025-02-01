@@ -2,7 +2,6 @@
 
 ## TODO
 
-- [ ] add contact section (emailJs)
 - [ ] add projects languages types
 - [ ] add [Qualifications](https://codepen.io/xichen/pen/wzpeMM) section Education & Work Experience as timeline (date - title - info)
 - [ ] apply [Alphabet soup](https://codepen.io/mohmmedtaysser/pen/rNQYVwg?editors=1010) effect on hero section
@@ -13,6 +12,7 @@
 
 - Add hero section background image
 - Add "hand writing" effect on hero section
+- add contact section (emailJs)
 
 ### 25 January 2025
 

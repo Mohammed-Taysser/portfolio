@@ -181,3 +181,15 @@
 		}
 	}
 }
+
+.contact-me {
+	.contact-information {
+		position: relative;
+		border-radius: 1rem;
+		background-image: url('/assets/contact-us-bg-54f56f07.svg');
+		background-size: cover;
+		background-position: center center;
+		border: 0.0625rem solid transparent;
+		padding: 1.5rem;
+	}
+}

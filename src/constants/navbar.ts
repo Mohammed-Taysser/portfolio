@@ -24,6 +24,11 @@ const NAVIGATION = [
 		title: 'Blogs',
 		label: 'Blogs',
 	},
+	{
+		href: 'contact-me',
+		title: 'Contact Me',
+		label: 'Contact Me',
+	},
 ];
 
 export { NAVIGATION };

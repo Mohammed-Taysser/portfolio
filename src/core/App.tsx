@@ -3,6 +3,7 @@ import { Tooltip } from 'bootstrap';
 import { useEffect } from 'react';
 import AboutMe from '../components/AboutMe';
 import BackToTop from '../components/BackToTop';
+import Contact from '../components/Contact';
 import Feed from '../components/Feed';
 import Projects from '../components/Projects';
 import Skills from '../components/Skills';
@@ -53,6 +54,7 @@ function App() {
 			<AboutMe />
 			<Skills />
 			<Projects />
+			<Contact />
 			<Feed />
 			<Footer />
 		</ThemeProvider>

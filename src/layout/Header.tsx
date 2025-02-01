@@ -25,11 +25,11 @@ function Header() {
 								<Typewriter
 									options={{
 										strings: [
-											'Frontend Developer',
 											'Software Engineer',
-											'Full-stack Developer',
 											'React.js Developer',
+											'Frontend Developer',
 											'Next.js Developer',
+											'Full-stack Developer',
 											'Node.js Developer',
 										],
 										autoStart: true,
