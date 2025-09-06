@@ -8,6 +8,10 @@
 
 ## History
 
+### 6 September 2025
+
+- add new "JavaScript Array Methods: A Guide with Examples " article
+
 ### 1 February 2025
 
 - Add hero section background image

@@ -10,11 +10,11 @@ function Feed() {
 				<SectionTitle center title='My Blogs' subtitle='Feeds' />
 
 				<div className='row justify-content-center align-items-stretch mt-5'>
-					<div className='col-xg-3 col-lg-4 col-md-6 my-3'>
-						{FEEDS.map((feed, index) => (
-							<SingleFeed feed={feed} key={index} />
-						))}
-					</div>
+					{FEEDS.map((feed, index) => (
+						<div className='col-xg-3 col-lg-4 col-md-6 my-3' key={index}>
+							<SingleFeed feed={feed} />
+						</div>
+					))}
 				</div>
 			</div>
 			<CircleAnimation />
