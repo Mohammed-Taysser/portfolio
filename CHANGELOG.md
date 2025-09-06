@@ -10,7 +10,8 @@
 
 ### 6 September 2025
 
-- add new "JavaScript Array Methods: A Guide with Examples " article
+- add new "JavaScript Array Methods: A Guide with Examples" article
+- add new "[object Object] isn’t an error — it’s just the default string representation of a plain JavaScript object." article
 
 ### 1 February 2025
 
