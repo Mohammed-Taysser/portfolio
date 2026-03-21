@@ -19,7 +19,6 @@ import takenshot from '../assets/images/projects/bg-project-takenshot.webp';
 import tline from '../assets/images/projects/bg-project-tline.webp';
 import tubeInfo from '../assets/images/projects/bg-project-tube-info.webp';
 import vezeeta from '../assets/images/projects/bg-project-vezeeta.webp';
-import yassen from '../assets/images/projects/bg-project-yassen.webp';
 import mongizz from '../assets/images/projects/bg-project-mongizz.webp';
 import nft from '../assets/images/projects/bg-project-nft.webp';
 
@@ -283,17 +282,6 @@ const PROJECTS: SingleProject[] = [
 			demo: 'https://mohammed-taysser.github.io/DJ-Music/',
 		},
 		tags: ['bootstrap', 'gulp', 'sass', 'pug'],
-		filter: ['bootstrap-project'],
-	},
-	{
-		title: 'YASSEN',
-		info: 'Different lookup to html page with powerful services counter that count on scroll and reach the section.',
-		img: yassen,
-		urls: {
-			github: 'https://github.com/Mohammed-Taysser/YASSEN',
-			demo: 'https://mohammed-taysser.github.io/YASSEN/',
-		},
-		tags: ['bootstrap'],
 		filter: ['bootstrap-project'],
 	},
 	{
