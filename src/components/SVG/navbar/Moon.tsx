@@ -8,9 +8,9 @@ import { SVGProps } from 'react';
  * `SVGProps<SVGSVGElement>`, which means it should include all the properties that
  * can be applied to an SVG element. These properties
  */
-function Moon(props: SVGProps<SVGSVGElement>) {
+function Moon({ className = '', ...props }: SVGProps<SVGSVGElement>) {
 	return (
-		<svg {...props} className={`moon ${props.className}`} viewBox='0 0 24 24'>
+		<svg {...props} className={`moon ${className}`} viewBox='0 0 24 24'>
 			<path d='M18,16C12.5,16,8,11.5,8,6 c0-0.9,0.1-1.8,0.4-2.6C4.1,4.5,1,8.4,1,13c0,5.5,4.5,10,10,10c4.6,0,8.5-3.1,9.6-7.4C19.8,15.9,18.9,16,18,16z'></path>
 			<g className='star-1'>
 				<line x1='15' y1='1' x2='15' y2='5'></line>
@@ -23,9 +23,5 @@ function Moon(props: SVGProps<SVGSVGElement>) {
 		</svg>
 	);
 }
-
-Moon.defaultProps = {
-	className: '',
-};
 
 export default Moon;

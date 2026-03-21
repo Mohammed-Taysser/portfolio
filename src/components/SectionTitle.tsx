@@ -7,21 +7,16 @@
  * "SectionTitleProps".
  */
 function SectionTitle(props: SectionTitleProps) {
+	const { title, subtitle, className = '', center = false } = props;
+
 	return (
 		<h2
-			className={`header-with-point ${props.center ? 'text-center' : ''} ${
-				props.className
-			}`}
-			data-text={props.subtitle}
+			className={`header-with-point ${center ? 'text-center' : ''} ${className}`}
+			data-text={subtitle}
 		>
-			{props.title}
+			{title}
 		</h2>
 	);
 }
-
-SectionTitle.defaultProps = {
-	className: '',
-	center: false,
-};
 
 export default SectionTitle;

@@ -31,8 +31,8 @@ interface SingleProject {
 interface SectionTitleProps {
 	title: string;
 	subtitle: string;
-	className: string;
-	center: boolean;
+	className?: string;
+	center?: boolean;
 }
 
 interface FilterConstant {

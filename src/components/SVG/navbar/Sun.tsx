@@ -8,9 +8,9 @@ import { SVGProps } from 'react';
  * SVGProps<SVGSVGElement>, which means it should contain all the properties that
  * can be applied to an SVG element.
  */
-function Sun(props: SVGProps<SVGSVGElement>) {
+function Sun({ className = '', ...props }: SVGProps<SVGSVGElement>) {
 	return (
-		<svg {...props} className={`sun ${props.className} `} viewBox='0 0 24 24'>
+		<svg {...props} className={`sun ${className}`} viewBox='0 0 24 24'>
 			<g className='lines'>
 				<line x1='1' y1='12' x2='2' y2='12'></line>
 				<line x1='4.2' y1='4.2' x2='4.9' y2='4.9'></line>
@@ -25,9 +25,5 @@ function Sun(props: SVGProps<SVGSVGElement>) {
 		</svg>
 	);
 }
-
-Sun.defaultProps = {
-	className: '',
-};
 
 export default Sun;

@@ -8,10 +8,10 @@ import { SVGProps } from 'react';
  * means it is an object that can accept any valid SVG attributes and event
  * handlers for an SVG element.
  */
-function Hamburger(props: SVGProps<SVGSVGElement>) {
+function Hamburger({ className = '', ...props }: SVGProps<SVGSVGElement>) {
 	return (
 		<svg
-			className={`hamburger-svg ${props.className}`}
+			className={`hamburger-svg ${className}`}
 			viewBox='0 0 100 100'
 			width='60'
 			onClick={props.onClick}
@@ -28,9 +28,5 @@ function Hamburger(props: SVGProps<SVGSVGElement>) {
 		</svg>
 	);
 }
-
-Hamburger.defaultProps = {
-	className: '',
-};
 
 export default Hamburger;
