@@ -48,6 +48,7 @@ interface SingleFeed {
 	img: string;
 	url: string;
 	publishAt: Date;
+	provider: 'Dev.to' | 'Medium';
 }
 
 interface Skill {

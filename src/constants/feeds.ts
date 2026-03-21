@@ -12,6 +12,7 @@ const FEEDS: SingleFeed[] = [
 		url: 'https://dev.to/mohammedtaysser/how-to-make-your-own-npm-package-4dm2',
 		img: publishNpm,
 		publishAt: new Date('2023-02-21T18:10:24Z'),
+		provider: 'Dev.to',
 	},
 	{
 		title: 'JavaScript Array Methods: A Guide with Examples',
@@ -19,6 +20,7 @@ const FEEDS: SingleFeed[] = [
 		url: 'https://dev.to/mohammedtaysser/javascript-array-methods-a-guide-with-examples-3a16',
 		img: jsArrayMethods,
 		publishAt: new Date('2023-09-06T19:10:24Z'),
+		provider: 'Dev.to',
 	},
 	{
 		title: 'The Case of the Mysterious [object Object] in JavaScript',
@@ -26,6 +28,7 @@ const FEEDS: SingleFeed[] = [
 		url: 'https://medium.com/@mohammed-taysser/the-case-of-the-mysterious-object-object-in-javascript-4e7120a28972',
 		img: jsObjectMethods,
 		publishAt: new Date('2023-09-06T22:14:24Z'),
+		provider: 'Medium',
 	},
 ];
 
