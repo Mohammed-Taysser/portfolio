@@ -1,4 +1,3 @@
-import atom from '../assets/images/projects/bg-project-atom.webp';
 import circle from '../assets/images/projects/bg-project-circle.webp';
 import covid19Tracker from '../assets/images/projects/bg-project-covid-19-tracker.webp';
 import cryptoverse from '../assets/images/projects/bg-project-cryptoverse.webp';
@@ -280,17 +279,6 @@ const PROJECTS: SingleProject[] = [
 		urls: {
 			github: 'https://github.com/Mohammed-Taysser/DJ-Music',
 			demo: 'https://mohammed-taysser.github.io/DJ-Music/',
-		},
-		tags: ['bootstrap', 'gulp', 'sass', 'pug'],
-		filter: ['bootstrap-project'],
-	},
-	{
-		title: 'ATOM',
-		info: 'Use vanilla JavaScript to apply functionality like model, custom bootstrap, animation and side menu.',
-		img: atom,
-		urls: {
-			github: 'https://github.com/Mohammed-Taysser/ATOM',
-			demo: 'https://mohammed-taysser.github.io/ATOM/',
 		},
 		tags: ['bootstrap', 'gulp', 'sass', 'pug'],
 		filter: ['bootstrap-project'],
