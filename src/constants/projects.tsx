@@ -20,6 +20,7 @@ import tline from '../assets/images/projects/bg-project-tline.webp';
 import tubeInfo from '../assets/images/projects/bg-project-tube-info.webp';
 import vezeeta from '../assets/images/projects/bg-project-vezeeta.webp';
 import yassen from '../assets/images/projects/bg-project-yassen.webp';
+import mongizz from '../assets/images/projects/bg-project-mongizz.webp';
 import nft from '../assets/images/projects/bg-project-nft.webp';
 
 const FILTERS: FilterConstant = {
@@ -176,6 +177,16 @@ const PROJECTS: SingleProject[] = [
 		},
 		tags: ['nodejs', 'npm'],
 		filter: ['nodejs-project'],
+	},
+	{
+		title: 'Mongizz',
+		info: 'In 2022, the Mongizz website was launched. To be a leading website builder, committed to providing the latest features and capabilities that enable anyone to create their website easily and as quickly as possible.',
+		img: mongizz,
+		urls: {
+			demo: 'https://mongizz.com/',
+		},
+		tags: ['bootstrap', 'jquery', 'javascript'],
+		filter: ['bootstrap-project'],
 	},
 	{
 		title: 'SADAT.VIP',
