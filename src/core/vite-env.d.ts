@@ -113,3 +113,43 @@ interface SkillProps {
 	title: string;
 	skills: Skill[];
 }
+
+interface CertificateItem {
+	title: string;
+	issuer: string;
+	issued: string;
+	credentialId?: string;
+	credentialUrl?: string;
+}
+
+interface EducationItem {
+	degree: string;
+	university: string;
+	department: string;
+	grade: string;
+	date: string;
+	location: string;
+}
+
+interface FreelanceItem {
+	project: string;
+	client: string;
+	tech: string;
+	date: string;
+	description: string;
+}
+
+interface ExperienceRole {
+	role: string;
+	type: 'Full-Time' | 'Part-Time';
+	from: string;
+	to: string;
+	description: string;
+}
+
+interface ExperienceItem {
+	company: string;
+	companyUrl: string;
+	location: string;
+	roles: ExperienceRole[];
+}

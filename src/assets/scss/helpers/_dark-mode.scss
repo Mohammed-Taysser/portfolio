@@ -71,6 +71,16 @@ body.dark {
 		}
 	}
 
+	.qualifications {
+		.timeline-content {
+			background-color: #0b111e;
+		}
+
+		.promotion-track .promotion-role::before {
+			border-color: #0b111e;
+		}
+	}
+
 	input.form-control,
 	textarea.form-control {
 		background: #0b111e;

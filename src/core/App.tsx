@@ -6,6 +6,7 @@ import BackToTop from '../components/BackToTop';
 import Contact from '../components/Contact';
 import Feed from '../components/Feed';
 import Projects from '../components/Projects';
+import Qualifications from '../components/Qualifications';
 import Skills from '../components/Skills';
 import { ThemeProvider } from '../context/theme';
 import Footer from '../layout/Footer';
@@ -53,6 +54,7 @@ function App() {
 			<Header />
 			<AboutMe />
 			<Skills />
+			<Qualifications />
 			<Projects />
 			<Contact />
 			<Feed />

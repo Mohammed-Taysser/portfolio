@@ -43,19 +43,21 @@
 	}
 }
 
-.my-projects {
-	.filter-buttons-container {
-		display: flex;
-		justify-content: center;
-		flex-wrap: wrap;
-		gap: 20px;
+.filter-buttons-container {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 20px;
 
-		.bg-underline {
-			&.mixitup-control-active {
-				background-size: 100% 100%;
-			}
+	.bg-underline {
+		&.mixitup-control-active,
+		&.active {
+			background-size: 100% 100%;
 		}
 	}
+}
+
+.my-projects {
 
 	.single-item {
 		height: 100%;

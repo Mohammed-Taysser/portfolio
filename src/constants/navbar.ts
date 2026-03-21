@@ -10,11 +10,6 @@ const NAVIGATION = [
 		label: 'About',
 	},
 	{
-		href: 'skills',
-		title: 'My Skills',
-		label: 'Skills',
-	},
-	{
 		href: 'projects',
 		title: 'My Projects',
 		label: 'Projects',
