@@ -16,7 +16,7 @@ const MobileDropdown = forwardRef((_props, ref: LegacyRef<HTMLDivElement>) => {
 					))}
 
 					<li className='nav-list-item'>
-						<div className='d-flex ps-5'>
+						<div className='ps-5 pt-2'>
 							<DarkModeBtn noTooltip />
 						</div>
 					</li>
