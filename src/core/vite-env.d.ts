@@ -131,7 +131,7 @@ interface EducationItem {
 interface FreelanceItem {
 	project: string;
 	client: string;
-	tech: string;
+	tags: ProjectTags[];
 	date: string;
 	description: string;
 }

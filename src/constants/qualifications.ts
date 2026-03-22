@@ -92,7 +92,7 @@ const QUALIFICATION_PROJECTS: FreelanceItem[] = [
 	{
 		project: 'Ramy Ashour Academy',
 		client: 'Logic-Design',
-		tech: 'React, TypeScript, Vite, Ant Design, TailwindCSS, SCSS',
+		tags: ['react', 'typescript', 'ant.design', 'tailwindcss', 'sass'],
 		date: '10/2024 – 11/2024',
 		description:
 			'Designed and developed a web portal for squash training programs. Created a marketing landing page, course management dashboard, and student progress tracking system.',
@@ -100,7 +100,7 @@ const QUALIFICATION_PROJECTS: FreelanceItem[] = [
 	{
 		project: 'PTSWare',
 		client: 'PTS-Ware',
-		tech: 'React, Redux, MUI',
+		tags: ['react', 'redux', 'materialui'],
 		date: '08/2023 – 12/2023',
 		description:
 			'Developed a POS solution to manage real-time appointments, product catalog, and invoicing. Added time tracking per active order and performance-optimized the data grid.',
@@ -108,7 +108,7 @@ const QUALIFICATION_PROJECTS: FreelanceItem[] = [
 	{
 		project: 'NasNav',
 		client: 'NasNav',
-		tech: 'React, Bootstrap, Ant Design, Google Maps',
+		tags: ['react', 'bootstrap', 'ant.design'],
 		date: '09/2022 – 10/2022',
 		description:
 			'Large-scale React e-commerce marketplace with Google Maps integration, carousel galleries, video chat, and sophisticated filtering.',
@@ -116,7 +116,7 @@ const QUALIFICATION_PROJECTS: FreelanceItem[] = [
 	{
 		project: 'Admin Coffee',
 		client: 'Freelance',
-		tech: 'React, TypeScript, Tailwind, Ant Design, Azure MSAL',
+		tags: ['react', 'typescript', 'tailwindcss', 'ant.design'],
 		date: '06/2023 – 09/2023',
 		description:
 			'Comprehensive admin dashboard with Azure authentication, data visualization, drag-and-drop, multi-language support, and testing.',
@@ -124,7 +124,7 @@ const QUALIFICATION_PROJECTS: FreelanceItem[] = [
 	{
 		project: 'Rosine',
 		client: 'Freelance',
-		tech: 'React, Node.js, MongoDB, Express, Bootstrap, Redux',
+		tags: ['react', 'nodejs', 'mongodb', 'express', 'bootstrap', 'redux'],
 		date: '03/2022 – 05/2022',
 		description:
 			'Full-featured MERN stack eCommerce platform with shopping cart, product reviews, PayPal payment integration, and admin dashboard.',
@@ -132,7 +132,7 @@ const QUALIFICATION_PROJECTS: FreelanceItem[] = [
 	{
 		project: 'Jeel - جيل',
 		client: 'Freelance',
-		tech: 'React, TypeScript, Vite, Material-UI, SCSS',
+		tags: ['react', 'typescript', 'materialui', 'sass'],
 		date: '09/2023 – 11/2023',
 		description:
 			'Saudi-based project focused on refining UI, fixing responsive issues, and updating the interface based on Figma prototypes.',
@@ -140,7 +140,7 @@ const QUALIFICATION_PROJECTS: FreelanceItem[] = [
 	{
 		project: 'Takenshot',
 		client: 'Freelance',
-		tech: 'Bootstrap, HTML, CSS',
+		tags: ['bootstrap'],
 		date: '2021',
 		description:
 			'Takenshot — Feel The Reality. A photography portfolio website built with Bootstrap.',
@@ -148,7 +148,7 @@ const QUALIFICATION_PROJECTS: FreelanceItem[] = [
 	{
 		project: 'Mokambo POS',
 		client: 'Dynamic Business Solution',
-		tech: 'React, TypeScript, Vite, Ant Design, Tailwind, Docker',
+		tags: ['react', 'typescript', 'ant.design', 'tailwindcss', 'docker'],
 		date: '07/2024 – 10/2024',
 		description:
 			'Café and restaurant POS with real-time checkout, draft invoices, branch theming, and Dockerized deployment. Built session persistence and role-based access control.',
@@ -156,7 +156,7 @@ const QUALIFICATION_PROJECTS: FreelanceItem[] = [
 	{
 		project: "What's Ad",
 		client: 'Dynamic Business Solution',
-		tech: 'React, TypeScript, Vite, Ant Design, Tailwind, i18next',
+		tags: ['react', 'typescript', 'ant.design', 'tailwindcss'],
 		date: '03/2025 – 03/2025',
 		description:
 			'WhatsApp marketing app for sending bulk advertisements. Features account management, process tracking, and Excel import support.',
@@ -164,7 +164,7 @@ const QUALIFICATION_PROJECTS: FreelanceItem[] = [
 	{
 		project: 'Jolie Stores',
 		client: 'Dynamic Business Solution',
-		tech: 'Next.js, TypeScript, MUI, Tailwind, SCSS',
+		tags: ['next', 'typescript', 'materialui', 'tailwindcss', 'sass'],
 		date: '05/2024 – 05/2025',
 		description:
 			'Minimal and fast e-commerce platform optimized for guest checkout and same-day order processing. Browse categories, view product variants and stock levels.',
