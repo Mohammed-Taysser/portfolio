@@ -19,7 +19,7 @@ function Header() {
 					<div className='col-md-7 my-3' data-aos='fade-up'>
 						<div className=''>
 							<h1 className='fw-bold display-4 main-heading'>
-								Hi 👋 <br /> I&apos;am{' '}
+								Hi 👋 <br /> I&apos;m{' '}
 								<span className='hovered bg-underline'>Mohammed</span>
 								<br />
 								<Typewriter
@@ -44,7 +44,7 @@ function Header() {
 										href={CONFIG.urls.linkedin}
 										target='_blank'
 										title='linkedin'
-										rel='noopener'
+										rel='noopener noreferrer'
 									>
 										<FiLinkedin className='fs-3' />
 									</a>
@@ -54,7 +54,7 @@ function Header() {
 										className='text-dark text-decoration-none mx-2'
 										href={CONFIG.urls.github}
 										target='_blank'
-										rel='noopener'
+										rel='noopener noreferrer'
 										title='github'
 									>
 										<BsGithub className='fs-3' />
@@ -65,7 +65,6 @@ function Header() {
 										className='text-dark text-decoration-none mx-2'
 										href={`mailto:${CONFIG.emails.gmail}`}
 										title='gmail'
-										target='_blank'
 									>
 										<BsEnvelopeAt className='fs-3' />
 									</a>

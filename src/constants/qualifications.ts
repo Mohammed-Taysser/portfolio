@@ -49,7 +49,7 @@ const EXPERIENCE: ExperienceItem[] = [
 		],
 	},
 	{
-		company: 'Shuhna',
+		company: 'Shuhna - شُحنه',
 		companyUrl: 'https://shuhna.co/',
 		location: 'Egypt, Cairo',
 		roles: [
@@ -104,6 +104,46 @@ const FREELANCE: FreelanceItem[] = [
 		date: '08/2023 – 12/2023',
 		description:
 			'Developed a POS solution to manage real-time appointments, product catalog, and invoicing. Added time tracking per active order and performance-optimized the data grid.',
+	},
+	{
+		project: 'NasNav',
+		client: 'NasNav',
+		tech: 'React, Bootstrap, Ant Design, Google Maps',
+		date: '09/2022 – 10/2022',
+		description:
+			'Large-scale React e-commerce marketplace with Google Maps integration, carousel galleries, video chat, and sophisticated filtering.',
+	},
+	{
+		project: 'Admin Coffee',
+		client: 'Freelance',
+		tech: 'React, TypeScript, Tailwind, Ant Design, Azure MSAL',
+		date: '06/2023 – 09/2023',
+		description:
+			'Comprehensive admin dashboard with Azure authentication, data visualization, drag-and-drop, multi-language support, and testing.',
+	},
+	{
+		project: 'Rosine',
+		client: 'Freelance',
+		tech: 'React, Node.js, MongoDB, Express, Bootstrap, Redux',
+		date: '03/2022 – 05/2022',
+		description:
+			'Full-featured MERN stack eCommerce platform with shopping cart, product reviews, PayPal payment integration, and admin dashboard.',
+	},
+	{
+		project: 'Jeel - جيل',
+		client: 'Freelance',
+		tech: 'React, TypeScript, Vite, Material-UI, SCSS',
+		date: '09/2023 – 11/2023',
+		description:
+			'Saudi-based project focused on refining UI, fixing responsive issues, and updating the interface based on Figma prototypes.',
+	},
+	{
+		project: 'Takenshot',
+		client: 'Freelance',
+		tech: 'Bootstrap, HTML, CSS',
+		date: '2021',
+		description:
+			'Takenshot — Feel The Reality. A photography portfolio website built with Bootstrap.',
 	},
 ];
 

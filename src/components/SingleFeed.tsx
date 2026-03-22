@@ -20,7 +20,7 @@ function SingleFeed(props: { feed: SingleFeed }) {
 					className='item-title my-3 fw-bold hovered bg-underline h4'
 					href={props.feed.url}
 					target='_blank'
-					rel='noopener'
+					rel='noopener noreferrer'
 				>
 					{props.feed.title}
 				</a>

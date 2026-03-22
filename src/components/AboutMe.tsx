@@ -86,7 +86,7 @@ function AboutMe() {
 									className='bubbly-btn mx-md-4 mx-0 mt-3 mt-md-0'
 									href={CONFIG.urls.cv}
 									target='_blank'
-									rel='noopener'
+									rel='noopener noreferrer'
 									download=''
 								>
 									Download CV

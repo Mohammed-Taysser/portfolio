@@ -14,7 +14,6 @@ import sadat from '../assets/images/projects/bg-project-sadat.webp';
 import scandiweb from '../assets/images/projects/bg-project-scandiweb.webp';
 import shareme from '../assets/images/projects/bg-project-shareme.webp';
 import shuhna from '../assets/images/projects/bg-project-shuhna.webp';
-import takenshot from '../assets/images/projects/bg-project-takenshot.webp';
 import tline from '../assets/images/projects/bg-project-tline.webp';
 import tubeInfo from '../assets/images/projects/bg-project-tube-info.webp';
 import vezeeta from '../assets/images/projects/bg-project-vezeeta.webp';
@@ -42,6 +41,10 @@ const FILTERS: FilterConstant = {
 		filter: 'freelance-project',
 		label: 'Freelance',
 	},
+	work: {
+		filter: 'work-project',
+		label: 'Work',
+	},
 };
 
 const PROJECTS: SingleProject[] = [
@@ -53,7 +56,7 @@ const PROJECTS: SingleProject[] = [
 			demo: 'https://shuhna.co/',
 		},
 		tags: ['next', 'typescript', 'sass', 'ant.design', 'tailwindcss'],
-		filter: ['next-project', 'freelance-project'],
+		filter: ['next-project', 'work-project'],
 	},
 	{
 		title: 'NFT',
@@ -101,7 +104,7 @@ const PROJECTS: SingleProject[] = [
 	},
 	{
 		title: 'PaperCuts',
-		info: 'First e-commerce website built with react, a lot of feature like order, events, wishlist ...etc, also use JWT &amp; express for authentication.',
+		info: 'First e-commerce website built with react, a lot of feature like order, events, wishlist ...etc, also use JWT & express for authentication.',
 		img: paperCuts,
 		urls: {
 			github: 'https://github.com/Mohammed-Taysser/paperCuts',
@@ -184,7 +187,7 @@ const PROJECTS: SingleProject[] = [
 			demo: 'https://mongizz.com/',
 		},
 		tags: ['bootstrap', 'jquery', 'javascript'],
-		filter: ['bootstrap-project'],
+		filter: ['bootstrap-project', 'work-project'],
 	},
 	{
 		title: 'SADAT.VIP',
@@ -194,16 +197,6 @@ const PROJECTS: SingleProject[] = [
 			demo: 'https://sadat.vip/',
 		},
 		tags: ['bootstrap', 'sass', 'pug'],
-		filter: ['freelance-project'],
-	},
-	{
-		title: 'Takenshot',
-		info: 'Takenshot Feel The Reality',
-		img: takenshot,
-		urls: {
-			demo: 'https://takenshot.com/',
-		},
-		tags: ['bootstrap'],
 		filter: ['freelance-project'],
 	},
 	{

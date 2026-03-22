@@ -18,7 +18,7 @@ function Navigation() {
 					className='bubbly-btn '
 					href={CONFIG.urls.cv}
 					target='_blank'
-					rel='noopener'
+					rel='noopener noreferrer'
 					download=''
 				>
 					Download CV

@@ -17,7 +17,7 @@ function Footer() {
 					className='bg-underline'
 					href='https://github.com/Mohammed-Taysser'
 					target='_blank'
-					rel='noopener'
+					rel='noopener noreferrer'
 				>
 					Mohammed Taysser
 				</a>

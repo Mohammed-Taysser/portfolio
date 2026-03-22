@@ -5,7 +5,7 @@ type ThemeLabel = 'dark' | 'light';
 
 interface ThemeContextType {
 	theme: ThemeLabel;
-	setTheme: (ThemeLabel) => void;
+	setTheme: (theme: ThemeLabel) => void;
 	toggleTheme: () => void;
 }
 
@@ -56,7 +56,8 @@ type MixItUpProjectFilter =
 	| 'nodejs-project'
 	| 'bootstrap-project'
 	| 'next-project'
-	| 'freelance-project';
+	| 'freelance-project'
+	| 'work-project';
 
 interface SingleProject {
 	title: string;
@@ -65,7 +66,7 @@ interface SingleProject {
 	filter: MixItUpProjectFilter[];
 	urls: {
 		github?: string;
-		demo: string;
+		demo?: string;
 	};
 	tags: ProjectTags[];
 }
@@ -96,16 +97,11 @@ interface SingleFeed {
 interface Skill {
 	title: string;
 	slug: string;
-	icon: IconType;
+	icon: {
+		name: IconType;
+		props: Record<string, unknown>;
+	};
 	variant: 'frontend' | 'backend' | 'tool';
-}
-
-interface FrontendSkill extends Skill {
-	variant: 'frontend';
-}
-
-interface BackendSkill extends Skill {
-	variant: 'backend';
 }
 
 interface SkillProps {

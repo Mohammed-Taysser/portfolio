@@ -1,3 +1,13 @@
 $aurora-color: #12b886;
-$aurora-font: 'Ubuntu', sans-serif;
+$aurora-font: 'Ubuntu', 'DIN Next LT Arabic', sans-serif;
 $secondary-font: 'Lavishly Yours', cursive;
+$arabic-font: 'DIN Next LT Arabic', sans-serif;
+
+@font-face {
+	font-family: 'DIN Next LT Arabic';
+	src: url('../fonts/DINNextLTArabic.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+	unicode-range: U+0600-06FF, U+0750-077F, U+FB50-FDFF, U+FE70-FEFF;
+}

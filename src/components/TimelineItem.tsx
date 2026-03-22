@@ -53,7 +53,7 @@ function ExperienceTimeline(props: { item: ExperienceItem; icon?: IconType }) {
 						<a
 							href={item.companyUrl}
 							target='_blank'
-							rel='noopener'
+							rel='noopener noreferrer'
 							className='text-aurora text-decoration-none bg-underline'
 						>
 							{item.company}
@@ -84,7 +84,7 @@ function ExperienceTimeline(props: { item: ExperienceItem; icon?: IconType }) {
 						<a
 							href={item.companyUrl}
 							target='_blank'
-							rel='noopener'
+							rel='noopener noreferrer'
 							className='text-aurora text-decoration-none bg-underline'
 						>
 							{item.company}
@@ -135,7 +135,9 @@ function EducationTimeline(props: { item: EducationItem; icon?: IconType }) {
 				<p className='text-muted small mb-1'>
 					Department: {item.department}
 				</p>
-				<p className='text-muted small mb-2'>Grade: {item.grade}</p>
+				<p className='text-muted small mb-2'>
+					Grade: <span className='badge bg-aurora'>{item.grade}</span>
+				</p>
 				<div className='d-flex gap-3 text-muted small'>
 					<span>
 						<FiCalendar className='me-1' />
@@ -194,7 +196,7 @@ function CertificateTimeline(props: { item: CertificateItem; icon?: IconType }) 
 					<a
 						href={item.credentialUrl}
 						target='_blank'
-						rel='noopener'
+						rel='noopener noreferrer'
 						className='text-aurora text-decoration-none bg-underline small'
 					>
 						Show credential

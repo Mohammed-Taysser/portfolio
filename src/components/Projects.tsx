@@ -5,10 +5,11 @@ import SingleProject from './SingleProject';
 import SectionTitle from './SectionTitle';
 
 function Projects() {
-	const filterRef = useRef(null)
+	const filterRef = useRef<HTMLDivElement>(null);
 	useEffect(() => {
-		// initializing the MixItUp library on the element with the id `js-mixitup-container-id`.
-		mixitup(filterRef.current);
+		if (filterRef.current) {
+			mixitup(filterRef.current);
+		}
 	}, []);
 
 	return (
@@ -22,19 +23,24 @@ function Projects() {
 							type='button'
 							data-filter='all'
 						>
-							All
+							All ({PROJECTS.length})
 						</button>
 
-						{Object.keys(FILTERS).map((filter) => (
-							<button
-								className='bg-underline fs-5'
-								type='button'
-								data-filter={`.${FILTERS[filter].filter}`}
-								key={FILTERS[filter].filter}
-							>
-								{FILTERS[filter].label}
-							</button>
-						))}
+						{Object.keys(FILTERS).map((filter) => {
+							const count = PROJECTS.filter((p) =>
+								p.filter.includes(FILTERS[filter].filter)
+							).length;
+							return (
+								<button
+									className='bg-underline fs-5'
+									type='button'
+									data-filter={`.${FILTERS[filter].filter}`}
+									key={FILTERS[filter].filter}
+								>
+									{FILTERS[filter].label} ({count})
+								</button>
+							);
+						})}
 					</div>
 					<div className='row justify-content-center align-items-stretch mt-5'>
 						{PROJECTS.map((project, index) => (

@@ -11,10 +11,10 @@ import { SVGProps } from 'react';
 function Hamburger({ className = '', ...props }: SVGProps<SVGSVGElement>) {
 	return (
 		<svg
+			{...props}
 			className={`hamburger-svg ${className}`}
 			viewBox='0 0 100 100'
 			width='60'
-			onClick={props.onClick}
 		>
 			<path
 				className='line top'
