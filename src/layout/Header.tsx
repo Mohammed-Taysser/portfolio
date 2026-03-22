@@ -1,5 +1,6 @@
 import { BsEnvelopeAt, BsGithub } from 'react-icons/bs';
 import { FiLinkedin } from 'react-icons/fi';
+import { PiHandWavingDuotone } from 'react-icons/pi';
 import Typewriter from 'typewriter-effect';
 import heroBG from '../assets/images/background/bg-hero-header.webp';
 import avatar from '../assets/images/icons/avatar.webp';
@@ -19,18 +20,21 @@ function Header() {
 					<div className='col-md-7 my-3' data-aos='fade-up'>
 						<div className=''>
 							<h1 className='fw-bold display-4 main-heading'>
-								Hi 👋 <br /> I&apos;m{' '}
+								Hi <PiHandWavingDuotone color='#f0a030' className='ms-1' />{' '}
+								<br /> I&apos;m{' '}
 								<span className='hovered bg-underline'>Mohammed</span>
 								<br />
 								<Typewriter
 									options={{
 										strings: [
 											'Software Engineer',
+											'Node.js Developer',
 											'React.js Developer',
 											'Frontend Developer',
+											'Backend Developer',
 											'Next.js Developer',
 											'Full-stack Developer',
-											'Node.js Developer',
+											'MERN Stack Developer',
 										],
 										autoStart: true,
 										loop: true,
@@ -80,7 +84,7 @@ function Header() {
 								alt='my avatar'
 								width='100%'
 								height='100%'
-								loading='lazy'
+								fetchPriority='high'
 							/>
 						</div>
 					</div>
