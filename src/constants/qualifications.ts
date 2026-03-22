@@ -88,7 +88,7 @@ const EXPERIENCE: ExperienceItem[] = [
 	},
 ];
 
-const FREELANCE: FreelanceItem[] = [
+const QUALIFICATION_PROJECTS: FreelanceItem[] = [
 	{
 		project: 'Ramy Ashour Academy',
 		client: 'Logic-Design',
@@ -144,6 +144,30 @@ const FREELANCE: FreelanceItem[] = [
 		date: '2021',
 		description:
 			'Takenshot — Feel The Reality. A photography portfolio website built with Bootstrap.',
+	},
+	{
+		project: 'Mokambo POS',
+		client: 'Dynamic Business Solution',
+		tech: 'React, TypeScript, Vite, Ant Design, Tailwind, Docker',
+		date: '07/2024 – 10/2024',
+		description:
+			'Café and restaurant POS with real-time checkout, draft invoices, branch theming, and Dockerized deployment. Built session persistence and role-based access control.',
+	},
+	{
+		project: "What's Ad",
+		client: 'Dynamic Business Solution',
+		tech: 'React, TypeScript, Vite, Ant Design, Tailwind, i18next',
+		date: '03/2025 – 03/2025',
+		description:
+			'WhatsApp marketing app for sending bulk advertisements. Features account management, process tracking, and Excel import support.',
+	},
+	{
+		project: 'Jolie Stores',
+		client: 'Dynamic Business Solution',
+		tech: 'Next.js, TypeScript, MUI, Tailwind, SCSS',
+		date: '05/2024 – 05/2025',
+		description:
+			'Minimal and fast e-commerce platform optimized for guest checkout and same-day order processing. Browse categories, view product variants and stock levels.',
 	},
 ];
 
@@ -220,4 +244,4 @@ const CERTIFICATES: CertificateItem[] = [
 	},
 ];
 
-export { EDUCATION, EXPERIENCE, FREELANCE, CERTIFICATES };
+export { EDUCATION, EXPERIENCE, QUALIFICATION_PROJECTS, CERTIFICATES };

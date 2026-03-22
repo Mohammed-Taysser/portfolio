@@ -1,11 +1,5 @@
 # CHANGELOG
 
-## TODO
-
-- [ ] add projects languages types
-- [ ] add [Qualifications](https://codepen.io/xichen/pen/wzpeMM) section Education & Work Experience as timeline (date - title - info)
-- [ ] apply [Alphabet soup](https://codepen.io/mohmmedtaysser/pen/rNQYVwg?editors=1010) effect on hero section
-
 ## History
 
 ### 6 September 2025

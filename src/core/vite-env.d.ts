@@ -39,6 +39,7 @@ type ProjectTags =
 	| 'jwt'
 	| 'react-native'
 	| 'postgresql'
+	| 'redis'
 	| 'docker'
 	| 'nginx'
 	| 'npm'

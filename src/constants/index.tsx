@@ -38,6 +38,7 @@ import {
 	SiSocketdotio,
 	SiTailwindcss,
 	SiTypescript,
+	SiRedis,
 	SiYarn
 } from 'react-icons/si';
 import { TbBrandMantine } from 'react-icons/tb';
@@ -386,6 +387,18 @@ const LANGUAGES: Skill[] = [
 		},
 		variant: 'backend',
 		slug: 'postgresql',
+	},
+	{
+		title: 'Redis',
+		icon: {
+			name: SiRedis,
+			props: {
+				fill: '#DC382D',
+				size: '1.5rem',
+			},
+		},
+		variant: 'backend',
+		slug: 'redis',
 	},
 	{
 		title: 'Docker',

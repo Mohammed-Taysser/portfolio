@@ -1,11 +1,11 @@
 import { useState } from 'react';
 import { HiOutlineAcademicCap } from 'react-icons/hi';
 import { HiOutlineBriefcase } from 'react-icons/hi2';
-import { FiAward, FiCode } from 'react-icons/fi';
+import { FiAward, FiFolder } from 'react-icons/fi';
 import {
 	EDUCATION,
 	EXPERIENCE,
-	FREELANCE,
+	QUALIFICATION_PROJECTS,
 	CERTIFICATES,
 } from '../constants/qualifications';
 import SectionTitle from './SectionTitle';
@@ -16,7 +16,7 @@ import {
 	CertificateTimeline,
 } from './TimelineItem';
 
-type Tab = 'experience' | 'freelance' | 'education' | 'certificates';
+type Tab = 'experience' | 'projects' | 'education' | 'certificates';
 
 const TABS: { key: Tab; label: string; icon: React.ReactNode }[] = [
 	{
@@ -24,7 +24,11 @@ const TABS: { key: Tab; label: string; icon: React.ReactNode }[] = [
 		label: 'Experience',
 		icon: <HiOutlineBriefcase className='me-1' />,
 	},
-	{ key: 'freelance', label: 'Freelance', icon: <FiCode className='me-1' /> },
+	{
+		key: 'projects',
+		label: 'Projects',
+		icon: <FiFolder className='me-1' />,
+	},
 	{
 		key: 'education',
 		label: 'Education',
@@ -69,9 +73,13 @@ function Qualifications() {
 							/>
 						))}
 
-					{activeTab === 'freelance' &&
-						FREELANCE.map((item) => (
-							<FreelanceTimeline item={item} icon={FiCode} key={item.project} />
+					{activeTab === 'projects' &&
+						QUALIFICATION_PROJECTS.map((item) => (
+							<FreelanceTimeline
+								item={item}
+								icon={FiFolder}
+								key={item.project}
+							/>
 						))}
 
 					{activeTab === 'education' &&
