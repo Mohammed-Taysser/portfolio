@@ -2,6 +2,31 @@
 
 ## History
 
+### 22 March 2026
+
+- Add Mongizz project (#36)
+- Fix hero section dark mode with gradient overlay and visible icons (#35)
+- Fix mobile dropdown animation timing and dark mode toggle overflow
+- Drop YASSEN and ATOM projects
+- Add publish date and provider badges to blog cards
+- Replace defaultProps with JS default parameters
+- Add ProjectTags union type for type-safe project tags
+- Add Qualifications section with Experience, Projects, Education, and Certificates tabs
+- Add promotion timeline for Dynamic Business Solution (SE → Senior SE)
+- Add company logos to experience cards
+- Code review fixes: Skill.icon type, setTheme type, rel=noreferrer, mixitup null guard, &amp; literal, I'am typo
+- Add Work filter tab to projects with counts
+- Add Arabic font (DIN Next LT Arabic) for Arabic text
+- Move NasNav, Rosine, Admin Coffee, Jeel, Takenshot to Qualifications projects tab
+- Add Mokambo POS, What's Ad, Jolie Stores to projects tab
+- Add Redis to backend skills
+- Replace tech text with skill icons in qualification projects tab
+- Replace Skills section and About placeholder with orbiting skills animation
+- Improve hero section loading with fallback bg and high-priority avatar
+- Replace emoji with waving hand icon
+- Update SEO meta tags, add Open Graph and Twitter card support
+- Update index.html title, description, keywords, and canonical URL
+
 ### 6 September 2025
 
 - add new "JavaScript Array Methods: A Guide with Examples" article
