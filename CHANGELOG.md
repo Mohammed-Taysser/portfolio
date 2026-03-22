@@ -4,6 +4,7 @@
 
 ### 22 March 2026
 
+- Add new "Running Node.js App as a Background Service" article
 - Add Mongizz project (#36)
 - Fix hero section dark mode with gradient overlay and visible icons (#35)
 - Fix mobile dropdown animation timing and dark mode toggle overflow
