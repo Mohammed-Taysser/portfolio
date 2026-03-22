@@ -7,7 +7,6 @@ import Contact from '../components/Contact';
 import Feed from '../components/Feed';
 import Projects from '../components/Projects';
 import Qualifications from '../components/Qualifications';
-import Skills from '../components/Skills';
 import { ThemeProvider } from '../context/theme';
 import Footer from '../layout/Footer';
 import Header from '../layout/Header';
@@ -53,7 +52,6 @@ function App() {
 			<BackToTop />
 			<Header />
 			<AboutMe />
-			<Skills />
 			<Qualifications />
 			<Projects />
 			<Contact />

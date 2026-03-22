@@ -105,12 +105,6 @@ interface Skill {
 	variant: 'frontend' | 'backend' | 'tool';
 }
 
-interface SkillProps {
-	icon: IconType;
-	title: string;
-	skills: Skill[];
-}
-
 interface CertificateItem {
 	title: string;
 	issuer: string;

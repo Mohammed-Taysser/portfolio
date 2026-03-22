@@ -1,10 +1,8 @@
 import { BsCheck2All } from 'react-icons/bs';
-import about from '../assets/images/icons/about-me.webp';
 import aboutShape from '../assets/images/icons/about-shape.svg';
-import points from '../assets/images/icons/points.webp';
-import wave from '../assets/images/icons/wave.webp';
 import { FEATURES } from '../constants/about';
 import SectionTitle from './SectionTitle';
+import SkillsOrbit from './SkillsOrbit';
 import CONFIG from '../constants/config';
 
 function AboutMe() {
@@ -20,32 +18,8 @@ function AboutMe() {
 			</div>
 			<div className='container'>
 				<div className='row'>
-					<div className='col-lg-6 my-5 order-2 order-lg-1'>
-						<div className='about-me py-5 ps-md-5'>
-							<div className='shapes'>
-								<img
-									loading='lazy'
-									className='points-shape'
-									src={points}
-									alt='points-shape'
-								/>
-								<img
-									loading='lazy'
-									className='wave-shape'
-									src={wave}
-									alt='wave-shape'
-								/>
-							</div>
-							<div className='ratio ratio-1x1'>
-								<img
-									loading='lazy'
-									className='img-fluid'
-									src={about}
-									alt='about-us'
-									data-aos='fade-up'
-								/>
-							</div>
-						</div>
+					<div className='col-lg-6 my-5 order-2 order-lg-1 d-flex align-items-center'>
+						<SkillsOrbit />
 					</div>
 					<div className='col-lg-6 my-5 my-md-3 order-1 order-lg-2'>
 						<div className='wrapper' data-aos='fade-down'>
