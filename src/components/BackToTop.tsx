@@ -39,8 +39,9 @@ function BackToTop() {
 		<a
 			className='back-to-top text-white p-2 bg-aurora'
 			id='js-back-to-top'
-			href='#bact-to-top'
+			href='#back-to-top'
 			title='back to top'
+			aria-label='Scroll to top'
 			onClick={onClickBtn}
 		>
 			<TbTriangleFilled />

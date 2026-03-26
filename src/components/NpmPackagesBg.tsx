@@ -1,5 +1,3 @@
-const ACCENT = '#12b886';
-
 const packages = [
 	// Top area
 	{ name: 'react', ver: '^18.2.0', x: '3%', y: '4%', rotate: -2 },
@@ -42,7 +40,7 @@ const packages = [
 
 function NpmPackagesBg() {
 	return (
-		<div className='npm-packages-bg'>
+		<div className='npm-packages-bg' aria-hidden='true'>
 			{packages.map((pkg, i) => (
 				<div
 					key={pkg.name}

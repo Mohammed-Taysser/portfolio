@@ -125,6 +125,11 @@ body.dark {
 }
 
 .dark-mode-container {
+	background: none;
+	border: none;
+	padding: 0;
+	line-height: 1;
+
 	svg {
 		width: 30px;
 		height: 30px;

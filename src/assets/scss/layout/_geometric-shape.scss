@@ -76,27 +76,27 @@
 }
 
 .geo-center {
-	width: 80px;
-	height: 80px;
+	width: 120px;
+	height: 120px;
 	border-radius: 50%;
 	border: 3px solid $aurora-color;
 	box-shadow: 0 0 30px rgba($aurora-color, 0.25), 0 0 60px rgba($aurora-color, 0.1);
-	animation: geoPulse 2s ease-in-out infinite;
 	overflow: hidden;
 
 	@media (min-width: 576px) {
-		width: 100px;
-		height: 100px;
+		width: 150px;
+		height: 150px;
 	}
 
 	@media (min-width: 768px) {
-		width: 120px;
-		height: 120px;
+		width: 180px;
+		height: 180px;
+		border-width: 4px;
 	}
 
 	@media (min-width: 992px) {
-		width: 140px;
-		height: 140px;
+		width: 210px;
+		height: 210px;
 		border-width: 4px;
 	}
 }

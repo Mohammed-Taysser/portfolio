@@ -44,6 +44,7 @@ function Header() {
 										target='_blank'
 										title='linkedin'
 										rel='noopener noreferrer'
+										aria-label='Visit my LinkedIn profile'
 									>
 										<FiLinkedin className='fs-3' />
 									</a>
@@ -55,6 +56,7 @@ function Header() {
 										target='_blank'
 										rel='noopener noreferrer'
 										title='github'
+										aria-label='Visit my GitHub profile'
 									>
 										<BsGithub className='fs-3' />
 									</a>
@@ -64,6 +66,7 @@ function Header() {
 										className='text-dark text-decoration-none mx-2'
 										href={`mailto:${CONFIG.emails.gmail}`}
 										title='gmail'
+										aria-label='Send me an email'
 									>
 										<BsEnvelopeAt className='fs-3' />
 									</a>

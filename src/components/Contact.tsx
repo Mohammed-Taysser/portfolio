@@ -8,21 +8,6 @@ import { MdAlternateEmail } from 'react-icons/md';
 import contactUsBG from '../assets/images/background/contact-us-bg.svg';
 import SectionTitle from './SectionTitle';
 
-const MOCK_DATA = [
-	{
-		title: 'Email',
-		description: 'mohammedtaysser983@gmail.com',
-		icon: MdAlternateEmail,
-	},
-	{ title: 'Phone', description: '+201015081861', icon: BiPhoneCall },
-	{
-		title: 'Address',
-		description: 'Egypt, Ad Daqahliyah, Markaz Meet Ghamr',
-		icon: LuMapPin,
-	},
-	{ title: 'Working hours', description: '8 a.m. - 10 p.m.', icon: LuSun },
-];
-
 function Contact() {
 	const [isSuccess, setIsSuccess] = useState(false);
 	const [error, setError] = useState<EmailJSResponseStatus | null | string>(
@@ -114,23 +99,45 @@ function Contact() {
 								>
 									<h3 className='text-white mb-4'>Contact information</h3>
 
-									{MOCK_DATA.map((item, index) => (
-										<div
-											className='row my-2 text-white align-items-center'
-											key={index}
-										>
-											<div className='col-auto'>
-												<item.icon className='fs-2' />
-											</div>
-
-											<div className='col'>
-												<div className='opacity-75 text-small'>
-													{item.title}
-												</div>
-												<p>{item.description}</p>
-											</div>
+									<a className='row my-3 text-white align-items-center text-decoration-none' href='mailto:mohamedtaysser983@gmail.com'>
+										<div className='col-auto'>
+											<MdAlternateEmail className='fs-2' />
 										</div>
-									))}
+										<div className='col'>
+											<div className='opacity-75 text-small'>Email</div>
+											<p className='mb-0'>mohamedtaysser983@gmail.com</p>
+										</div>
+									</a>
+
+									<a className='row my-3 text-white align-items-center text-decoration-none' href='tel:+201015081861'>
+										<div className='col-auto'>
+											<BiPhoneCall className='fs-2' />
+										</div>
+										<div className='col'>
+											<div className='opacity-75 text-small'>Phone</div>
+											<p className='mb-0'>+201015081861</p>
+										</div>
+									</a>
+
+									<div className='row my-3 text-white align-items-center'>
+										<div className='col-auto'>
+											<LuMapPin className='fs-2' />
+										</div>
+										<div className='col'>
+											<div className='opacity-75 text-small'>Address</div>
+											<p className='mb-0'>Egypt, Ad Daqahliyah, Markaz Meet Ghamr</p>
+										</div>
+									</div>
+
+									<div className='row my-3 text-white align-items-center'>
+										<div className='col-auto'>
+											<LuSun className='fs-2' />
+										</div>
+										<div className='col'>
+											<div className='opacity-75 text-small'>Working hours</div>
+											<p className='mb-0'>8 a.m. - 10 p.m.</p>
+										</div>
+									</div>
 								</div>
 							</div>
 
@@ -148,6 +155,7 @@ function Contact() {
 												type='text'
 												className='form-control'
 												onChange={onInputChange}
+												aria-label='Your name'
 											/>
 										</div>
 
@@ -160,6 +168,7 @@ function Contact() {
 												onChange={onInputChange}
 												required
 												className='form-control'
+												aria-label='Your email'
 											/>
 										</div>
 
@@ -172,6 +181,7 @@ function Contact() {
 												onChange={onInputChange}
 												required
 												className='form-control'
+												aria-label='Your subject'
 											/>
 										</div>
 
@@ -184,6 +194,7 @@ function Contact() {
 												required
 												value={formInfo.phone}
 												className='form-control'
+												aria-label='Your phone number'
 											/>
 										</div>
 
@@ -196,6 +207,7 @@ function Contact() {
 												value={formInfo.message}
 												onChange={onInputChange}
 												className='form-control'
+												aria-label='Your message'
 											/>
 										</div>
 

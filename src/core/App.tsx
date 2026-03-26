@@ -51,11 +51,15 @@ function App() {
 			<Navbar />
 			<BackToTop />
 			<Header />
-			<AboutMe />
-			<Qualifications />
-			<Projects />
-			<Contact />
-			<Feed />
+
+			<main>
+				<AboutMe />
+				<Qualifications />
+				<Projects />
+				<Contact />
+				<Feed />
+			</main>
+
 			<Footer />
 		</ThemeProvider>
 	);

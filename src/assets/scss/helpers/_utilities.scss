@@ -36,10 +36,10 @@ textarea.form-control {
 	font-size: 16px;
 	line-height: 1.5;
 	border-radius: 8px;
-	color: #78909c;
+	color: #546e7a;
 
 	&::placeholder {
-		color: #78909c;
+		color: #546e7a;
 		font-size: 16px;
 		user-select: none;
 	}
@@ -47,7 +47,7 @@ textarea.form-control {
 	&:focus {
 		background: #f0f2f5;
 		border-color: $aurora-color;
-		color: #78909c;
+		color: #546e7a;
 		box-shadow: none;
 	}
 }

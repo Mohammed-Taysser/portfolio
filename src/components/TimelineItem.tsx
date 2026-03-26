@@ -47,7 +47,7 @@ function ExperienceTimeline(props: { item: ExperienceItem; icon?: IconType }) {
 				<div className='timeline-content nice-shadow p-4 rounded-3'>
 					<Icon className='timeline-decoration' />
 					<div className='d-flex justify-content-between align-items-center mb-1 timeline-header'>
-						<h5 className='fw-bold mb-0'>{role.role}</h5>
+						<h3 className='fw-bold mb-0 h6'>{role.role}</h3>
 						<span className='badge bg-aurora'>{role.type}</span>
 					</div>
 					<p className='text-aurora mb-2'>
@@ -107,7 +107,7 @@ function ExperienceTimeline(props: { item: ExperienceItem; icon?: IconType }) {
 							key={`${r.role}-${r.from}`}
 						>
 							<div className='d-flex justify-content-between align-items-center mb-1 promotion-role-header'>
-								<h6 className='fw-bold mb-0'>{r.role}</h6>
+								<h3 className='fw-bold mb-0 h6'>{r.role}</h3>
 								<span className='badge bg-aurora'>{r.type}</span>
 							</div>
 							<p className='text-muted small mb-1'>
@@ -131,7 +131,7 @@ function EducationTimeline(props: { item: EducationItem; icon?: IconType }) {
 		<div className='timeline-item' data-aos='fade-up'>
 			<div className='timeline-content nice-shadow p-4 rounded-3'>
 				<Icon className='timeline-decoration' />
-				<h5 className='fw-bold mb-1'>{item.degree}</h5>
+				<h3 className='fw-bold mb-1 h6'>{item.degree}</h3>
 				<p className='text-aurora mb-2'>{item.university}</p>
 				<p className='text-muted small mb-1'>
 					Department: {item.department}
@@ -163,7 +163,7 @@ function FreelanceTimeline(props: { item: FreelanceItem; icon?: IconType }) {
 			<div className='timeline-content nice-shadow p-4 rounded-3'>
 				<Icon className='timeline-decoration' />
 				<div className='d-flex justify-content-between align-items-center mb-1 timeline-header'>
-					<h5 className='fw-bold mb-0'>{item.project}</h5>
+					<h3 className='fw-bold mb-0 h6'>{item.project}</h3>
 					<span className='badge bg-aurora'>{item.client}</span>
 				</div>
 				<div className='d-flex flex-wrap gap-2 mb-2'>
@@ -205,7 +205,7 @@ function CertificateTimeline(props: { item: CertificateItem; icon?: IconType }) 
 		<div className='timeline-item' data-aos='fade-up'>
 			<div className='timeline-content nice-shadow p-4 rounded-3'>
 				<Icon className='timeline-decoration' />
-				<h6 className='fw-bold mb-1'>{item.title}</h6>
+				<h3 className='fw-bold mb-1 h6'>{item.title}</h3>
 				<p className='text-aurora small mb-1'>{item.issuer}</p>
 				<p className='text-muted small mb-2'>
 					<FiCalendar className='me-1' />
