@@ -2,6 +2,8 @@ body {
 	font-family: $aurora-font;
 	transition: 0.4s;
 	position: relative;
+	background-color: #fafbfc;
+	color: #1a1a2e;
 }
 
 .back-to-top {
@@ -27,7 +29,7 @@ body {
 
 input.form-control,
 textarea.form-control {
-	background: #f3f5f6;
+	background: #f0f2f5;
 	border: 1px solid transparent;
 	box-shadow: none;
 	padding: 14px;
@@ -43,7 +45,7 @@ textarea.form-control {
 	}
 
 	&:focus {
-		background: #f3f5f6;
+		background: #f0f2f5;
 		border-color: $aurora-color;
 		color: #78909c;
 		box-shadow: none;
@@ -121,7 +123,7 @@ a {
 }
 
 .nice-shadow {
-	box-shadow: 0 3px 15px rgba(22, 41, 124, 0.1);
+	box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
 }
 
 .text-aurora {

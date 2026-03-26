@@ -2,20 +2,15 @@ import { BsEnvelopeAt, BsGithub } from 'react-icons/bs';
 import { FiLinkedin } from 'react-icons/fi';
 import { PiHandWavingDuotone } from 'react-icons/pi';
 import Typewriter from 'typewriter-effect';
-import heroBG from '../assets/images/background/bg-hero-header.webp';
-import avatar from '../assets/images/icons/avatar.webp';
+import GeometricShape from '../components/GeometricShape';
+import NpmPackagesBg from '../components/NpmPackagesBg';
 import CONFIG from '../constants/config';
 
 function Header() {
 	return (
-		<header
-			className='hero-header'
-			style={{
-				backgroundImage: `linear-gradient(to top, rgba(255, 255, 255, 0.97) 10%, rgba(255, 255, 255, 0.73) 80%), url(${heroBG})`,
-			}}
-			id='home'
-		>
-			<div className='container'>
+		<header className='hero-header' id='home'>
+			<NpmPackagesBg />
+			<div className='container position-relative hero-content'>
 				<div className='row justify-content-center align-content-center align-items-center'>
 					<div className='col-md-7 my-3' data-aos='fade-up'>
 						<div className=''>
@@ -77,16 +72,7 @@ function Header() {
 						</div>
 					</div>
 					<div className='col-md-5 my-3' data-aos='fade-down'>
-						<div className='image'>
-							<img
-								className='img-fluid border-transform'
-								src={avatar}
-								alt='my avatar'
-								width='100%'
-								height='100%'
-								fetchPriority='high'
-							/>
-						</div>
+						<GeometricShape />
 					</div>
 				</div>
 			</div>

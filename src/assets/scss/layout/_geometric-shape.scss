@@ -1,0 +1,165 @@
+.geometric-shape {
+	width: 280px;
+	height: 280px;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0 auto;
+
+	@media (min-width: 576px) {
+		width: 340px;
+		height: 340px;
+	}
+
+	@media (min-width: 768px) {
+		width: 400px;
+		height: 400px;
+	}
+
+	@media (min-width: 992px) {
+		width: 460px;
+		height: 460px;
+	}
+}
+
+.geo-ring-dashed {
+	position: absolute;
+	width: 260px;
+	height: 260px;
+	border: 2px dashed rgba($aurora-color, 0.25);
+	border-radius: 50%;
+	animation: geoSpin 20s linear infinite;
+
+	@media (min-width: 576px) {
+		width: 320px;
+		height: 320px;
+	}
+
+	@media (min-width: 768px) {
+		width: 370px;
+		height: 370px;
+	}
+
+	@media (min-width: 992px) {
+		width: 430px;
+		height: 430px;
+	}
+}
+
+.geo-morph {
+	width: 180px;
+	height: 180px;
+	position: relative;
+	background: linear-gradient(135deg, rgba($aurora-color, 0.12), rgba($aurora-color, 0.03));
+	border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+	animation: geoMorph 8s ease-in-out infinite;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 2px solid rgba($aurora-color, 0.2);
+
+	@media (min-width: 576px) {
+		width: 220px;
+		height: 220px;
+	}
+
+	@media (min-width: 768px) {
+		width: 260px;
+		height: 260px;
+	}
+
+	@media (min-width: 992px) {
+		width: 300px;
+		height: 300px;
+	}
+}
+
+.geo-center {
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	border: 3px solid $aurora-color;
+	box-shadow: 0 0 30px rgba($aurora-color, 0.25), 0 0 60px rgba($aurora-color, 0.1);
+	animation: geoPulse 2s ease-in-out infinite;
+	overflow: hidden;
+
+	@media (min-width: 576px) {
+		width: 100px;
+		height: 100px;
+	}
+
+	@media (min-width: 768px) {
+		width: 120px;
+		height: 120px;
+	}
+
+	@media (min-width: 992px) {
+		width: 140px;
+		height: 140px;
+		border-width: 4px;
+	}
+}
+
+.geo-avatar {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	display: block;
+}
+
+.geo-dot {
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background: $aurora-color;
+	animation: geoPulse ease-in-out infinite;
+
+	@media (min-width: 768px) {
+		width: 12px;
+		height: 12px;
+	}
+
+	@media (min-width: 992px) {
+		width: 14px;
+		height: 14px;
+	}
+}
+
+@keyframes geoSpin {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes geoMorph {
+	0%,
+	100% {
+		border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+	}
+	25% {
+		border-radius: 58% 42% 75% 25% / 76% 46% 54% 24%;
+	}
+	50% {
+		border-radius: 50% 50% 33% 67% / 55% 27% 73% 45%;
+	}
+	75% {
+		border-radius: 33% 67% 58% 42% / 63% 68% 32% 37%;
+	}
+}
+
+@keyframes geoPulse {
+	0%,
+	100% {
+		transform: scale(1);
+		opacity: 1;
+	}
+	50% {
+		transform: scale(1.05);
+		opacity: 0.8;
+	}
+}

@@ -1,0 +1,52 @@
+.npm-packages-bg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	pointer-events: none;
+	z-index: 0;
+}
+
+.npm-package-item {
+	position: absolute;
+	padding: 5px 12px;
+	border-radius: 6px;
+	border: 1px solid rgba($aurora-color, 0.08);
+	background: rgba($aurora-color, 0.03);
+	font-family: monospace;
+	font-size: 11px;
+	white-space: nowrap;
+	opacity: 0.3;
+	animation: npmFloat ease-in-out infinite alternate;
+	animation-fill-mode: both;
+
+	@media (max-width: 767px) {
+		font-size: 9px;
+		padding: 3px 8px;
+	}
+}
+
+.npm-pkg-name {
+	color: #e06c75;
+}
+
+.npm-pkg-colon {
+	color: #5c6370;
+}
+
+.npm-pkg-ver {
+	color: $aurora-color;
+}
+
+@keyframes npmFloat {
+	0% {
+		transform: translateY(0) rotate(var(--r, 0deg));
+		opacity: 0.25;
+	}
+	100% {
+		transform: translateY(-10px) rotate(var(--r, 0deg));
+		opacity: 0.45;
+	}
+}

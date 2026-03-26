@@ -1,6 +1,6 @@
 body.dark {
-	--text-color: #fff;
-	--bg-color: #111827;
+	--text-color: #c9d1d9;
+	--bg-color: #0d1117;
 
 	background-color: var(--bg-color);
 	color: var(--text-color);
@@ -27,7 +27,8 @@ body.dark {
 	}
 
 	nav.navbar {
-		background-color: var(--bg-color) !important;
+		background-color: #161b22 !important;
+		border-bottom: 1px solid #21262d;
 
 		.hamburger-svg .line {
 			stroke: var(--text-color);
@@ -40,53 +41,85 @@ body.dark {
 		}
 	}
 
-	header.hero-header {
-		&::before {
-			content: '';
-			position: absolute;
-			inset: 0;
-			background: linear-gradient(
-				to bottom,
-				rgba(17, 24, 39, 0.5) 0%,
-				rgba(17, 24, 39, 0.75) 50%,
-				rgba(17, 24, 39, 1) 100%
-			);
-			z-index: 0;
-		}
+	footer {
+		background-color: #161b22 !important;
+		border-top: 1px solid #21262d;
+	}
 
-		& > .container {
-			position: relative;
-			z-index: 1;
-		}
+	header.hero-header {
+		background-color: #0d1117;
 
 		.main-heading {
 			color: var(--text-color);
+		}
+
+		.npm-package-item {
+			border-color: rgba($aurora-color, 0.12);
+			background: rgba($aurora-color, 0.06);
+		}
+
+		.npm-pkg-name {
+			color: #e06c75cc;
+		}
+
+		.npm-pkg-colon {
+			color: #5c6370;
+		}
+
+		.npm-pkg-ver {
+			color: rgba($aurora-color, 0.8);
+		}
+
+		.geo-ring-dashed {
+			border-color: rgba($aurora-color, 0.15);
+		}
+
+		.geo-morph {
+			background: linear-gradient(135deg, rgba($aurora-color, 0.1), rgba($aurora-color, 0.02));
+			border-color: rgba($aurora-color, 0.15);
 		}
 	}
 
 	.my-projects,
 	.my-blogs {
 		.single-item {
-			background-color: #0b111e;
+			background-color: #161b22;
+			border-color: #21262d;
+
+			hr {
+				border-color: #21262d;
+			}
 		}
 	}
 
 	.qualifications {
 		.timeline-content {
-			background-color: #0b111e;
+			background-color: #161b22;
+			border-color: #21262d;
 		}
 
 		.promotion-track .promotion-role::before {
-			border-color: #0b111e;
+			border-color: #161b22;
 		}
+	}
+
+	.contact-me .contact-information {
+		border-color: #21262d;
 	}
 
 	input.form-control,
 	textarea.form-control {
-		background: #0b111e;
+		background: #161b22;
+		border-color: #21262d;
+		color: #c9d1d9;
+
+		&::placeholder {
+			color: #8b949e;
+		}
 
 		&:focus {
-			background: #0b111e;
+			background: #161b22;
+			color: #c9d1d9;
 		}
 	}
 }

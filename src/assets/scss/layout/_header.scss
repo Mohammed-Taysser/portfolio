@@ -1,13 +1,15 @@
 header.hero-header {
 	position: relative;
 	margin-top: 98px;
-	background-color: #f5f5f5;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
+	background-color: #fafbfc;
+	overflow: hidden;
+
+	.hero-content {
+		z-index: 1;
+	}
 
 	.main-heading {
-		color: #000;
+		color: #1a1a2e;
 	}
 
 	& > .container > .row {
