@@ -71,6 +71,20 @@
 			content="https://mohammed-taysser.github.io/portfolio/favicon-full.png"
 		/>
 
+		<!-- Google Analytics 4 -->
+		<script
+			async
+			src="https://www.googletagmanager.com/gtag/js?id=%VITE_GA_MEASUREMENT_ID%"
+		></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag() {
+				dataLayer.push(arguments);
+			}
+			gtag('js', new Date());
+			gtag('config', '%VITE_GA_MEASUREMENT_ID%');
+		</script>
+
 		<!-- google fonts -->
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
